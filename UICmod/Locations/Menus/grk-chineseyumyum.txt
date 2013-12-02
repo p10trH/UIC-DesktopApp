@@ -1,0 +1,210 @@
+###Menu Coupons###
+Free Soda with Purchase of $15 or More  : 
+###Smoothies###
+Avocado Smoothie : $3.25
+Cantaloupe Smoothie : $3.25
+Honey Dew Smoothie : $3.25
+Mango Smoothie : $3.25
+Pineapple : $3.25
+Watermelon : $3.25
+Banana : $3.25
+Coconut : $3.25
+Lychee : $3.25
+Papaya : $3.25
+Strawberry Smoothie : $3.25
+Peach Smoothie : $3.25
+###Drinks###
+Canned Soda : $1.00
+16.9 oz Soda : $1.80
+Vitamin Water : $1.95
+Powerade : $1.95
+Bottled Water : $1.35
+Hot Lipton Tea : $1.75 - $2.50
+Cold Hong Kong Milk Tea : $2.75
+Cold Fresh Lemon Iced Tea : $2.75
+###Snacks###
+Egg Roll : $1.50 - $2.80
+Vegetable Egg Roll : $1.50 - $2.80
+Crab Rangoon  : $4.95
+BBQ Pork : $5.45
+Rib Tips with BBQ Sauce : $5.45
+Teriyaki Beef Stick : $5.45
+Teriyaki Chicken Stick : $5.15
+Satay Curry Chicken Stick : $5.15
+Pork Pot Sticker : $5.15
+Chicken Pot Sticker : $5.15
+Fried Chicken Wings : $4.95
+Spicy BBQ Chicken Wings : $5.95
+Honey Garlic Chicken Wings : $5.95
+Salt & Pepper Chicken Wings : $5.95
+Fried Shrimp : $5.25
+Fried Crab Stick : $4.25
+Popcorn Shrimp : $4.95
+Fried Wonton Skin : $2.95
+Fried Shrimp & Pork Wonton : $4.25
+Salt & Pepper Calamari : $5.75
+Yum Yum Sampler : $8.55
+###Soup###
+Hot & Sour Soup : $2.75 - $4.75
+Egg Drop Soup : $2.75 - $4.75
+Corn Egg Drop Soup : $2.75 - $4.75
+Shrimp & Pork Wonton Soup : $2.75 - $4.75
+Chicken Noodle Soup : $2.75 - $4.75
+Chicken Rice Soup : $2.75 - $4.75
+Tofu Vegetable Soup : $2.75 - $4.75
+Hot & Sour Seafood Soup : $5.45
+Seafood Tofu Soup : $5.45
+Shrimp & Pork Wonton Noodle Soup : $5.75
+###Fried Rice###
+Plain Fried Rice : $3.45 - $5.95
+Chicken Fried Rice : $4.85 - $7.35
+Beef Fried Rice : $4.85 - $7.35
+BBQ Pork Fried Rice : $4.85 - $7.35
+Ham Fried Rice : $4.85 - $7.35
+Shrimp Fried Rice : $5.15 - $7.55
+Jumbo Shrimp Fried Rice : $6.15 - $9.55
+Crabmeat Fried Rice : $4.85 - $7.35
+Tofu Fried Rice : $4.85 - $7.35
+Vegetable Fried Rice : $4.85 - $7.35
+Chinese Sausage Fried Rice : $5.25 - $7.95
+Seafood Fried Rice : $6.45 - $9.95
+Combination Fried Rice : $5.25 - $8.35
+Hawaiian Fried Rice : $8.35
+Basil Fried Rice : $8.35
+Flaming Dragon Fried Rice : $8.35
+Yum Yum Fried Rice : $9.55
+###Dinner Egg Foo Young###
+Plain Egg Foo Young : $4.85 - $7.45
+Chicken Egg Foo Young : $5.25 - $7.75
+Beef Egg Foo Young : $5.85 - $8.25
+BBQ Pork Egg Foo Young : $5.25 - $7.75
+Ham Egg Foo Young : $5.25 - $7.75
+Shrimp Egg Foo Young : $6.85 - $7.75
+Jumbo Shrimp Egg Foo Young : $6.15 - $8.25
+Seafood Egg Foo Young : $6.25 - $8.75
+Vegetable Egg Foo Young : $5.25 - $7.75
+Combo Egg Foo Young : $6.15 - $8.35
+###Egg Foo Young###
+Plain Egg Foo Young : $4.85 - $6.45
+Chicken Egg Foo Young : $5.25 - $6.75
+Beef Egg Foo Young : $5.85 - $7.25
+BBQ Pork Egg Foo Young : $5.25 - $6.75
+Ham Egg Foo Young : $5.25 - $6.75
+Shrimp Egg Foo Young : $5.85 - $6.75
+Jumbo Shrimp Egg Foo Young : $6.15 - $7.25
+Seafood Egg Foo Young : $6.25 - $7.75
+Vegetable Egg Foo Young : $5.25 - $6.75
+Combo Egg Foo Young : $6.15 - $7.35
+###Dim Sum###
+Siu Mai Pork Dumpling : $3.75
+Ha Gao Shrimp Dumpling : $3.75
+Mandarin Pork Dumpling : $3.95
+###Noodles###
+Singapore Rice Noodles : $9.55
+Pad Thai : $8.55 - $10.55
+Shanghai Udon Noodles : $8.55 - $10.55
+Chow Fun Noodles : $8.55 - $10.55
+Lo Mein Noodles : $8.55 - $10.55
+Pan Fried Noodles : $8.55 - $10.55
+###Congee###
+Plain Congee : $2.45 - $3.75
+Fish Fillet Congee : $3.15 - $5.15
+Seafood Congee : $3.45 - $5.85
+Preserved Egg & Pork Congee : $3.15 - $4.85
+###Dinner Chef's Specials###
+General Tao's Chicken : $6.15 - $8.25
+Empress Chicken : $6.15 - $8.25
+Sesame Chicken : $6.15 - $8.25
+Orange Chicken : $6.15 - $8.25
+Lemon Chicken : $6.15 - $8.25
+Pineapple Chicken : $6.15 - $8.25
+Salt & Pepper Fish Fillet : $6.15 - $8.25
+Salt & Pepper Shrimp : $6.25 - $8.35
+Ma Po Tofu : $6.15 - $8.25
+Walnut Shrimp : $6.65 - $8.75
+Fried Chicken Wings : $5.25 - $7.75
+Spicy BBQ Chicken Wings : $5.25 - $7.75
+Honey Garlic Chicken Wings : $5.25 - $7.75
+Salt & Pepper Chicken Wings : $5.25 - $7.75
+###Chef' Specials###
+General Tso's Chicken : $6.15 - $7.25
+Empress Chicken : $6.15 - $7.25
+Sesame Chicken : $6.15 - $7.25
+Orange Chicken : $6.15 - $7.25
+Lemon Chicken : $6.15 - $7.25
+Pineapple Chicken : $6.15 - $7.25
+Salt and Pepper Fish Fillet : $6.15 - $7.25
+Salt and Pepper Shrimp : $6.25 - $7.35
+Ma Pa Tofu : $6.15 - $7.25
+Walnut Shrimp : $6.65 - $7.75
+Fried Chicken Wing : $5.25 - $6.75
+Spicy BBQ Chicken Wing : $5.25 - $6.75
+Honey Garlic Chicken Wing : $5.25 - $6.75
+Salt and Pepper Chicken Wing : $5.25 - $6.75
+###Dinner Boxes & Entrees###
+Mixed Vegetables : $5.65 - $6.35
+Broccoli : $5.65 - $6.35
+Peapods : $5.65 - $6.35
+Fresh Mushrooms : $5.65 - $6.35
+Tomato & Bell Peppers : $5.65 - $6.35
+Gravy : $5.65 - $6.35
+Chop Suey : $5.65 - $6.35
+Sweet & Sour : $5.65 - $6.35
+Lobster Sauce : $5.65 - $6.35
+Garlic Sauce : $5.65 - $6.35
+Black Pepper : $5.65 - $6.35
+Cashew : $5.65 - $6.35
+Almond : $5.65 - $6.35
+Mongolian : $5.65 - $6.35
+Szechwan : $5.65 - $6.35
+Hunan : $5.65 - $6.35
+Kung Pao : $5.65 - $6.35
+Flaming Hot Pepper : $5.65 - $6.35
+Basil : $5.65 - $6.35
+Yellow Curry : $5.65 - $6.35
+Red Curry : $5.65 - $6.35
+Green Curry : $5.65 - $6.35
+Teriyaki : $5.65 - $6.35
+Coconut : $5.65 - $6.35
+###Boxes and Entrees###
+Mixed Vegetable : $5.65 - $6.35
+Broccoli : $5.65 - $6.35
+Peapod : $5.65 - $6.35
+Fresh Mushroom : $5.65 - $6.35
+Tomato and Bell Pepper : $5.65 - $6.35
+Gravy : $5.65 - $6.35
+Chop Suey : $5.65 - $6.35
+Sweet and Sour : $5.65 - $6.35
+Lobster Sauce : $5.65 - $6.35
+Garlic Sauce : $5.65 - $6.35
+Black Pepper : $5.65 - $6.35
+Cashew : $5.65 - $6.35
+Almond : $5.65 - $6.35
+Mongolian : $5.65 - $6.35
+Szechwan : $5.65 - $6.35
+Hunan : $5.65 - $6.35
+Kung Pao : $5.65 - $6.35
+Flaming Hot Pepper : $5.65 - $6.35
+Basil : $5.65 - $6.35
+Yellow Curry : $5.65 - $6.35
+Red Curry : $5.65 - $6.35
+Green Curry : $5.65 - $6.35
+Teriyaki : $5.65 - $6.35
+Coconut : $5.65 - $6.35
+###Miscellaneous###
+House Sweet & Sour Sauce (Pint) : $2.00
+Egg Foo Young Gravy (Pint) : $1.50
+Rice : $1.50 - $2.50
+Pan Fried Noodles : $1.95 - $3.50
+Lo Mein Noodles : $1.95 - $3.50
+Chow Mein Noodles : $1.00
+Almond Cookies : $1.00
+Fortune Cookies : $1.00
+Extra Chicken : $2.50
+Extra Beef : $2.50
+Extra Pork : $2.50
+Extra Shrimp : $3.00
+Extra Jumbo Shrimp : $3.50
+Extra Vegetables : $2.00
+Extra Egg : $1.00
+Extra Onion : $1.00

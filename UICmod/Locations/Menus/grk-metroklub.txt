@@ -1,0 +1,34 @@
+###Starters###
+Soup Of The Day : $6.00
+Tomato Eggplant Soup : $6.00
+Hand Made Guacamole : $6.95
+Bruschetta : $6.50
+Metro House Salad : $6.95
+Caesar Salad : $6.95
+As An Entree Salad : $16.95
+As An Entree Salad : $17.95
+As An Entree Salad : $18.95
+Grilled Salad : $12.95
+Chicken Cobb Salad : $13.95
+###Sandwiches###
+Metroklub Burger : $15.95
+Metroklub Burger : $1.00
+French Dip : $17.95
+BBQ Brisket : $17.95
+Grilled Steak : $19.95
+Grilled Chicken : $15.95
+Buffalo Chicken : $15.95
+Buffalo Chicken Wrap : $15.95
+Turkey Klub : $14.95
+Turkey Klub : $1.00
+Corned Beef : $15.95
+Pastrami : $15.95
+Vegetable Wrap : $12.95
+###Entrees###
+Skirt Steak Frites : $21.95
+Seared Atlantic Salmon : $18.95
+Grilled Chicken Breast : $17.95
+Garlic Linguini : $14.95
+###Desserts###
+Daily Homemade Sorbet : $3.95
+Turtle &quot;&quot;Cheesecake&quot;&quot; : $5.95

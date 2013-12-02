@@ -1,0 +1,28 @@
+Location (file)
+	Restaurant
+	{
+		Name:
+		Location:
+		Phone:
+		Hours:
+		Menu (file)
+			{
+				Dish:
+				Price:
+			}
+		Hashtags:
+	}
+	
+***NAME***
+ADRESS 1
+ADRESS 2
+(XXX) XXX-XXXX PHONE
+Monday		XX:XX am - XX:XX pm
+Tuesday		XX:XX am - XX:XX pm
+Wednesday	XX:XX am - XX:XX pm
+Thursday	XX:XX am - XX:XX pm
+Friday		XX:XX am - XX:XX pm
+Saturday	XX:XX am - XX:XX pm
+Sunday		XX:XX am - XX:XX pm
+@yyy-zzz.txt LINK FILE
+#X #Y #Z HASH

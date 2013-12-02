@@ -1,0 +1,74 @@
+###Submarines And Salads###
+Turkey And Swiss Cheese Sub : $3.25
+Ham And Cheese Submarine : $3.25
+Tossed Salad : $2.10
+Greek Salad : $3.75
+Julienne Salad : $4.60
+Chicken Breast Salad : $4.60
+###Special Sandwiches###
+Hamburger : $2.95 - $2.45
+Gyros Sandwich : $3.50
+Chicken Ka-Bob Sandwich : $3.50
+Chicken Breast Sandwich : $3.50
+On French Bread : $3.75
+Pork Chop Sandwich : $3.25
+Cod Fish Sandwich : $2.25
+Patty Melt : $2.75
+Italian Beef : $3.60
+2 Chicken Or Steak Tacos : $2.75
+Grilled Cheese Sandwich : $1.75
+Grilled Ham & Cheese Sandwich : $2.75
+###Burgers###
+French Burger : $4.25
+Mushroom Burger : $4.25
+American Burger : $4.20
+Befteki (Greek) Burger : $3.25
+###The Best Breakfast In The Greek Town###
+Zeus Morning Special : $4.45
+2 Eggs Any Style : $3.50
+Egg Sandwich : $1.50 - $2.75
+3 Buttermilk Panckes : $2.25 - $2.75
+4 Egg Cheese Omelette : $3.75
+Zeus Omelette : $3.95
+Denver Omelette : $4.25
+###Dinner Selections###
+Gyros Plate : $5.50
+Chicken Ka-Bob Plate : $5.50
+Shish-Ka-Bob Plate : $5.50
+Skirt Steak : $5.50
+Grecian Or Bbq Chicken : $5.25
+Rib Tips : $4.75
+Breaded Shrimp Plate : $4.50
+Fish And Chip Plate : $4.75
+###Zeus Specials###
+Gyros Sandwich : $4.85
+Chicken Breast Sandwich : $4.85
+2 Hot Dogs : $3.85
+Polish Sausage : $3.85
+Italian Beef : $5.25
+Cod Fish : $3.90
+Italian Sausage : $3.80
+Patty Melt : $3.85
+Zeus Hamburger : $3.75
+Chicken Wings : $4.60
+Chicken Philly Sandwich : $4.65
+Chop Steak : $4.60
+###Side Orders###
+Extra Egg : $0.50
+Extra Bread : $0.50
+Hash Browned Potatoes : $1.25
+Ham : $1.25
+Bacon : $1.25
+Pork Sausage Links : $1.25
+Pizza Puff - Plain : $1.95 - $2.65
+Cheese : $1.75
+French Fries : $0.92 - $1.38
+Rice : $0.92
+Cole Slaw : $0.92
+Fried Mushrooms : $2.15
+Mozzarella Sticks (6) : $2.45
+Onion Rings (12) : $1.90
+Soft Dirnks : $1.00 - $1.50
+Coffee : $0.75 - $1.00
+Hot Chocolate : $0.75
+Hot Tea : $0.75

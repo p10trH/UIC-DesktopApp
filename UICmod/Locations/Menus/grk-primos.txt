@@ -1,0 +1,73 @@
+Primos Chicago Pizza menu###Drinks###
+Fountain Drink : $1.30
+Bottled Drink : $1.45
+2 Liter : $2.50
+###Daily Soup###
+Soup of the Day : $2.65
+###Salads###
+Julian Salad : $6.50
+Side Salad : $3.00
+Chicken Breast Salad : $6.50
+Greek Salad : $6.10
+Garden Salad : $4.80
+Caesar Salad with Chicken : $6.99
+Caesar Salad : $4.80
+Chicken Pasta Salad : $3.25 - $5.99
+Tuna Salad : $6.50
+Bean Salad : $3.00 - $5.50
+###Pastas###
+Garlic Chicken : $9.00
+Chicken Parmesan : $9.00
+Meat Ravioli : $6.99
+Cheese Ravioli : $6.99
+Angel Hair : $6.79
+Mostaccioli : $6.79
+Baked Angel Hair : $7.29
+Baked Mostaccioli : $7.29
+Linguini : $6.79
+Mac and Cheese : $5.99
+###Cold Sub Sandwiches###
+Panino Italiano Sandwich : $4.49 - $5.49
+American Panino Sandwich : $4.49 - $5.49
+Panino Ham Sandwich : $4.49 - $5.49
+Panino De Taccitino Sandwich : $4.49 - $5.49
+Panino Tuna Sandwich : $4.49 - $5.49
+###Hot Focaccia Sandwiches###
+Focaccia Di Taccitino Sandwich : $4.99 - $6.09
+Chicken Breast Focaccia Sandwich : $4.99 - $7.09
+Focaccia Italiano Sandwich : $4.99 - $6.59
+Cheesy Beef Focaccia Sandwich : $5.09 - $6.59
+Meatball Focaccia Sandwich : $4.89 - $6.59
+Eggplant Parmesan Focaccia Sandwich : $5.09 - $6.59
+Chicken Parmesan Focaccia Sandwich : $5.09 - $6.89
+Tuna Focaccia Sandwich : $5.09 - $6.59
+###Hot Sandwiches###
+Italian Beef Sandwich : $4.59 - $6.09
+Italian Sausage Sandwich : $4.39 - $5.25
+Beef and Sausage Combo Sandwich : $5.79 - $6.50
+Meat Ball Sandwich : $4.59 - $6.09
+Chicken Breast Sandwich : $4.99 - $6.09
+Eggplant Parmesan Sandwich : $5.09 - $6.09
+Cheesy Beef Sandwich : $5.09 - $6.39
+Chicken Parmesan Sandwich : $5.09 - $6.89
+Chicken Pita : $4.89
+###Pizza###
+Cheese Pizza : $11.29 - $28.00
+1-Topping Pizza : $12.29 - $29.00
+Margarita Pizza : $12.29 - $29.00
+###Specials###
+Fish with Chips and a Large Drink : $5.99
+Grilled Cheese with Soup : $4.89
+Chicken Tenders with Soup : $5.99
+6&quot; Cold Sub with Drink and Chips : $6.00
+10&quot; Cold Sub with Drink and Chips : $7.00
+###Side Orders###
+Garlic Bread : $1.75
+Cheesy Garlic Bread : $2.89
+6 Mozzarella Sticks : $4.10
+Onion Rings : $3.50
+Zullini : $3.95
+Breaded Mushrooms : $3.50
+Grilled Cheese : $2.99
+###Desserts###
+Tiramisu : $2.50 - $3.75

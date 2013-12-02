@@ -1,0 +1,113 @@
+###Breakfast###
+Two Eggs : $4.45
+Two Eggs : $5.45
+Three Egg Omelette : $5.09
+Cheese Omelette : $5.89
+Ham & Cheese Omelette : $6.29
+Denver Omelette : $6.29
+Mr Greek Omelette : $6.29
+Gyros Omelette : $6.29
+Bacon Omelette : $6.29
+Breakfast Orders Above Are Served With Hash Brown Potatoes & Toast : ###Salads##
+#
+Greek Salad : $6.99
+Julienne Salad : $6.79
+Chicken Salad : $6.99
+Tossed Salad : $3.99
+Chicken Caesar Salad : $7.39
+###House Specialties###
+#1. Gyros : $6.99
+#2. Charbroiled Chicken Breast : $6.99
+#3. Vienna Beef Hot Dog : $5.99
+#4. Vienna Beef Polish Sausage : $5.39
+#5. Big Baby 1/3 Charbroiled Double Cheeseburger : $6.19
+#6. Pizza Puff : $5.19
+#7. Homemade Italian Beef : $7.49
+#8. Fish Filet : $5.69
+#9. Chicken Philly : $7.29
+#10. Beef Philly : $7.29
+#11. Steak Super Taco : $6.99
+#12. Patty Melt : $6.69
+###Sandwiches###
+Vienna Beef Hot Dog : $3.49
+Vienna Beef Hot Dog : $3.89
+Vienna Beef Double Dog : $4.09
+Vienna Beef Double Dog : $4.69
+Vienna Beef Chili Dog : $4.99
+Vienna Beef Cheddar Cheese Dog : $4.99
+Vienna Beef Polish : $4.09
+Vienna Beef Polish : $4.69
+Gyros : $5.65
+Hoagie Steak : $5.99
+Hamburger : $3.89
+Double Hamburger : $4.49
+Cheese Burger : $4.09
+Double Cheese Burger : $4.79
+Italian Beef : $5.99
+Italian Sausage : $5.39
+Combo : $6.99
+BBQ Beef : $5.59
+Corned Beef On Rye : $5.99
+Super Taco : $5.29
+Grilled Cheese : $3.79
+Grilled Ham & Cheese : $4.79
+21 Shrimp In Basket : $5.89
+BLT : $5.39
+Rib-Eye Steak : $8.99
+Pork Chop : $5.19
+Chop Steak Sand : $5.79
+Chicken Breast On Pita : $5.99
+Chicken Wings : $6.99
+Chicken Kabob : $5.79
+Veggie Burger : $5.79
+Shish-Ka-Bob-On Pita : $4.79
+Patty Melt : $4.99
+Burrito : $5.49
+Chicken Burrito : $5.49
+Taco : $2.75
+Filet O' Fish : $4.59
+Chicken Tender (5pcs) & French Fries : $6.69
+###Submarines###
+Corn Beef : $5.79
+Ham & Cheese : $5.39
+Turkey & Cheese : $5.39
+Veggie : $4.89
+###Dinners###
+Rib Tips : $6.69
+Ribeye Steak Dinner : $9.99
+Pork Chop Dinner : $7.69
+Chopped Steak : $7.69
+Chicken Breast : $7.89
+Gyros Plate : $7.89
+1/2 Grecian Chicken : $7.99
+Souvlaki : $7.65
+Perch Dinner : $7.25
+Spinach Pie Dinner : $6.45
+Rib & Chicken Dinner : $6.99
+Chicken Ka-Bob-Dinner : $7.89
+###Side Orders###
+Mozzarella Sticks : $4.00
+Pizza Puff : $3.79
+French Fries : $1.35
+Onion Rings : $3.79
+Mushroom : $4.00
+Cheese Fries : $3.49
+Gravy Bread : $2.30
+Spanakopita : $3.79
+Chili : $3.39
+Corn Dog : $3.49
+###Pastries###
+Baklava : $2.65
+Cheese Cake : $2.65
+Strawberry Cheese Cake : $2.65
+Muffins : $0.99
+Pound Cake : $0.99
+Small Fruit Plate : $2.95
+###Beverages###
+Coffee Or Tea : $0.95 - $1.10
+Milk : $1.29
+Hot Chocolate : $0.95 - $1.70
+Fruit Juices : $1.59
+Bottled Water : $1.15
+Fountain Pop : $1.45 - $1.65
+Milk Shakes : $2.79 - $3.69

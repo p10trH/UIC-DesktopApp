@@ -1,0 +1,92 @@
+###Appetizers###
+Saganaki : $7.00
+Greek Fries : $5.50
+Tomato Basil : $7.00
+Feta : $7.00
+Mozzarella Sticks           : $7.00
+Tzatziki : $6.50
+Spanakopita : $6.50
+Char-broiled Greek Loukanika            : $8.50
+Roasted Florina Peppers             : $8.50
+Kalamata Olives  : $7.00
+Keftedes : $9.00
+Flamed Grilled Zucchini : $6.00
+Beets : $8.00
+Hummus  : $8.00
+Gigantes  : $7.00
+Calamari : $8.00
+###Salads###
+House Salad : $7.00
+Penny┬Æs Salad : $13.00
+Village Salad : $8.00
+Caesar Salad : $14.00
+Grilled Chicken Salad : $14.00
+Artichoke Salad : $15.00
+Reggiano Salad : $15.00
+Avocado Salad : $15.00
+Chicken Shawarma Salad : $13.00
+Red Beet Salad : $12.00
+###Pitas###
+Beef Kabob : $9.00
+Shish Kabob : $8.50
+Chicken kabob : $9.50
+Chicken Caesar : $10.00
+Gyros : $7.50
+###Toasts (Paninis), Sandwiches###
+Skirt Steak Sandwich                 : $16.00
+Burger : $9.00
+Basil Chicken Panini               : $11.00
+9 Muses Panini : $10.00
+Grilled Feta & Florina Pepper Panini           : $9.00
+Veggie Panini : $9.00
+Veggie Burger : $8.00
+###From the Broiler###
+The Meze for 2 : $22.50
+The Pekilia for 2 : $21.00
+Tigania : $11.00
+Mediterranean Chicken : $15.50
+###Platters###
+Beef Kabob              : $15.00
+Skirt Steak          : $19.00
+Gyros Plate : $10.00
+Souvlakia Korinthou : $8.00
+Souvlaki Korinthou (Each)  : $3.50
+Shish Kabob : $12.50
+Pork Chop : $16.00
+Chicken Kabob      : $15.00
+Chicken Skewers : $9.00
+Chicken Skewer Each  : $4.00
+###Makaronades (Pastas)###
+With Meat Sauce : $13.50
+Skordato : $14.00
+9 Muses Pasta : $15.50
+Mediterranean : $13.00
+###Desserts###
+Baklava Cheesecake : $6.00
+Orange Shortcake : $5.50
+Tuxedo Truffle Mousse Cake : $6.00
+###Beverages###
+9 Muses Frappe      : $4.00
+Espresso : $3.25
+Cappuccino : $4.00
+Fredo : $4.75
+Latte : $4.00
+Greek Coffee       : $3.50
+Replublic Ice Tea  (17 oz.- Bottle) : $4.00
+###Beverages###
+Dasani Bottled Water (16.9oz.) : $1.85
+Seagrams Ginger Ale (12oz.Can)  : $1.50
+Coke (12oz. Cans) : $1.50
+Diet Coke (12oz. Cans) : $1.50
+12 Cans of Coke  : $18.00
+12 Cans of Diet Coke  : $18.00
+6 + 6 (6 cans of Coke and 6 cans of Diet Coke)  : $18.00
+6 Cans of Coke : $9.00
+6 Cans of Diet Coke : $9.00
+6 Cans of Ginger Ale : $9.00
+6 Bottles of Water : $9.00
+###Soups###
+Egg Lemon Soup : $3.50
+
+Process returned 0 (0x0)   execution time : 0.056 s
+Press any key to continue.

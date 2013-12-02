@@ -1,0 +1,41 @@
+###Breakfast Menu###
+Smoked Salmon & Bagel : $12.00
+Steel Cut Irish Oatmeal - Mixed Berries : $8.00
+Belgian Waffles - Blueberry Syrup : $9.00
+Brioche French Toast : $9.00
+Buckwheat Pancakes : $9.00
+Two Eggs Any Style : $9.00
+Eggs Benedict : $10.95
+Dine Omelet : $10.95
+Egg White Omelet : $10.95
+Steak & Eggs : $12.95
+Vegetable Skillet : $10.95
+Ranchero Omelet : $10.95
+Metro Breakfast Buffet : $15.95
+###Fruits and Cereals###
+Selection of Cold Cereals : $4.00
+Seasonal Berries : $6.00
+Seasonal Fruit Plate : $6.00
+Cottage Cheese, Yogurt : $3.00
+###Sides###
+Corned Beef Hash : $5.00
+1 Egg : $2.00
+Bacon or Sausage : $4.00
+Potato Hash : $2.00
+Toast : $1.00
+Bagel with Cream Cheese : $3.00
+Pancakes : $5.00
+Steel Cut Irish Oatmeal : $4.00
+English Muffin : $2.00
+Baked Muffin or Danish : $2.00
+###Juices & Beverages###
+Pineapple : $2.50
+Orange : $2.50
+Grapefruit : $2.50
+Cranberry : $2.50
+Grape and Apple Juice : $2.50
+Freshly Brewed Coffee : $3.00
+Selection of Teas : $3.00
+Cappuccino : $3.50
+Espresso : $3.00
+Milk Whole or Skim : $2.50

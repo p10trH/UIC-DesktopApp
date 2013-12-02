@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1385938288 source:c:\users\pb\desktop\schoolfall13\uicmod\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"include/menuParser.h"
+	"include/locationLoader.h"
+
+1383856639 c:\users\pb\desktop\schoolfall13\uicmod\include\parsebot.h
+
+1385265546 c:\users\pb\desktop\schoolfall13\uicmod\include\htmlparser.h
+
+1385269177 source:c:\users\pb\desktop\schoolfall13\uicmod\src\menuparser.cpp
+	"../include/menuParser.h"
+
+1385269193 c:\users\pb\desktop\schoolfall13\uicmod\include\menuparser.h
+	<iostream>
+	<string>
+	<fstream>
+
+1385938047 c:\users\pb\desktop\schoolfall13\uicmod\include\locationloader.h
+	<iostream>
+	<string>
+	<fstream>
+	"../include/menuLoader.h"
+
+1385939109 source:c:\users\pb\desktop\schoolfall13\uicmod\src\locationloader.cpp
+	"../include/locationLoader.h"
+
+1385938291 c:\users\pb\desktop\schoolfall13\uicmod\include\menuloader.h
+	<iostream>
+	<fstream>
+	<string>
+
+1385938162 source:c:\users\pb\desktop\schoolfall13\uicmod\src\menuloader.cpp
+	"../include/menuLoader.h"
+

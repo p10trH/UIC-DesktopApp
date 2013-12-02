@@ -1,0 +1,45 @@
+###Pan Pastries###
+Baklava (pc.) : $2.45
+Galaktoboureko (pc.) : $2.45
+Kataifi (pc.) : $2.45
+Saragli (pc.) : $2.45
+Floyera (pc.) : $1.85
+Floyera (Chocolate pc.) : $1.95
+Karidopita (pc.) : $2.45
+Diples (Large) : $2.45
+Diples (Small) : $1.60
+Samous (pc.) : $2.75
+###Cokkies - Biscuits###
+Koulouria (dz.) : $5.95
+Kourabiethes (lb.) : $10.75
+Melomakarona (lb.) : $10.75
+Amigdalota (lb.) : $14.25
+Louie's Cookies (lb.) : $14.25
+Paximadia (lb.) : $9.95
+Macaroons (pc.) : $1.15
+Shortbread Petit Fours (lb.) : $9.95
+Moustokouloura (dz.) : $6.50
+###Tortes - Cakes###
+Nougatina : $2.95
+Sokolatina : $2.95
+Serrano : $2.95
+Napolean (Mille - Feuille) : $2.95
+Tiramisu : $2.95
+Black Forest : $2.95
+Eclaire : $2.95
+Koko : $2.95
+###Bread - Savories###
+Bread : $1.15 - $5.25
+Spanakopita (Each) : $3.95
+Spanakopita (24 pc.) : $19.75
+Tiropita (Each) : $3.50
+Tiropita (24 pc.) : $19.75
+Pizza (Slice) : $2.85
+Homemade Rice Pudding (8 oz.) : $2.75
+###Specialty###
+Bougatsa (pc.) : $2.75
+Milopita (pc.) : $3.25
+Pasteli (pc.) : $1.75
+Karioka (pc.) : $2.25
+Loukoumades (Order) : $5.75
+Tsoureki (lb.) : $7.45

@@ -1,0 +1,58 @@
+###Beverages###
+2 Liter Soda : $2.99
+20 oz.  : $1.99
+20 oz. Dansani Water : $1.99
+###Topperstix###
+Single Original Breadstix : $5.99
+Single Cinnamonstix : $5.99
+Single Berrystix : $5.99
+Single Baconstix : $6.99
+Single Pepperonistix : $6.99
+Single Tacostix : $6.99
+Triple Original Breadstix : $10.99
+Triple Cinnamonstix : $10.99
+Triple Berrystix : $10.99
+Triple Baconstix : $11.99
+Triple Pepperonistix : $11.99
+Triple Tacostix : $11.99
+###Quesadillas###
+Cheese Quesadilla : $8.49
+Chicken Quesadilla : $9.49
+Steak Quesadilla : $9.49
+###House Pizzas###
+Taco Topper Pizza : $8.99 - $24.99
+Old School Sausage and Pepperoni Pizza : $8.99 - $24.99
+Maui Topper Pizza : $8.99 - $24.99
+Chicken Tuscano Topper Pizza : $8.99 - $24.99
+Ultimate Pepperoni Topper Pizza : $8.99 - $24.99
+Topper Classic Pizza : $8.99 - $24.99
+Mac 'N Cheese Pizza : $8.99 - $24.99
+Meat Topper Pizza : $8.99 - $24.99
+Big Topper Pizza : $8.99 - $24.99
+Cool C-B-R Pizza : $8.99 - $24.99
+California Topper Pizza : $8.99 - $24.99
+Buffalo Chicken Topper Pizza : $8.99 - $24.99
+Veggie Classic Pizza : $8.99 - $24.99
+Gyro Topper Pizza : $8.99 - $24.99
+Hangover Helper Pizza : $8.99 - $24.99
+Smoky BBQ Chicken Pizza : $8.99 - $24.99
+Potato Topper Pizza : $8.99 - $24.99
+Philly Cheesesteak Topper Pizza : $8.99 - $24.99
+###Build Your Own Za###
+1 Topping Za : $6.99 - $16.99
+###Toasted Grinders###
+Gyro Grinder : $6.99
+Buffalo Chicken Grinder : $6.99
+Ultimate Philly Cheesesteak Grinder : $6.99
+The Smoky BBQ Beef Grinder : $6.99
+Southwest Chicken Club Grinder : $6.99
+Italian Sausage and Peppers Grinder : $6.99
+Chipotle Chicken Grinder : $6.99
+Original Toppers Pizza Grinder : $6.99
+###Wings###
+10 Buffalo Wings : $8.49
+15 Buffalo Wings : $12.49
+25 Buffalo Wings : $19.99
+1/2 lb. Boneless Wings : $8.49
+1 lb. Boneless Wings : $12.49
+1 1/2 lbs. Boneless Wings : $19.99

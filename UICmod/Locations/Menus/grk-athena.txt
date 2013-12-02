@@ -1,0 +1,116 @@
+###Cold Appetizers###
+Taramosalata : $6.99
+Tzatziki : $6.99
+Tirokafteri : $6.99
+Meatless Dolmadakia : $6.99
+Cold Combo Plate : $11.50
+Olives : $3.99
+Melitzanosalata : $6.99
+Skordalia : $6.99
+Feta Or Kefalotiri Cheese : $6.99
+Patzaria : $6.99
+Octapodi Salata : $15.75
+Hummus : $6.99
+###Hot Appetizers###
+Pipperies Florines : $7.99
+Tiropitakia : $6.99
+Kolokithakia : $6.99
+Soutzoukakia : $8.99
+Loukaniko : $8.99
+Kalamari : $10.99
+Kotosouvlakia : $9.99
+Saganaki : $6.99
+Feta Zesti : $6.99
+Spanakopitakia : $6.99
+Melitzanes : $6.99
+Keftedakia : $7.99
+Gyros : $8.99
+Octapodi : $15.75
+Souvlakia : $9.99
+Shrimp Opaa : $11.99
+###Salads###
+Greek Salad : $4.99 - $5.00
+Athenian Salad : $6.29
+Horta : $5.99
+Village Salad : $5.99
+Chicken Breast Salad : $14.99
+###Authentic Greek Dishes###
+Braised Lamb : $17.99
+Loin Of Lamb : $19.99
+Pastitsio : $12.99
+Dolmades : $12.99
+Combination Plate : $15.99
+Family Style : $21.99
+Leg Of Lamb : $18.99
+Spanakopita : $12.99
+Mousakas : $13.99
+Gyros Plate : $11.99
+Chicken Riganati : $12.99
+Chicken Breast Lemonati : $13.99
+###Pastas###
+Makaronada Apli : $9.99 - $17.99
+Mediterranean Pasta : $10.99 - $18.99
+Traditional Pasta : $11.99
+Ionion Pasta : $9.99 - $18.99
+###Vegetarian###
+Gigandes : $7.59
+Vegetable Plate : $8.99
+Vegetable Pasta : $10.99
+Briami : $7.59
+Spanakorizo : $6.99
+Vegetarian Mousaka : $13.99
+###Seafood###
+Marides : $13.99
+Kalamari : $13.99
+Swordfish Kebob : $18.99
+Shrimp Skordati : $18.99
+Norwegian Salmon : $18.99
+Seafood Kebob : $18.99
+Swordfish Steak : $18.99
+Bacalao : $13.99
+Orange Roughy : $16.99
+Lake Superior Whitefish : $16.99
+Shrimp Argos : $18.99
+Shrimp Kebob : $18.99
+Shrimp Athena : $18.99
+###Char-broiled###
+Athenian Chicken : $14.79
+Paidakia : $29.99
+New York Strip Steak : $23.99
+Chicken Breast : $14.79
+Ortikia : $13.99
+Loukaniko : $11.99
+Pork Tenderloin Kebob : $14.99
+Chicken Kebob : $14.79
+Stuffed Chicken Breast : $16.99
+Beef Kebob : $19.99
+Pork Chops : $15.99
+###Side Dishes###
+Rice Pilaf : $3.99 - $6.99
+Green Beans : $4.29 - $6.99
+Okra : $4.29 - $6.99
+Pita Bread : $1.75
+Oven Roasted Potatoes : $3.99 - $6.99
+Peas : $4.29 - $6.99
+French Fries : $2.99 - $4.99
+###Desserts###
+Baklava : $4.75
+Rizogalo : $3.75
+Galaktobouriko : $3.75
+Homemade Yogurt : $5.75
+Crema Caramele : $4.50
+Ek Mek : $5.25
+Chocolate Mousse Cake : $5.25
+###Beverages###
+Pepsi : $2.25
+Sierra Mist : $2.25
+Club Soda : $1.75
+Lemonade : $2.00
+Orange Juice : $2.00
+Milk : $2.00
+Diet Pepsi : $2.25
+Ginger Ale : $2.25
+Iced Tea : $2.25
+Cranberry Juice : $2.00
+Pineapple Juice : $2.00
+Pelegrino : $5.50
