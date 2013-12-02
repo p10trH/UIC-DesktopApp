@@ -109,8 +109,8 @@ QComboBox, QLineEdit, QSpinBox, QTextEdit, QListView {
 }
 
 QLineEdit {
-border-bottom-width: 2px;
-border-bottom-color: rgb(255, 0, 0);
+border-right-width: 4px;
+border-right-color: rgb(255, 0, 0);
 color: rgb(255, 0, 0);
 border-style: solid;
 border-radius: 0;
@@ -2303,262 +2303,82 @@ background-color: rgb(204, 204, 204);
      </property>
      <item>
       <property name="text">
-       <string>New Item</string>
+       <string>Baseball (Men's)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>New Item</string>
+       <string>Basketball (Men's)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>New Item</string>
+       <string>Basketball (Women's)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>New Item</string>
+       <string>Cross Country/Track &amp; Field (Men's)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>New Item</string>
+       <string>Cross Country/Track &amp; Field (Women's)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>New Item</string>
+       <string>Golf (Women's)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>New Item</string>
+       <string>Gymnastics (Men's)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>New Item</string>
+       <string>Gymnastics (Women's)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>New Item</string>
+       <string>Soccer (Men's)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>New Item</string>
+       <string>Soccer (Women's)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>New Item</string>
+       <string>Softball (Women's)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>New Item</string>
+       <string>Swimming And Diving (Men's)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>New Item</string>
+       <string>Swimming And Diving (Women's)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>New Item</string>
+       <string>Tennis (Men's)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>New Item</string>
+       <string>Tennis (Women's)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>New Item</string>
+       <string>Volleyball (Women's)</string>
       </property>
      </item>
     </widget>
@@ -2590,17 +2410,17 @@ border-radius: 0;</string>
     <zorder>listWidget_2</zorder>
    </widget>
    <zorder>f_TopMenu</zorder>
+   <zorder>f_Athletics</zorder>
+   <zorder>f_Courses</zorder>
    <zorder>tabW_Maps</zorder>
    <zorder>f_BookS</zorder>
    <zorder>f_Library</zorder>
-   <zorder>f_Athletics</zorder>
    <zorder>tabW_Directory</zorder>
    <zorder>tabW_CHousing</zorder>
    <zorder>f_Safety</zorder>
    <zorder>label_pix</zorder>
    <zorder>label_18</zorder>
    <zorder>f_SideMenu</zorder>
-   <zorder>f_Courses</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

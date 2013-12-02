@@ -413,7 +413,7 @@ void MainWindow::on_lineEdit_Courses_textChanged(const QString &arg1)
     int listWidgetSize = ui->listWidget_Courses->count();
 
     for (int k1 = 0; k1 < listWidgetSize; k1++)
-        if (ui->listWidget_Courses->item(k1)->text().toLower().startsWith(arg1.toLower()))
+        if (ui->listWidget_Courses->item(k1)->text().toLower().contains(arg1.toLower()))
             ui->listWidget_Courses->item(k1)->setHidden(false);
         else
             ui->listWidget_Courses->item(k1)->setHidden(true);
