@@ -6,6 +6,8 @@
 #include <QMovie>
 #include <QPropertyAnimation>
 #include <QHoverEvent>
+#include <QListWidget>
+#include <QListWidgetItem>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -14,6 +16,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     ui->webView->load(QUrl("http://bus.uic.edu/"));
+
+    //ui->webView_2->load(QUrl("qrc:///resources/resources/ComputerScience.html"));
+    //ui->webView_2->load(QUrl("qrc:///resources/resources/ComputerScience2.htm"));
+
 
     //QMovie *movie = new QMovie(":/resources/resources/uicApp.gif");
     //QLabel *processLabel = new QLabel(ui->label_pix);
@@ -31,10 +37,17 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->f_SideMenu->hasMouseTracking();
 
-    ui->listWidget->setAttribute(Qt::WA_MacShowFocusRect, false);
+    ui->listWidget_Courses->setAttribute(Qt::WA_MacShowFocusRect, false);
     ui->listWidget_2->setAttribute(Qt::WA_MacShowFocusRect, false);
+    ui->lineEdit_Courses->setAttribute(Qt::WA_MacShowFocusRect, false);
 
    // ui->b_Maps->installEventFilter();
+
+
+
+
+
+
 
 
 }
@@ -392,3 +405,21 @@ void MainWindow::on_b_Safety_clicked()
 }
 
 
+
+
+void MainWindow::on_lineEdit_Courses_textChanged(const QString &arg1)
+{
+
+    int listWidgetSize = ui->listWidget_Courses->count();
+
+    for (int k1 = 0; k1 < listWidgetSize; k1++)
+        if (ui->listWidget_Courses->item(k1)->text().toLower().startsWith(arg1.toLower()))
+            ui->listWidget_Courses->item(k1)->setHidden(false);
+        else
+            ui->listWidget_Courses->item(k1)->setHidden(true);
+}
+
+void MainWindow::on_listWidget_Courses_itemClicked()
+{
+    ui->lineEdit_Courses->clear();
+}

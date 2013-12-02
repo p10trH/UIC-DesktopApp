@@ -28,5 +28,8 @@
         <file>resources/chiRedSkyLine1.png</file>
         <file>resources/chiRedSkyLine2.png</file>
         <file>resources/chiRedSkyLine3.png</file>
+        <file>resources/ComputerScience.html</file>
+        <file>resources/ComputerScience2.htm</file>
+        <file>resources/peterStyle.css</file>
     </qresource>
 </RCC>

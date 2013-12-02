@@ -99,11 +99,21 @@ QStatusBar::item {
 
 
 QComboBox, QLineEdit, QSpinBox, QTextEdit, QListView {
+
+
     
 	selection-color: rgb(255, 255, 255);
     background-color: rgb(204, 204, 204);
     color: rgb(0, 0, 186);
     selection-background-color: rgb(255, 0, 0);
+}
+
+QLineEdit {
+border-bottom-width: 2px;
+border-bottom-color: rgb(255, 0, 0);
+color: rgb(255, 0, 0);
+border-style: solid;
+border-radius: 0;
 }
 
 QListView::item:hover {
@@ -320,13 +330,13 @@ border-radius: 0;
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QListWidget" name="listWidget">
+    <widget class="QListWidget" name="listWidget_Courses">
      <property name="geometry">
       <rect>
        <x>840</x>
-       <y>1</y>
+       <y>23</y>
        <width>261</width>
-       <height>611</height>
+       <height>588</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -1066,6 +1076,155 @@ background-color: rgb(204, 204, 204);
        <string>Political Science  (POLS)</string>
       </property>
      </item>
+     <item>
+      <property name="text">
+       <string>Portuguese  (PORT)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Preclinical Medicine  (PRCL)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Prosthodontics  (PROS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Psychology  (PSCH)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Public Administration  (PA)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Public Health  (PUBH)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Public Policy Analysis  (PPA)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Religious Studies  (RELS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Restorative Dentistry  (REST)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Russian  (RUSS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Slavic and Baltic Languages and Literatures  (SLAV)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Social Work  (SOCW)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sociology  (SOC)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Spanish  (SPAN)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Special Education  (SPED)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Specialty Medicine  (SPEC)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Statistics  (STAT)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Study Abroad  (SABR)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Surgery  (SURG)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Theatre  (THTR)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Urban and Public Affairs  (UPA)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Urban Planning and Policy  (UPP)</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Courses">
+     <property name="geometry">
+      <rect>
+       <x>909</x>
+       <y>1</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Search">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>1</y>
+       <width>68</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>      Filter :</string>
+     </property>
     </widget>
    </widget>
    <widget class="QFrame" name="f_Library">
@@ -1475,6 +1634,21 @@ color: rgb(0, 0, 255);</string>
       <string>(312) 996-7000</string>
      </property>
     </widget>
+    <zorder>label_3</zorder>
+    <zorder>label_4</zorder>
+    <zorder>label_5</zorder>
+    <zorder>label_6</zorder>
+    <zorder>label_7</zorder>
+    <zorder>label_8</zorder>
+    <zorder>label_9</zorder>
+    <zorder>label_10</zorder>
+    <zorder>label_11</zorder>
+    <zorder>label_12</zorder>
+    <zorder>label_13</zorder>
+    <zorder>label_14</zorder>
+    <zorder>label_15</zorder>
+    <zorder>label_16</zorder>
+    <zorder>f_Courses</zorder>
    </widget>
    <widget class="QTabWidget" name="tabW_Maps">
     <property name="geometry">
@@ -1512,7 +1686,7 @@ QTabWidget::tab-bar {
  }</string>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="West">
      <attribute name="title">
@@ -1572,7 +1746,7 @@ QTabBar::tab {
 }</string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="cta">
        <attribute name="title">
@@ -2416,11 +2590,11 @@ border-radius: 0;</string>
     <zorder>listWidget_2</zorder>
    </widget>
    <zorder>f_TopMenu</zorder>
+   <zorder>tabW_Maps</zorder>
    <zorder>f_BookS</zorder>
    <zorder>f_Library</zorder>
    <zorder>f_Athletics</zorder>
    <zorder>tabW_Directory</zorder>
-   <zorder>tabW_Maps</zorder>
    <zorder>tabW_CHousing</zorder>
    <zorder>f_Safety</zorder>
    <zorder>label_pix</zorder>
