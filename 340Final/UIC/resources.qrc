@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>resources/img-top-1.jpg</file>
+        <file>resources/img-top-4.jpg</file>
+        <file>resources/uicApp.gif</file>
+        <file>resources/iconsUIC/athleticsBlue.png</file>
+        <file>resources/iconsUIC/athleticsWhite.png</file>
+        <file>resources/iconsUIC/bookStoreBlue.png</file>
+        <file>resources/iconsUIC/bookStoreWhite.png</file>
+        <file>resources/iconsUIC/campusBlue.png</file>
+        <file>resources/iconsUIC/campusWhite.png</file>
+        <file>resources/iconsUIC/coursesBlue.png</file>
+        <file>resources/iconsUIC/coursesWhite.png</file>
+        <file>resources/iconsUIC/directoryBlue.png</file>
+        <file>resources/iconsUIC/directoryWhite.png</file>
+        <file>resources/iconsUIC/eventsBlue.png</file>
+        <file>resources/iconsUIC/eventsWhite.png</file>
+        <file>resources/iconsUIC/homeBlue.png</file>
+        <file>resources/iconsUIC/homeWhite.png</file>
+        <file>resources/iconsUIC/libraryBlue.png</file>
+        <file>resources/iconsUIC/libraryWhite.png</file>
+        <file>resources/iconsUIC/mapsBlue.png</file>
+        <file>resources/iconsUIC/mapsWhite.png</file>
+        <file>resources/iconsUIC/safetyBlue.png</file>
+        <file>resources/iconsUIC/safetyWhite.png</file>
+        <file>resources/img-top-1-cut.png</file>
+        <file>resources/chicagoMap.png</file>
+        <file>resources/chiRedSkyLine1.png</file>
+        <file>resources/chiRedSkyLine2.png</file>
+        <file>resources/chiRedSkyLine3.png</file>
+    </qresource>
+</RCC>

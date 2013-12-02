@@ -1,0 +1,2471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1150</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1150</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>15</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+MainWindow {
+
+	background-color: rgb(255, 255, 255);
+    /*image: url(:/resources/resources/img-top-1-cut.jpg);*/
+image: url(:/resources/resources/chiRedSkyLine1.png);
+
+}
+
+/*.QWidget {
+	image: url(:/resources/resources/img-top-1.jpg);
+   background-color: white;
+} */
+
+/* We provide a min-width and min-height for push buttons
+   so that they look elegant regardless of the width of the text. */
+QPushButton {
+    font: 16pt &quot;Arial&quot;;
+	background-color: rgb(204, 204, 204);
+
+	/*background-color: rgba(0, 0, 186, 191);
+	color: rgb(255, 255, 255);*/
+    color: rgb(0, 0, 186);
+	
+    /*background-color: blue;*/
+    border-width: 0px;
+    border-color: rgba(0, 0, 186, 191);
+    border-style: solid;
+    border-radius: 0;
+    padding: 0px;
+    min-width: 9ex;
+    min-height: 2.5ex;
+}
+
+QPushButton:hover {
+	background-color: rgb(255, 0, 0);
+	color: rgb(255, 255, 255);
+
+
+}
+
+/* Increase the padding, so the text is shifted when the button is
+   pressed. */
+QPushButton:pressed {
+    padding-left: 0px;
+    padding-top: 0px;
+	background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+QLabel, QAbstractButton {
+    font: normal;
+}
+
+/* Mark mandatory fields with a brownish color. */
+.mandatory {
+    color: brown;
+}
+
+/* Bold text on status bar looks awful. */
+QStatusBar QLabel {
+   font: normal;
+}
+
+QStatusBar::item {
+    border-width: 1;
+    border-color: darkkhaki;
+    border-style: solid;
+    border-radius: 2;
+}
+
+
+QComboBox, QLineEdit, QSpinBox, QTextEdit, QListView {
+    
+	selection-color: rgb(255, 255, 255);
+    background-color: rgb(204, 204, 204);
+    color: rgb(0, 0, 186);
+    selection-background-color: rgb(255, 0, 0);
+}
+
+QListView::item:hover {
+    background-color: rgb(255, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+
+
+ QComboBox {
+
+	 font: 15pt &quot;Arial&quot;;
+     border: 0px solid red;
+     border-radius: 0px;
+     padding: 0px 0px 0px 4px;
+    /* min-width: 6em;*/
+ }
+
+QComboBox::drop-down {
+    
+
+     border-left-width: 1px;
+     border-left-color: white;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 0px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 0px;
+ }
+
+
+
+
+QListView {
+    show-decoration-selected: 1;
+}
+
+
+
+/* We reserve 1 pixel space in padding. When we get the focus,
+   we kill the padding and enlarge the border. This makes the items
+   glow. 
+QLineEdit, QFrame {
+    border-width: 2px;
+    padding: 1px;
+    border-style: solid;
+    border-color: darkkhaki;
+    border-radius: 5px;
+}*/
+
+/* As mentioned above, eliminate the padding and increase the border. 
+QLineEdit:focus, QFrame:focus {
+    border-width: 3px;
+    padding: 0px;
+}*/
+
+/* A QLabel is a QFrame ... */
+QLabel {
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+/* A QToolTip is a QLabel ... */
+QToolTip {
+    border: 2px solid darkkhaki;
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 200;
+}
+
+/* Nice to have the background color change when hovered. */
+QRadioButton:hover, QCheckBox:hover {
+    background-color: wheat;
+}
+
+/* Force the dialog's buttons to follow the Windows guidelines. */
+QDialogButtonBox {
+    button-layout: 0;
+}
+
+
+
+QTabWidget::pane { /* The tab widget frame */
+     border-top: 0px solid #C2C7CB;
+ }
+
+ QTabWidget::tab-bar {
+     left: 0px; /* move to the right by 5px */
+ }
+
+ /* Style the tab using the tab sub-control. Note that
+     it reads QTabBar _not_ QTabWidget */
+ QTabBar::tab {
+
+font: 16pt &quot;Arial&quot;;
+
+    height: 39px; width: 200px;
+	color: rgb(0, 0, 186);
+
+     background-color: rgb(204, 204, 204);
+     /*background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);*/
+    /* border: 0px solid #C4C4C3;*/
+	
+     border-right: 1px solid rgb(255, 255, 255);
+     /*border-left: 1px solid rgb(255, 255, 255);*/
+     
+     border-bottom-color: #C2C7CB; /* same as the pane color */
+     border-top-left-radius: 0px;
+     border-top-right-radius: 0px;
+     min-width: 8ex;
+     padding: 0px;
+ }
+
+ QTabBar::tab:selected, QTabBar::tab:hover {
+
+     background-color: rgb(255, 0, 0);
+     color: rgb(255, 255, 255);
+
+     /*background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                 stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);*/
+ }
+
+ QTabBar::tab:selected {
+     /*border-color: rgba(0, 0, 186, 191); */
+     /* border-bottom-color: #C2C7CB; /* same as pane color */
+ }
+
+ QTabBar::tab:!selected {
+     margin-top: 0px; /* make non-selected tabs look smaller */
+ }
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QTabWidget" name="tabW_Directory">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>0</y>
+      <width>1101</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget::pane { /* The tab widget frame */
+     border-width: 0px;
+border-color: rgba(255, 0, 0, 191);
+border-style: solid;
+border-radius: 0;
+ }
+
+/*QTabBar::tab {
+
+
+
+    height: 48px; width: 198px;
+}
+*/
+
+QTabWidget::tab-bar {
+     left: 2px; /* move to the right by 5px */
+ }</string>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_Prof">
+     <attribute name="title">
+      <string>Professors</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_Stud">
+     <attribute name="title">
+      <string>Students</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="f_Courses">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>39</y>
+      <width>1101</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+
+background-color: rgb(255, 255, 255);
+
+border-width: 0px;
+border-color: rgba(255, 0, 0, 191);
+border-style: solid;
+border-radius: 0;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>1</y>
+       <width>261</width>
+       <height>611</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+ QListView {
+border-width: 0px;
+border-color: rgba(255, 0, 0, 191);
+border-style: solid;
+border-radius: 0;
+background-color: rgb(204, 204, 204);
+
+ }
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Academic Skills Program  (ASP)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Accounting  (ACTG)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>African American Studies  (AAST)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Anatomy and Cell Biology  (ANAT)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ancient Greek  (GKA)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Anthropology  (ANTH)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Arabic  (ARAB)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Archaeological Studies  (ARST)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Architecture  (ARCH)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Art  (ART)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Art History  (AH)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Asian American Studies  (ASAM)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Asian Studies  (ASST)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Associated Health Sciences  (AHS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Basic Medical Sciences  (BMS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Biochemistry and Molecular Genetics  (BCMG)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Bioengineering  (BIOE)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Biological Sciences  (BIOS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Biomedical and Health Information Sciences  (BHIS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Biomedical Visualization  (BVIS) </string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Biopharmaceutical Sciences  (BPS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Biostatistics  (BSTT)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Business Administration  (BA)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Campus Courses  (CC)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Catholic Studies  (CST)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Central and Eastern European Studies  (CEES)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Chemical Engineering  (CHE)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Chemistry  (CHEM)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Chinese  (CHIN)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Civil and Materials Engineering  (CME)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Classics  (CL)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Clerkship - Medicine  (CLER)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Clerkship Electives-Chicago  (CELE)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Clerkship Electives-Peoria  (PELE)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Clerkship Electives-Rockford  (RELE)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Clerkship Electives-Urbana  (UELE)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Communication  (COMM)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Community Health Sciences  (CHSC)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Computer Science  (CS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Criminology, Law, and Justice  (CLJ)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Curriculum and Instruction  (CI)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dental Administration  (DADM)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dental Behavioral Science  (DBSC)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dentistry - Applied Oral and Behavioral Sciences  (DAOB)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dentistry - Biomedical and Clinical Sciences  (DBCS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dentistry - Community Learning Experience  (DCLE)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dentistry - Oral/Systemic Issues  (DOSI)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dentistry - Oral/Systemic Topics  (DOST)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Design  (DES)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Disability and Human Development  (DHD)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Earth and Environmental Sciences  (EAES)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Economics  (ECON)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Education  (ED)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Educational Policy Studies  (EDPS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Educational Psychology  (EPSY)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Electrical and Computer Engineering  (ECE)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Endodontics  (ENDO)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Energy Engineering  (ENER)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Engineering  (ENGR)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>English  (ENGL)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>English as a Second Language  (ESL)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Entrepreneurship  (ENTR)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Environmental and Occupational Health Sciences  (EOHS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Epidemiology  (EPID)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Finance  (FIN)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>French  (FR)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Gender and Women's Studies  (GWS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Geography  (GEOG)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Germanic Studies  (GER)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Graduate College  (GC)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Graduate College - Life Sciences  (GCLS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Guaranteed Admissions Medicine  (GAMD)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Health Information Management  (HIM)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Health Policy and Administration  (HPA)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Hebrew  (HEB)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Hindi-Urdu  (HNUR)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Histology  (HSTL)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>History  (HIST)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Honors College Courses  (HON)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Human Nutrition  (HN)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Industrial Engineering  (IE) </string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Information and Decision Sciences  (IDS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Information Technology  (IT)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Interdisciplinary Public Health Sciences  (IPHS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Interdisciplinary Studies in the Arts  (ISA)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>International Studies  (INST) </string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Italian  (ITAL)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Japanese  (JPN)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Jewish Studies  (JST)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Kinesiology  (KN)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Latin  (LAT)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Latin American and Latino Studies  (LALS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Learning Sciences  (LRSC)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Liberal Arts and Sciences  (LAS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Library and Information Science  (LIB)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Linguistics  (LING)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Literatures, Cultural Studies, and Linguistics  (LCSL)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Lithuanian  (LITH)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Management  (MGMT)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Marketing  (MKTG)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Master of Business Administration  (MBA)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Master of Engineering  (MENG)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mathematical Computer Science  (MCS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mathematics  (MATH)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mathematics Teaching  (MTHT)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mechanical Engineering  (ME)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Medical Biotechnology  (MBT)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Medical Education  (MHPE)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Medical Humanities  (MHUM)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Medicinal Chemistry  (MDCH)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Medicinal Chemistry and Pharmacognosy  (PMMP)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Microbiology and Immunology  (MIM)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Military Science  (MILS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Modern Greek  (GKM)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Moving Image Arts  (MOVI)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Music  (MUS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Native American Studies  (NAST)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Natural Sciences  (NATS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Naval Science  (NS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Neuroscience  (NEUS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nursing Core  (NURS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nursing Elective  (NUEL)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nursing Practicum  (NUPR)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nursing Specialty  (NUSP)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Occupational Therapy  (OT)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Oral Anatomy  (ORLA)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Oral and Maxillofacial Surgery  (OSUR)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Oral Medicine and Diagnostic Sciences  (OMDS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Oral Sciences  (OSCI)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Orthodontics  (ORTD)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pathology  (PATH) </string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Patient Safety Leadership  (PSL)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pediatric Dentistry  (PEDD)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Periodontics  (PERI)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pharmacognosy  (PMPG)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pharmacology  (PCOL)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pharmacy  (PHAR)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pharmacy Practice  (PMPR)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pharmacy Systems, Outcomes and Policy  (PSOP)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Philosophy  (PHIL)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Physical Therapy  (PT)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Physics  (PHYS)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Physiology and Biophysics  (PHYB)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Polish  (POL)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Political Science  (POLS)</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="f_Library">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>38</y>
+      <width>1101</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 0px;
+background-color: rgb(255, 255, 255);
+border-color: rgba(255, 0, 0, 191);
+border-style: solid;
+border-radius: 0;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="f_BookS">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>38</y>
+      <width>1101</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 0px;
+background-color: rgb(255, 255, 255);
+border-color: rgba(255, 0, 0, 191);
+border-style: solid;
+border-radius: 0;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="f_Safety">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>40</y>
+      <width>851</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color: rgb(255, 0, 0);
+     background-color: rgb(255, 255, 255);
+
+border-width: 0px;
+border-color: rgba(255, 0, 0, 191);
+border-style: solid;
+border-radius: 0;
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>80</y>
+       <width>203</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string>UIC Police Emergency:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>120</y>
+       <width>203</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string>UIC Police Non-Emergency:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>160</y>
+       <width>203</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string>UIC Family Medical Center:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>200</y>
+       <width>203</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string>Res-Net (ACCC):</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>240</y>
+       <width>203</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string>UIC Red Car:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>240</y>
+       <width>203</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>(312) 996-6800</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>200</y>
+       <width>203</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>(312) 413-0003</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>160</y>
+       <width>203</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>(312) 996-2901</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>80</y>
+       <width>203</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>(312) 355-5555</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>120</y>
+       <width>203</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>(312) 996-2830</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>280</y>
+       <width>203</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string>Crisis Hotline (In-Touch):</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>280</y>
+       <width>203</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>(312) 996-5535</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>320</y>
+       <width>203</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string>UIC Operators:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>320</y>
+       <width>203</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>(312) 996-7000</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="tabW_Maps">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>0</y>
+      <width>1101</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget::pane { /* The tab widget frame */
+     border-width: 0px;
+border-color: rgba(255, 0, 0, 191);
+border-style: solid;
+border-radius: 0;
+ }
+
+/*QTabBar::tab {
+
+
+
+    height: 48px; width: 198px;
+}
+*/
+
+QTabWidget::tab-bar {
+     left: 2px; /* move to the right by 5px */
+ }</string>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="West">
+     <attribute name="title">
+      <string>West Campus</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="East">
+     <attribute name="title">
+      <string>East Campus</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="Food">
+     <attribute name="title">
+      <string>Restaurants</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="Navigation">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <attribute name="title">
+      <string>Navigation</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabW_transit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>611</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabWidget::pane { /* The tab widget frame */
+     border-width: 0px;
+     top: -3.1em;
+ }
+
+QTabWidget::tab-bar {
+     left: 605px; /* move to the right by 5px */
+ }
+
+QTabBar::tab {
+    height: 39px; width: 100px;
+
+
+
+    
+	
+     border-right: 0px solid rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="cta">
+       <attribute name="title">
+        <string>CTA Tracker</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="uicShuttle">
+       <attribute name="title">
+        <string>UIC Shuttle</string>
+       </attribute>
+       <widget class="QWebView" name="webView">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>-40</y>
+          <width>1131</width>
+          <height>671</height>
+         </rect>
+        </property>
+        <property name="url">
+         <url>
+          <string>about:blank</string>
+         </url>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_pix">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>100</y>
+      <width>1031</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="MyFrame" name="f_SideMenu">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>51</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QFrame {
+
+background-color: rgb(255, 255, 255);
+
+ border-width: 0px;
+    border-color: rgb(255, 0, 0);
+    border-style: none;
+    border-radius: 0;
+    padding: 0px;
+
+}
+
+QPushButton {
+
+padding-left:13px;
+font: 16pt &quot;Arial&quot;;
+qproperty-iconSize: 25px; 
+Text-align:left
+
+}
+
+/*
+QPushButton#b_Athletics:hover {
+   qproperty-icon: url(:/resources/resources/iconsUIC/athleticsWhite.png);
+}
+*/
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="MyPushButton" name="b_Home">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>200</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/*image: url(:/resources/resources/iconsUIC/homeBlue.png); 
+
+qproperty-iconSize: 30px; */</string>
+     </property>
+     <property name="text">
+      <string>     Home</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>25</width>
+       <height>25</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="MyPushButton" name="b_Maps">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>200</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/*
+QPushButton {
+
+    qproperty-icon: url(:/resources/resources/iconsUIC/mapsBlue.png);
+}
+*/</string>
+     </property>
+     <property name="text">
+      <string>     Maps</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>25</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="MyPushButton" name="b_Directory">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>200</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>     Directory</string>
+     </property>
+    </widget>
+    <widget class="MyPushButton" name="b_Courses">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>120</y>
+       <width>200</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>     Courses</string>
+     </property>
+    </widget>
+    <widget class="MyPushButton" name="b_EventsNews">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>160</y>
+       <width>200</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>     Events/News</string>
+     </property>
+    </widget>
+    <widget class="MyPushButton" name="b_Athletics">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>200</y>
+       <width>200</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>     Athletics</string>
+     </property>
+    </widget>
+    <widget class="MyPushButton" name="b_Library">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>240</y>
+       <width>200</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>     Library</string>
+     </property>
+    </widget>
+    <widget class="MyPushButton" name="b_BookS">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>280</y>
+       <width>200</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>     Book Store</string>
+     </property>
+    </widget>
+    <widget class="MyPushButton" name="b_CHousing">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>320</y>
+       <width>200</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/*qproperty-iconSize: 30px; */</string>
+     </property>
+     <property name="text">
+      <string>     Campus Housing</string>
+     </property>
+    </widget>
+    <widget class="MyPushButton" name="b_Safety">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>360</y>
+       <width>200</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>     Safety</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>400</y>
+       <width>201</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(204, 204, 204);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>51</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QFrame" name="f_TopMenu">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>0</y>
+      <width>1099</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+
+background-color: rgb(204, 204, 204);
+
+ border-width: 0px;
+    border-color: rgb(255, 0, 0);
+    border-style: none;
+    border-radius: 0;
+    padding: 0px;
+
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabW_CHousing">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>0</y>
+      <width>1101</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget::pane { /* The tab widget frame */
+     border-width: 0px;
+border-color: rgba(255, 0, 0, 191);
+border-style: solid;
+border-radius: 0;
+ }
+
+
+QTabBar::tab {
+
+
+
+  /*  height: 48px; width: 200px;*/
+}
+QTabWidget::tab-bar {
+     left: 2px; /* move to the right by 5px */
+ }</string>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="Laundry">
+     <attribute name="title">
+      <string>Laundry View</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="Numbers">
+     <attribute name="title">
+      <string>Important Numbers</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="Dining">
+     <attribute name="title">
+      <string>Dining Menu</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="f_Athletics">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>0</y>
+      <width>1101</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+background-color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTabWidget" name="tabW_Athletics">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>841</width>
+       <height>651</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabWidget::pane { /* The tab widget frame */
+     border-width: 0px;
+border-color: rgba(255, 0, 0, 191);
+border-style: solid;
+border-radius: 0;
+ }
+
+QTabBar::tab {
+	
+
+
+
+    /*height: 48px; width: 100px;*/
+}
+QTabWidget::tab-bar {
+     left: 2px; /* move to the right by 5px */
+ }
+
+</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_Scores">
+      <attribute name="title">
+       <string>Scores</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_Schedule">
+      <attribute name="title">
+       <string>Schedule</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_News">
+      <attribute name="title">
+       <string>News</string>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QListWidget" name="listWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>40</y>
+       <width>261</width>
+       <height>611</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+ QListView {
+
+
+border-width: 0px;
+border-color: rgba(255, 0, 0, 191);
+border-style: solid;
+border-radius: 0;
+background-color: rgb(204, 204, 204);
+ }
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>605</x>
+       <y>0</y>
+       <width>501</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(204, 204, 204);
+border-width: 0px;
+border-color: rgba(255, 0, 0, 191);
+border-style: solid;
+border-radius: 0;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <zorder>tabW_Athletics</zorder>
+    <zorder>frame_2</zorder>
+    <zorder>listWidget_2</zorder>
+   </widget>
+   <zorder>f_TopMenu</zorder>
+   <zorder>f_BookS</zorder>
+   <zorder>f_Library</zorder>
+   <zorder>f_Athletics</zorder>
+   <zorder>tabW_Directory</zorder>
+   <zorder>tabW_Maps</zorder>
+   <zorder>tabW_CHousing</zorder>
+   <zorder>f_Safety</zorder>
+   <zorder>label_pix</zorder>
+   <zorder>label_18</zorder>
+   <zorder>f_SideMenu</zorder>
+   <zorder>f_Courses</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKitWidgets/QWebView</header>
+  </customwidget>
+  <customwidget>
+   <class>MyPushButton</class>
+   <extends>QPushButton</extends>
+   <header>mypushbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>MyFrame</class>
+   <extends>QFrame</extends>
+   <header>myframe.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>tabW_Athletics</tabstop>
+  <tabstop>tabW_CHousing</tabstop>
+  <tabstop>tabW_Maps</tabstop>
+  <tabstop>tabW_transit</tabstop>
+  <tabstop>webView</tabstop>
+  <tabstop>tabW_Directory</tabstop>
+  <tabstop>b_Home</tabstop>
+  <tabstop>b_Maps</tabstop>
+  <tabstop>b_Directory</tabstop>
+  <tabstop>b_Courses</tabstop>
+  <tabstop>b_EventsNews</tabstop>
+  <tabstop>b_Athletics</tabstop>
+  <tabstop>b_Library</tabstop>
+  <tabstop>b_BookS</tabstop>
+  <tabstop>b_CHousing</tabstop>
+  <tabstop>b_Safety</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
