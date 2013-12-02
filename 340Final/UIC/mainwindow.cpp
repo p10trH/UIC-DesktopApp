@@ -38,7 +38,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->f_SideMenu->hasMouseTracking();
 
     ui->listWidget_Courses->setAttribute(Qt::WA_MacShowFocusRect, false);
-    ui->listWidget_2->setAttribute(Qt::WA_MacShowFocusRect, false);
+    ui->listWidget_Athletics->setAttribute(Qt::WA_MacShowFocusRect, false);
     ui->lineEdit_Courses->setAttribute(Qt::WA_MacShowFocusRect, false);
 
    // ui->b_Maps->installEventFilter();

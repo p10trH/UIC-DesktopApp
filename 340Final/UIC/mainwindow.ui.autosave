@@ -1690,10 +1690,10 @@ QTabWidget::tab-bar {
      <widget class="QListWidget" name="listWidget_Area">
       <property name="geometry">
        <rect>
-        <x>790</x>
-        <y>10</y>
+        <x>840</x>
+        <y>1</y>
         <width>261</width>
-        <height>192</height>
+        <height>91</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1733,10 +1733,10 @@ border-style: solid;
      <widget class="QListWidget" name="listWidget_Rest">
       <property name="geometry">
        <rect>
-        <x>790</x>
-        <y>210</y>
+        <x>840</x>
+        <y>93</y>
         <width>261</width>
-        <height>192</height>
+        <height>519</height>
        </rect>
       </property>
       <property name="styleSheet">
