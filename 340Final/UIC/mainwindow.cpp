@@ -49,6 +49,9 @@ MainWindow::MainWindow(QWidget *parent) :
     //scrollArea = new QScrollArea;
     ui->scrollArea->setBackgroundRole(QPalette::Dark);
 
+   ui->scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+    ui->scrollArea->setWidgetResizable(true);
+
 
     //ui->scrollArea->setWidget(ui->label_EastMap);
     //ui->setCentralWidget(scrollArea);
