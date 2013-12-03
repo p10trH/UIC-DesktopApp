@@ -35,3 +35,35 @@
 1385938162 source:c:\users\pb\desktop\schoolfall13\uicmod\src\menuloader.cpp
 	"../include/menuLoader.h"
 
+1386047894 source:c:\users\pb\documents\github\uic-desktopapp\uicmod\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"include/menuParser.h"
+	"include/locationLoader.h"
+
+1385269193 c:\users\pb\documents\github\uic-desktopapp\uicmod\include\menuparser.h
+	<iostream>
+	<string>
+	<fstream>
+
+1385938047 c:\users\pb\documents\github\uic-desktopapp\uicmod\include\locationloader.h
+	<iostream>
+	<string>
+	<fstream>
+	"../include/menuLoader.h"
+
+1385951370 c:\users\pb\documents\github\uic-desktopapp\uicmod\include\menuloader.h
+	<iostream>
+	<fstream>
+	<string>
+
+1385951419 source:c:\users\pb\documents\github\uic-desktopapp\uicmod\src\locationloader.cpp
+	"../include/locationLoader.h"
+
+1385952052 source:c:\users\pb\documents\github\uic-desktopapp\uicmod\src\menuloader.cpp
+	"../include/menuLoader.h"
+
+1385269177 source:c:\users\pb\documents\github\uic-desktopapp\uicmod\src\menuparser.cpp
+	"../include/menuParser.h"
+

@@ -12,7 +12,7 @@ class menuLoader
         virtual ~menuLoader();
         int extractPrice(string);
         int charInString(string input, char look);
-        void menuLoad(char* filename);
+        void menuLoad(char* filename, int option);
     protected:
     private:
 };

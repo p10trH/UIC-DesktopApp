@@ -149,7 +149,7 @@ void locationLoader::locationLoad(char* filename, int option)
                 std::copy(menuFile.begin(), menuFile.end(), mF);
                 mF[menuFile.size()] = '\0';
 
-                mL.menuLoad(mF);
+                mL.menuLoad(mF, 2);
                 delete[] mF;
                 mL.~menuLoader();
             }
