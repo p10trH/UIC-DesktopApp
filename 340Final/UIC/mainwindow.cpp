@@ -8,6 +8,9 @@
 #include <QHoverEvent>
 #include <QListWidget>
 #include <QListWidgetItem>
+#include <QtWidgets>
+#include <QtNetwork>
+#include <QtWebKitWidgets>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -16,6 +19,17 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     ui->webView->load(QUrl("http://bus.uic.edu/"));
+    ui->webView_Interactive->load(QUrl("http://www.uic.edu/uic/docs/UICVisitorMapMCwest.pdf"));
+
+   // QWebView *view = new QWebView();
+   //     view->load(QUrl("http://cdn.nucloud.com/maps/124/index.html"));
+   //     view->show();
+    //connect(view, SIGNAL(loadFinished(bool)), SLOT(adjustLocation()));
+    //connect(view, SIGNAL(titleChanged(QString)), SLOT(adjustTitle()));
+    //connect(view, SIGNAL(loadProgress(int)), SLOT(setProgress(int)));
+    //connect(view, SIGNAL(loadFinished(bool)), SLOT(finishLoading(bool)));
+
+
 
     //ui->webView_2->load(QUrl("qrc:///resources/resources/ComputerScience.html"));
     //ui->webView_2->load(QUrl("qrc:///resources/resources/ComputerScience2.htm"));
@@ -25,6 +39,31 @@ MainWindow::MainWindow(QWidget *parent) :
     //QLabel *processLabel = new QLabel(ui->label_pix);
     //processLabel->setMovie(movie);
     //movie->start();
+
+
+    //imageLabel = new QLabel;
+    ui->label_EastMap->setBackgroundRole(QPalette::Base);
+    ui->label_EastMap->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
+    ui->label_EastMap->setScaledContents(true);
+
+    //scrollArea = new QScrollArea;
+    ui->scrollArea->setBackgroundRole(QPalette::Dark);
+
+
+    //ui->scrollArea->setWidget(ui->label_EastMap);
+    //ui->setCentralWidget(scrollArea);
+
+    QPixmap pix1 ( ":/resources/resources/img-top-1.jpg");
+    ui->label_EastMap->setPixmap(pix1);
+
+    //createActions();
+    //createMenus();
+
+    //setWindowTitle(tr("Image Viewer"));
+    //resize(500, 400);
+
+    //
+
 
     hideWidgets();
     setMenuIcons();
@@ -38,8 +77,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->f_SideMenu->hasMouseTracking();
 
     ui->listWidget_Courses->setAttribute(Qt::WA_MacShowFocusRect, false);
-    ui->listWidget_Athletics->setAttribute(Qt::WA_MacShowFocusRect, false);
     ui->lineEdit_Courses->setAttribute(Qt::WA_MacShowFocusRect, false);
+
+    ui->listWidget_Athletics->setAttribute(Qt::WA_MacShowFocusRect, false);
+
+    ui->listWidget_Area->setAttribute(Qt::WA_MacShowFocusRect, false);
+    ui->listWidget_Rest->setAttribute(Qt::WA_MacShowFocusRect, false);
 
    // ui->b_Maps->installEventFilter();
 
@@ -109,13 +152,13 @@ void MainWindow::mouseMoveEvent(QMouseEvent *event) {
 
    // if (ui->f_SideMenu->) {
 
-        qDebug("fuck");
+
     //}
 
 /*
     if (this->rect().contains(e->pos())) {
         // Mouse over Widget
-         qDebug("fuck");
+
     }
     else {
          qDebug("no sir");
@@ -413,7 +456,7 @@ void MainWindow::on_lineEdit_Courses_textChanged(const QString &arg1)
     int listWidgetSize = ui->listWidget_Courses->count();
 
     for (int k1 = 0; k1 < listWidgetSize; k1++)
-        if (ui->listWidget_Courses->item(k1)->text().toLower().contains(arg1.toLower()))
+        if (ui->listWidget_Courses->item(k1)->text().toLower().startsWith(arg1.toLower()))
             ui->listWidget_Courses->item(k1)->setHidden(false);
         else
             ui->listWidget_Courses->item(k1)->setHidden(true);

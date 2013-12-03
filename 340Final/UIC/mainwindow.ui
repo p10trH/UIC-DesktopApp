@@ -31,7 +31,8 @@ MainWindow {
 
 	background-color: rgb(255, 255, 255);
     /*image: url(:/resources/resources/img-top-1-cut.jpg);*/
-image: url(:/resources/resources/chiRedSkyLine1.png);
+/*image: url(:/resources/resources/chiRedSkyLine1.png);*/
+image: url(:/resources/resources/chiRedFarHalfTinted.png);
 
 }
 
@@ -1671,7 +1672,7 @@ QTabWidget::tab-bar {
  }</string>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="West">
      <attribute name="title">
@@ -1682,6 +1683,62 @@ QTabWidget::tab-bar {
      <attribute name="title">
       <string>East Campus</string>
      </attribute>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>90</y>
+        <width>621</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>619</width>
+         <height>299</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_EastMap">
+        <property name="geometry">
+         <rect>
+          <x>-60</x>
+          <y>-40</y>
+          <width>841</width>
+          <height>461</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Interactive">
+     <attribute name="title">
+      <string>Interactive Map</string>
+     </attribute>
+     <widget class="QWebView" name="webView_Interactive">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>21</y>
+        <width>971</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="url">
+       <url>
+        <string>about:blank</string>
+       </url>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="Food">
      <attribute name="title">
@@ -1690,10 +1747,10 @@ QTabWidget::tab-bar {
      <widget class="QListWidget" name="listWidget_Area">
       <property name="geometry">
        <rect>
-        <x>790</x>
-        <y>10</y>
+        <x>840</x>
+        <y>1</y>
         <width>261</width>
-        <height>192</height>
+        <height>91</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1733,10 +1790,10 @@ border-style: solid;
      <widget class="QListWidget" name="listWidget_Rest">
       <property name="geometry">
        <rect>
-        <x>790</x>
-        <y>210</y>
+        <x>840</x>
+        <y>93</y>
         <width>261</width>
-        <height>192</height>
+        <height>519</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1750,6 +1807,15 @@ border-style: solid;
       <item>
        <property name="text">
         <string>New Item</string>
+       </property>
+       <property name="background">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </brush>
        </property>
       </item>
       <item>
@@ -2278,6 +2344,7 @@ QTabWidget::tab-bar {
      <attribute name="title">
       <string>Important Numbers</string>
      </attribute>
+     <zorder>tabW_Maps</zorder>
     </widget>
     <widget class="QWidget" name="Dining">
      <attribute name="title">
@@ -2490,9 +2557,9 @@ border-radius: 0;</string>
     <zorder>f_filler</zorder>
     <zorder>listWidget_Athletics</zorder>
    </widget>
+   <zorder>f_Courses</zorder>
    <zorder>f_BookS</zorder>
    <zorder>f_Library</zorder>
-   <zorder>f_Courses</zorder>
    <zorder>f_Safety</zorder>
    <zorder>f_Athletics</zorder>
    <zorder>f_TopMenu</zorder>
