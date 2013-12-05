@@ -1,4 +1,4 @@
-Primos Chicago Pizza menu###Drinks###
+###Drinks###
 Fountain Drink : $1.30
 Bottled Drink : $1.45
 2 Liter : $2.50
@@ -59,8 +59,8 @@ Margarita Pizza : $12.29 - $29.00
 Fish with Chips and a Large Drink : $5.99
 Grilled Cheese with Soup : $4.89
 Chicken Tenders with Soup : $5.99
-6&quot; Cold Sub with Drink and Chips : $6.00
-10&quot; Cold Sub with Drink and Chips : $7.00
+6" Cold Sub with Drink and Chips : $6.00
+10" Cold Sub with Drink and Chips : $7.00
 ###Side Orders###
 Garlic Bread : $1.75
 Cheesy Garlic Bread : $2.89

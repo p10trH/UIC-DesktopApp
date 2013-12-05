@@ -109,7 +109,7 @@ void locationLoader::locationLoad(char* filename, int option)
         getline(file,menuFile);
         getline(file,hashTags);
         getline(file, line);
-        name = extractName(name);
+        //name = extractName(name);
 
         if(option == 1){
             cout << name << endl;
@@ -149,7 +149,7 @@ void locationLoader::locationLoad(char* filename, int option)
                 std::copy(menuFile.begin(), menuFile.end(), mF);
                 mF[menuFile.size()] = '\0';
 
-                mL.menuLoad(mF, 2);
+                mL.menuLoad(mF, 1);
                 delete[] mF;
                 mL.~menuLoader();
             }
