@@ -1,0 +1,31 @@
+***Wendys***
+750 S Halsted St
+Chicago, IL 60607
+(312) 996-6438
+Monday		9:00 am – 9:00 pm
+Tuesday		9:00 am – 9:00 pm
+Wednesday	9:00 am – 9:00 pm
+Thursday	9:00 am – 9:00 pm
+Friday		9:00 am – 9:00 pm
+Saturday	9:00 am – 9:00 pm
+Sunday		9:00 am – 9:00 pm
+@
+#burgers
+
+***Cafe Descartes***
+750 S Halsted St
+Chicago, IL 60607
+(773) 442-5353
+Monday		7:00 am – 6:30 pm
+Tuesday		7:00 am – 6:30 pm
+Wednesday	7:00 am – 6:30 pm
+Thursday	7:00 am – 6:30 pm
+Friday		7:00 am – 6:30 pm
+Saturday	7:00 am – 6:30 pm
+Sunday		7:00 am – 6:30 pm
+@
+#cafe
+
+Tropical Smoothie Cafe
+737 S Halsted St
+Chicago, IL 60607
