@@ -45,7 +45,7 @@ void foodService(){
     {
         listOptions();
         cin >> optionSelect;
-        lL.locationLoad(location, optionSelect);
+        cout << lL.locationLoad(location, optionSelect);
     }
     //menuLoader("Locations/Menus/grk-giordanos.txt");
 

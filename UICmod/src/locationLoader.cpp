@@ -67,8 +67,9 @@ int locationLoader::extractCTime(string input)
         return 9999;
     }
 }
-void locationLoader::locationLoad(char* filename, int option)
+string locationLoader::locationLoad(char* filename, int option)
 {
+    string infoOut = "";
     /*
     cout << "< 1. Get all retaurant info" << endl;
     */
@@ -112,19 +113,19 @@ void locationLoader::locationLoad(char* filename, int option)
         //name = extractName(name);
 
         if(option == 1){
-            cout << name << endl;
-            cout << adress1 << endl;
-            cout << adress2 << endl;
-            cout << phone << endl;
-            cout << hoursMon << endl;
-            cout << hoursTue << endl;
-            cout << hoursWed << endl;
-            cout << hoursThr << endl;
-            cout << hoursFri << endl;
-            cout << hoursSat << endl;
-            cout << hoursSun << endl;
-            cout << hashTags << endl;
-            cout << endl;
+            infoOut += name + "\n";
+            infoOut += adress1 + "\n";
+            infoOut += adress2 + "\n";
+            infoOut += phone + "\n";
+            infoOut += hoursMon + "\n";
+            infoOut += hoursTue + "\n";
+            infoOut += hoursWed + "\n";
+            infoOut += hoursThr + "\n";
+            infoOut += hoursFri + "\n";
+            infoOut += hoursSat + "\n";
+            infoOut += hoursSun + "\n";
+            infoOut += hashTags + "\n";
+            infoOut += "\n";
         } else if (option == 2) {
             string hoursOnDay = hoursSun;
             int currentTime = 1350;
@@ -132,17 +133,21 @@ void locationLoader::locationLoad(char* filename, int option)
             int openTime = extractOTime(hoursOnDay);
             int closeTime = extractCTime(hoursOnDay);
             if(openTime < currentTime && currentTime < closeTime){
-                cout << name << endl;
+                //cout << name << endl;
+                infoOut += name + "\n";
             } else if (closeTime < openTime && openTime < currentTime) {
-                cout << name << endl;
+                //cout << name << endl;
+                infoOut += name + "\n";
             } else if (hoursOnDay.find("Open 24 hours") != std::string::npos) {
-                cout << name << endl;
+                //cout << name << endl;
+                infoOut += name + "\n";
             }
         } else if (option == 3) {
             if(name.find(menuSelectName) != std::string::npos)
             {
                 menuFile = "Locations/Menus/" + menuFile.substr(1);
-                cout << menuFile << endl;
+                //cout << menuFile << endl;
+                infoOut += menuFile + "\n";
 
                 menuLoader mL;
                 char* mF = new char[menuFile.size() + 1];
@@ -186,4 +191,5 @@ void locationLoader::locationLoad(char* filename, int option)
         */
     }
     file.close();
+    return infoOut;
 }

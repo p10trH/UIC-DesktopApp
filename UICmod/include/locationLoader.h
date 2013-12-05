@@ -12,7 +12,7 @@ class locationLoader
     public:
         locationLoader();
         virtual ~locationLoader();
-        void locationLoad(char* filename, int option);
+        string locationLoad(char* filename, int option);
         int extractOTime(string input);
         int extractCTime(string input);
         string extractName(string input);
