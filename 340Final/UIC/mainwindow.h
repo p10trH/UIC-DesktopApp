@@ -59,6 +59,10 @@ private slots:
 
     void on_B_LegendEast_clicked(bool checked);
 
+    void on_B_LegendWest_clicked(bool checked);
+
+    void on_listWidget_Area_itemClicked(QListWidgetItem *item);
+
 protected:
     //void hoverEnterEvent(QGraphicsSceneHoverEvent *event);
     //void hoverLeaveEvent(QGraphicsSceneHoverEvent *event);

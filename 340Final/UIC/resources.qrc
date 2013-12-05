@@ -204,5 +204,8 @@
         <file>resources/UICskyline.png</file>
         <file>resources/eastCampusLegend.png</file>
         <file>resources/eastCampus.png</file>
+        <file>resources/westCampus.png</file>
+        <file>resources/westCampusLegend.png</file>
+        <file>resources/GreekTown.txt</file>
     </qresource>
 </RCC>

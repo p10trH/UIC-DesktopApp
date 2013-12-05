@@ -21,10 +21,17 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     ui->webView->load(QUrl("http://bus.uic.edu/"));
-    ui->webView_Interactive->load(QUrl("http://www.uic.edu/uic/docs/UICVisitorMapMCwest.pdf"));
+    //ui->webView_Interactive->load(QUrl("http://www.uic.edu/uic/docs/UICVisitorMapMCwest.pdf"));
 
     ui->webView_Amazon->load(QUrl("http://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Dstripbooks"));
     ui->webView_BStore->load(QUrl("http://www.uicbookstore.org/courselistbuilder.aspx?2"));
+    ui->webView_Prof->load(QUrl("http://www.uic.edu/htbin/ldap_search/index.pl"));
+    ui->webView_Lib->load(QUrl("http://library.uic.edu/"));
+    ui->webView_Dining->load(QUrl("http://www.dineoncampus.com/uic/show.cfm?cmd=menus2"));
+    ui->webView_Numbers->load(QUrl("http://www.housing.uic.edu/current/resources/phone-numbers.php"));
+    ui->webView_Laundry->load(QUrl("http://www.laundryview.com/lvs.php"));
+    ui->webView_Cta->load(QUrl("http://ctabustracker.com/bustime/map/displaymap.jsp"));
+    ui->webView_Train->load(QUrl("http://www.transitchicago.com/traintrackermap/"));
 
    // QWebView *view = new QWebView();
    //     view->load(QUrl("http://cdn.nucloud.com/maps/124/index.html"));
@@ -63,6 +70,16 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->gView_East->setScene(scene2);
     QGraphicsPixmapItem* item2 = new QGraphicsPixmapItem(QPixmap(":/resources/resources/eastCampus.png"));
     scene2->addItem(item2);
+
+    QGraphicsScene *scene3 = new QGraphicsScene();
+    ui->gView_LegendWest->setScene(scene3);
+    QGraphicsPixmapItem* item3 = new QGraphicsPixmapItem(QPixmap(":/resources/resources/westCampusLegend.png"));
+    scene3->addItem(item3);
+
+    QGraphicsScene *scene4 = new QGraphicsScene();
+    ui->gView_West->setScene(scene4);
+    QGraphicsPixmapItem* item4 = new QGraphicsPixmapItem(QPixmap(":/resources/resources/westCampus.png"));
+    scene4->addItem(item4);
 
      //ui->graphicsView->show();
 
@@ -115,6 +132,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
 
+    ui->toolBox->setItemText(0, "Bus");
+    ui->toolBox->setItemText(1, "Train");
 
 
 
@@ -526,5 +545,44 @@ void MainWindow::on_B_LegendEast_clicked(bool checked)
          ui->gView_LegendEast->hide();
     else
         ui->gView_LegendEast->show();
+
+}
+
+void MainWindow::on_B_LegendWest_clicked(bool checked)
+{
+    if (checked == true)
+         ui->gView_LegendWest->hide();
+    else
+        ui->gView_LegendWest->show();
+
+}
+
+void MainWindow::on_listWidget_Area_itemClicked(QListWidgetItem *item)
+{
+
+    QString temp = item->text();
+
+
+    if (temp.contains("East Campus")) {
+
+        ui->textBrowser->clear();
+        ui->textBrowser->setText ("jhdshhdchbcbkckbdckjdbdckbdkjcbdcdhcbdcbdckdcbckdbkc");
+
+
+
+
+    }
+    else if (temp.contains("Greek Town")) {
+        ui->textBrowser->clear();
+
+
+        ui->textBrowser->setText(textBrowser->setSource(QUrl(":/resources/resources/GreekTown.txt")));
+        ui->textBrowser->show();
+
+    }
+    else
+        qDebug() << "fail";
+
+
 
 }

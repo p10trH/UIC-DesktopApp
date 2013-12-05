@@ -26,7 +26,13 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">
+   <string notr="true">QTextBrowser {
+
+ border-width: 0px;
+    border-color: rgba(0, 0, 186, 191);
+    border-style: solid;
+
+}
 MainWindow {
 
 	background-color: rgb(255, 255, 255);
@@ -314,13 +320,23 @@ QTabWidget::tab-bar {
     </property>
     <widget class="QWidget" name="tab_Prof">
      <attribute name="title">
-      <string>Professors</string>
+      <string/>
      </attribute>
-    </widget>
-    <widget class="QWidget" name="tab_Stud">
-     <attribute name="title">
-      <string>Students</string>
-     </attribute>
+     <widget class="QWebView" name="webView_Prof">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>-1</y>
+        <width>1101</width>
+        <height>611</height>
+       </rect>
+      </property>
+      <property name="url">
+       <url>
+        <string>about:blank</string>
+       </url>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QFrame" name="f_Courses">
@@ -1283,6 +1299,21 @@ border-radius: 0;</string>
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <widget class="QWebView" name="webView_Lib">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1101</width>
+       <height>611</height>
+      </rect>
+     </property>
+     <property name="url">
+      <url>
+       <string>about:blank</string>
+      </url>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="f_BookS">
     <property name="geometry">
@@ -1390,13 +1421,6 @@ font: 16pt &quot;Arial&quot;;</string>
       </rect>
      </property>
     </widget>
-    <zorder>webView_BStore</zorder>
-    <zorder>webView_Amazon</zorder>
-    <zorder>line</zorder>
-    <zorder>label_Search_2</zorder>
-    <zorder>lineEdit_Books</zorder>
-    <zorder>tabW_Maps</zorder>
-    <zorder>tabW_Maps</zorder>
    </widget>
    <widget class="QFrame" name="f_Safety">
     <property name="geometry">
@@ -1781,6 +1805,7 @@ color: rgb(0, 0, 255);</string>
 border-color: rgba(255, 0, 0, 191);
 border-style: solid;
 border-radius: 0;
+	
  }
 
 /*QTabBar::tab {
@@ -1796,7 +1821,7 @@ QTabWidget::tab-bar {
  }</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="West">
      <attribute name="title">
@@ -1833,7 +1858,7 @@ QPushButton:hover {
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QGraphicsView" name="gView_East_2">
+     <widget class="QGraphicsView" name="gView_West">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -1843,8 +1868,19 @@ QPushButton:hover {
        </rect>
       </property>
      </widget>
-     <zorder>gView_East_2</zorder>
+     <widget class="QGraphicsView" name="gView_LegendWest">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>400</width>
+        <height>611</height>
+       </rect>
+      </property>
+     </widget>
+     <zorder>gView_West</zorder>
      <zorder>B_LegendWest</zorder>
+     <zorder>gView_LegendWest</zorder>
     </widget>
     <widget class="QWidget" name="East">
      <attribute name="title">
@@ -1904,26 +1940,6 @@ QPushButton:hover {
      <zorder>gView_East</zorder>
      <zorder>gView_LegendEast</zorder>
      <zorder>B_LegendEast</zorder>
-    </widget>
-    <widget class="QWidget" name="Interactive">
-     <attribute name="title">
-      <string>Interactive Map</string>
-     </attribute>
-     <widget class="QWebView" name="webView_Interactive">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
-        <y>21</y>
-        <width>971</width>
-        <height>481</height>
-       </rect>
-      </property>
-      <property name="url">
-       <url>
-        <string>about:blank</string>
-       </url>
-      </property>
-     </widget>
     </widget>
     <widget class="QWidget" name="Food">
      <attribute name="title">
@@ -2044,10 +2060,36 @@ border-style: solid;
        </property>
       </item>
      </widget>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>611</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.Lucida Grande UI'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;test&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <zorder>textBrowser</zorder>
+     <zorder>listWidget_Area</zorder>
+     <zorder>listWidget_Rest</zorder>
     </widget>
     <widget class="QWidget" name="Navigation">
      <property name="styleSheet">
-      <string notr="true"/>
+      <string notr="true">QToolBox::tab {
+     
+	color: rgb(0, 0, 186);
+ }</string>
      </property>
      <attribute name="title">
       <string>Navigation</string>
@@ -2091,9 +2133,84 @@ QTabBar::tab {
        <number>0</number>
       </property>
       <widget class="QWidget" name="cta">
+       <property name="styleSheet">
+        <string notr="true">
+
+	background-color: rgb(255, 255, 255);
+</string>
+       </property>
        <attribute name="title">
         <string>CTA Tracker</string>
        </attribute>
+       <widget class="QToolBox" name="toolBox">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>1101</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="Bus">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>Page 1</string>
+         </attribute>
+         <widget class="QWebView" name="webView_Cta">
+          <property name="geometry">
+           <rect>
+            <x>9</x>
+            <y>-31</y>
+            <width>1091</width>
+            <height>581</height>
+           </rect>
+          </property>
+          <property name="url">
+           <url>
+            <string>about:blank</string>
+           </url>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="Train">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1101</width>
+           <height>543</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>Page 2</string>
+         </attribute>
+         <widget class="QWebView" name="webView_Train">
+          <property name="geometry">
+           <rect>
+            <x>-1</x>
+            <y>-21</y>
+            <width>1101</width>
+            <height>561</height>
+           </rect>
+          </property>
+          <property name="url">
+           <url>
+            <string>about:blank</string>
+           </url>
+          </property>
+         </widget>
+        </widget>
+       </widget>
       </widget>
       <widget class="QWidget" name="uicShuttle">
        <attribute name="title">
@@ -2528,22 +2645,67 @@ QTabWidget::tab-bar {
  }</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="Laundry">
      <attribute name="title">
       <string>Laundry View</string>
      </attribute>
+     <widget class="QWebView" name="webView_Laundry">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>611</height>
+       </rect>
+      </property>
+      <property name="url">
+       <url>
+        <string>about:blank</string>
+       </url>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="Numbers">
      <attribute name="title">
       <string>Important Numbers</string>
      </attribute>
+     <widget class="QWebView" name="webView_Numbers">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>611</height>
+       </rect>
+      </property>
+      <property name="url">
+       <url>
+        <string>about:blank</string>
+       </url>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="Dining">
      <attribute name="title">
       <string>Dining Menu</string>
      </attribute>
+     <widget class="QWebView" name="webView_Dining">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>611</height>
+       </rect>
+      </property>
+      <property name="url">
+       <url>
+        <string>about:blank</string>
+       </url>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QFrame" name="f_Athletics">
@@ -2753,14 +2915,14 @@ border-radius: 0;</string>
    </widget>
    <zorder>f_TopMenu</zorder>
    <zorder>f_Courses</zorder>
-   <zorder>tabW_CHousing</zorder>
-   <zorder>f_Library</zorder>
    <zorder>f_Safety</zorder>
    <zorder>f_Athletics</zorder>
-   <zorder>tabW_Directory</zorder>
    <zorder>label_pix</zorder>
    <zorder>label_18</zorder>
    <zorder>f_BookS</zorder>
+   <zorder>tabW_Directory</zorder>
+   <zorder>f_Library</zorder>
+   <zorder>tabW_CHousing</zorder>
    <zorder>f_SideMenu</zorder>
    <zorder>tabW_Maps</zorder>
   </widget>

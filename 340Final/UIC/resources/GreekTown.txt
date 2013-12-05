@@ -1,0 +1,377 @@
+***Giordano's***
+815 W Van Buren St #115
+Chicago, IL 60607
+(312) 421-1221
+Monday		11:00 am - 10:30 pm
+Tuesday		11:00 am - 10:30 pm
+Wednesday	11:00 am - 10:30 pm
+Thursday	11:00 am - 10:30 pm
+Friday		11:00 am - 12:00 am
+Saturday	11:00 am - 12:00 am
+Sunday		11:00 am - 10:30 pm
+@grk-giordanos.txt
+#pizza #italian
+
+***Jimmy John's***
+812 W Van Buren St
+Chicago, IL 60607
+(312) 733-8030
+Monday		10:00 am - 9:00 pm
+Tuesday		10:00 am - 9:00 pm
+Wednesday	10:00 am - 9:00 pm
+Thursday	10:00 am - 9:00 pm
+Friday		10:00 am - 9:00 pm
+Saturday	10:00 am - 6:00 pm
+Sunday		10:00 am - 6:00 pm
+@yyy-zzz.txt LINK FILE
+#sandwiches #fast
+
+***Primos Chicago Pizza***
+816 W Van Buren St
+Chicago, IL 60607
+(312) 243-1052
+Monday		11:00 am - 9:00 pm
+Tuesday		11:00 am - 9:00 pm
+Wednesday	11:00 am - 9:00 pm
+Thursday	11:00 am - 9:00 pm
+Friday		11:00 am - 9:00 pm
+Saturday	Closed
+Sunday		Closed
+@grk-primos.txt
+#pizza #sandwiches
+
+***Pan Hellenic Pastry Shop***
+322 S Halsted St
+Chicago, IL 60661
+(312) 454-1886
+Monday		9:00 am - 8:00 pm
+Tuesday		9:00 am - 8:00 pm
+Wednesday	9:00 am - 8:00 pm
+Thursday	9:00 am - 8:00 pm
+Friday		9:00 am - 9:00 pm
+Saturday	9:00 am - 9:00 pm
+Sunday		11:00 am - 7:00 pm
+@grk-grk-panhellenic.txt
+#bakery #pastry
+
+***Parthenon***
+314 S Halsted St
+Chicago, Illinois 60661
+(312) 726-2407
+Monday		11:00 am - 11:00 pm
+Tuesday		11:00 am - 11:00 pm
+Wednesday	11:00 am - 11:00 pm
+Thursday	11:00 am - 11:00 pm
+Friday		11:00 am - 11:00 pm
+Saturday	11:00 am - 11:00 pm
+Sunday		11:00 am - 11:00 pm
+@grk-parthenon.txt
+#greek
+
+***9 Muses Bar & Grill***
+315 S Halsted St
+Chicago, IL 60661
+(312) 902-9922
+Monday		11:00 am - 2:00 am
+Tuesday		11:00 am - 2:00 am
+Wednesday	11:00 am - 2:00 am
+Thursday	11:00 am - 2:00 am
+Friday		11:00 am - 2:00 am
+Saturday	11:00 am - 3:00 am
+Sunday		11:00 am - 2:00 am
+@grk-grk-9muses.txt
+#bar #grill #cafe
+
+***Artopolis***
+306 S Halsted St
+Chicago, IL 60661
+(312) 559-9000
+Monday		9:00 am - 12:00 am
+Tuesday		9:00 am - 12:00 am
+Wednesday	9:00 am - 12:00 am
+Thursday	9:00 am - 12:00 am
+Friday		9:00 am - 1:00 am
+Saturday	9:00 am - 1:00 am
+Sunday		10:00 am - 11:00 pm
+@grk-artopolis.txt
+#greek #bakery #cafe
+
+***Meli Cafe & Juice Bar***
+301 S Halsted St
+Chicago, IL 60661
+(312) 454-0748
+Monday		6:00 am - 3:00 pm
+Tuesday		6:00 am - 3:00 pm
+Wednesday	6:00 am - 3:00 pm
+Thursday	6:00 am - 3:00 pm
+Friday		6:00 am - 3:00 pm
+Saturday	6:00 am - 3:00 pm
+Sunday		6:00 am - 3:00 pm
+@grk-meli.txt
+#cafe #breakfast #juice
+
+***Chinese Yum Yum***
+809 W Jackson Blvd
+Chicago, IL 60607
+(312) 985-8888
+Monday		10:00 am - 5:00 am
+Tuesday		10:00 am - 5:00 am
+Wednesday	10:00 am - 5:00 am
+Thursday	10:00 am - 5:00 am
+Friday		10:00 am - 5:00 am
+Saturday	10:00 am - 5:00 am
+Sunday		10:00 am - 5:00 am
+@grk-chineseyumyum.txt
+#chinese
+
+***Zeus Inc***
+806 W Jackson Blvd
+Chicago, IL 60607
+(312) 258-8789
+Monday		7:00 am - 10:00 pm
+Tuesday		7:00 am - 10:00 pm
+Wednesday	7:00 am - 10:00 pm
+Thursday	7:00 am - 10:00 pm
+Friday		10:00 am - 5:00 am
+Saturday	10:00 am - 5:00 am
+Sunday		10:00 am - 5:00 am
+@grk-zeus.txt
+#greek
+
+***Mr Greek Gyros***
+234 S Halsted St
+Chicago, IL 60607
+(312) 906-8731
+Monday		Open 24 hours
+Tuesday		Open 24 hours
+Wednesday	Open 24 hours
+Thursday	Open 24 hours
+Friday		Open 24 hours
+Saturday	Open 24 hours
+Sunday		Open 24 hours
+@mrgreek.txt
+#greek #mexican
+
+***TBK Greek Town***
+811 W Jackson Blvd
+Chicago, IL 60607
+(312) 831-0633
+Monday		Open 24 hours
+Tuesday		Open 24 hours
+Wednesday	Open 24 hours
+Thursday	Open 24 hours
+Friday		Open 24 hours
+Saturday	Open 24 hours
+Sunday		Open 24 hours
+@grk-tbk.txt
+#mexican
+
+***Subway***
+808 W Jackson Blvd
+Chicago, IL 60607
+(312) 669-1500
+Monday		Open 24 hours
+Tuesday		Open 24 hours
+Wednesday	Open 24 hours
+Thursday	Open 24 hours
+Friday		Open 24 hours
+Saturday	Open 24 hours
+Sunday		Open 24 hours
+@yyy-zzz.txt LINK FILE
+#sandwiches
+
+***Philly's Best***
+769 W Jackson Blvd
+Chicago, IL 60661
+(312) 715-9800
+Monday		10:30 am - 2:00 am
+Tuesday		10:30 am - 2:00 am
+Wednesday	10:30 am - 2:00 am
+Thursday	10:30 am - 2:00 am
+Friday		10:30 am - 3:00 am
+Saturday	11:00 am - 3:00 am
+Sunday		12:00 pm - 12:00 am
+@yyy-zzz.txt LINK FILE
+#sandwiches #pizza #wings
+
+***Spectrum Bar & Grill***
+233 S Halsted St
+Chicago, IL 60661
+(312) 715-0770
+Monday		11:00 am - 4:00 am
+Tuesday		11:00 am - 4:00 am
+Wednesday	11:00 am - 4:00 am
+Thursday	11:00 am - 4:00 am
+Friday		11:00 am - 4:00 am
+Saturday	5:00 pm - 5:00 am
+Sunday		5:00 pm - 4:00 am
+@yyy-zzz.txt LINK FILE
+#bar #grill
+
+***Roditys Restaurant***
+222 S Halsted St
+Chicago, Illinois 60661
+(312) 454-0800
+Monday		11:00 am - 11:00 pm
+Tuesday		11:00 am - 11:00 pm
+Wednesday	11:00 am - 11:00 pm
+Thursday	11:00 am - 11:00 pm
+Friday		11:00 am - 12:00 am
+Saturday	11:00 am - 12:00 am
+Sunday		11:00 am - 11:00 pm
+@grk-roditys.txt
+#greek
+
+***Athena Greek Restaurant***
+212 S Halsted St #1
+Chicago, IL 60661
+(312) 655-0000
+Monday		11:00 am - 12:00 am
+Tuesday		11:00 am - 12:00 am
+Wednesday	11:00 am - 12:00 am
+Thursday	11:00 am - 12:00 am
+Friday		11:00 am - 1:00 am
+Saturday	11:00 am - 1:00 am
+Sunday		11:00 am - 12:00 am
+@grk-athena.txt
+#greek
+
+***Greek Islands***
+200 S Halsted St
+Chicago, IL 60661
+(312) 782-9855
+Monday		11:00 am - 12:00 am
+Tuesday		11:00 am - 12:00 am
+Wednesday	11:00 am - 12:00 am
+Thursday	11:00 am - 12:00 am
+Friday		11:00 am - 12:00 am
+Saturday	11:00 am - 1:00 am
+Sunday		11:00 am - 12:00 am
+@grk-greekislands.txt
+#greek
+
+***Santorini***
+800 W. Adams St.
+Chicago, Illinois 60607
+(312) 829-8820
+Monday		11:00 am - 10:00 pm
+Tuesday		11:00 am - 10:00 pm
+Wednesday	11:00 am - 10:00 pm
+Thursday	11:00 am - 10:00 pm
+Friday		11:00 am - 12:00 am
+Saturday	11:00 am - 12:00 am
+Sunday		11:00 am - 10:00 pm
+@grk-santorini.txt
+#greek
+
+***Pegasus Restaurant and Taverna***
+130 S Halsted St
+Chicago, IL 60661
+(312) 226-3377
+Monday		11:00 am - 11:00 pm
+Tuesday		11:00 am - 11:00 pm
+Wednesday	11:00 am - 11:00 pm
+Thursday	11:00 am - 11:00 pm
+Friday		11:00 am - 12:00 am
+Saturday	12:00 pm - 12:00 am
+Sunday		12:00-10:00 pm
+@grk-pegasus.txt
+#greek
+
+***Karyn's On Green***
+130 S Green St
+Chicago, IL 60607
+(312) 226-6155
+Monday		Closed
+Tuesday		11:30 am - 10:00 pm
+Wednesday	11:30 am - 10:00 pm
+Thursday	11:30 am - 10:00 pm
+Friday		11:30 am - 11:00 pm
+Saturday	11:30 am - 11:00 pm
+Sunday		11:30 am - 3:00 pm
+@grk-karyns.txt
+#vegan
+
+***Dugans***
+128 S Halsted St
+Chicago, IL 60661
+(312) 421-7191
+Monday		2:00 pm - 3:00 am
+Tuesday		2:00 pm - 3:00 am
+Wednesday	2:00 pm - 3:00 am
+Thursday	2:00 pm - 3:00 am
+Friday		2:00 pm - 3:00 am
+Saturday	12:00 pm - 3:00 am
+Sunday		12:00 pm - 3:00 am
+@yyy-zzz.txt LINK FILE
+#irish #bar
+
+***Toppers Pizza***
+120 S Halsted St
+Chicago, IL 60661
+(312) 226-6664
+Monday		11:00 am - 3:00 am
+Tuesday		11:00 am - 3:00 am
+Wednesday	11:00 am - 3:00 am
+Thursday	11:00 am - 3:00 am
+Friday		11:00 am - 3:00 am
+Saturday	11:00 am - 3:00 am
+Sunday		11:00 am - 3:00 am
+@grk-toppers.txt
+#pizza #wings
+
+***Starbucks***
+100 S Halsted St
+Chicago, IL 60661
+(312) 226-3658
+Monday		5:00 am - 9:00 pm
+Tuesday		5:00 am - 9:00 pm
+Wednesday	5:00 am - 9:00 pm
+Thursday	5:00 am - 9:00 pm
+Friday		5:00 am - 9:00 pm
+Saturday	5:30 am - 10:00 pm
+Sunday		5:30 am - 10:00 pm
+@yyy-zzz.txt LINK FILE
+#cafe
+
+***Eggsperience Cafe***
+30 S Halsted St
+Chicago, Illinois 60607
+(312) 929-2090
+Monday		6:00 am - 4:00 pm
+Tuesday		6:00 am - 4:00 pm
+Wednesday	6:00 am - 4:00 pm
+Thursday	6:00 am - 4:00 pm
+Friday		6:00 am - 4:00 pm
+Saturday	6:00 am - 4:00 pm
+Sunday		6:00 am - 4:00 pm
+@yyy-zzz.txt LINK FILE
+#X #Y #Z HASH
+
+***Dine***
+733 W Madison St
+Chicago, IL 60661
+(312) 602-2100
+Monday		6:00 am - 11:00 pm
+Tuesday		6:00 am - 11:00 pm
+Wednesday	6:00 am - 11:00 pm
+Thursday	6:00 am - 11:00 pm
+Friday		6:00 am - 11:00 pm
+Saturday	6:00 am - 11:00 pm
+Sunday		6:00 am - 11:00 pm
+@grk-dine.txt
+#american
+
+***MetroKlub***
+733 W Madison St
+Chicago, IL 60661
+(312) 602-2104
+Monday		11:00 am - 3:00 pm
+Tuesday		11:00 am - 3:00 pm
+Wednesday	11:00 am - 3:00 pm
+Thursday	11:00 am - 3:00 pm
+Friday		Closed
+Saturday	Closed
+Sunday		Closed
+@grk-metroklub.txt
+#kosher
