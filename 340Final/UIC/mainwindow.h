@@ -52,6 +52,9 @@ private slots:
 
     void on_listWidget_Courses_itemClicked();
 
+
+    void on_listWidget_Courses_itemClicked(QListWidgetItem *item);
+
 protected:
     //void hoverEnterEvent(QGraphicsSceneHoverEvent *event);
     //void hoverLeaveEvent(QGraphicsSceneHoverEvent *event);

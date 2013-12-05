@@ -1227,6 +1227,21 @@ color: rgb(255, 255, 255);</string>
       <string>      Filter :</string>
      </property>
     </widget>
+    <widget class="QWebView" name="webView_Courses">
+     <property name="geometry">
+      <rect>
+       <x>49</x>
+       <y>69</y>
+       <width>741</width>
+       <height>511</height>
+      </rect>
+     </property>
+     <property name="url">
+      <url>
+       <string>about:blank</string>
+      </url>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="f_Library">
     <property name="geometry">
@@ -1672,7 +1687,7 @@ QTabWidget::tab-bar {
  }</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="West">
      <attribute name="title">
@@ -1816,6 +1831,16 @@ border-style: solid;
           <blue>0</blue>
          </color>
         </brush>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New Item</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New Item</string>
        </property>
       </item>
       <item>
@@ -2344,7 +2369,6 @@ QTabWidget::tab-bar {
      <attribute name="title">
       <string>Important Numbers</string>
      </attribute>
-     <zorder>tabW_Maps</zorder>
     </widget>
     <widget class="QWidget" name="Dining">
      <attribute name="title">
@@ -2557,7 +2581,6 @@ border-radius: 0;</string>
     <zorder>f_filler</zorder>
     <zorder>listWidget_Athletics</zorder>
    </widget>
-   <zorder>f_Courses</zorder>
    <zorder>f_BookS</zorder>
    <zorder>f_Library</zorder>
    <zorder>f_Safety</zorder>
@@ -2569,6 +2592,7 @@ border-radius: 0;</string>
    <zorder>label_18</zorder>
    <zorder>f_SideMenu</zorder>
    <zorder>tabW_Maps</zorder>
+   <zorder>f_Courses</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

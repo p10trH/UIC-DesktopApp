@@ -16,12 +16,14 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     mypushbutton.cpp \
-    myframe.cpp
+    myframe.cpp \
+    coursedata.cpp
 
 HEADERS  += mainwindow.h \
     ../mypushbutton.h \
     mypushbutton.h \
-    myframe.h
+    myframe.h \
+    coursedata.h
 
 FORMS    += mainwindow.ui
 

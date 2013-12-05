@@ -33,5 +33,6 @@
         <file>resources/peterStyle.css</file>
         <file>resources/chiSkylineTinted.png</file>
         <file>resources/chiRedFarHalfTinted.png</file>
+        <file>resources/courseCat/Fixed/peterStyle.css</file>
     </qresource>
 </RCC>

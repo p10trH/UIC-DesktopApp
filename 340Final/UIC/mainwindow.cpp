@@ -49,8 +49,6 @@ MainWindow::MainWindow(QWidget *parent) :
     //scrollArea = new QScrollArea;
     ui->scrollArea->setBackgroundRole(QPalette::Dark);
 
-   ui->scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
-    ui->scrollArea->setWidgetResizable(true);
 
 
     //ui->scrollArea->setWidget(ui->label_EastMap);
@@ -455,7 +453,6 @@ void MainWindow::on_b_Safety_clicked()
 
 void MainWindow::on_lineEdit_Courses_textChanged(const QString &arg1)
 {
-
     int listWidgetSize = ui->listWidget_Courses->count();
 
     for (int k1 = 0; k1 < listWidgetSize; k1++)
@@ -468,4 +465,31 @@ void MainWindow::on_lineEdit_Courses_textChanged(const QString &arg1)
 void MainWindow::on_listWidget_Courses_itemClicked()
 {
     ui->lineEdit_Courses->clear();
+}
+
+
+void MainWindow::on_listWidget_Courses_itemClicked(QListWidgetItem *item)
+{
+
+    QString temp = item->text();
+
+    qDebug() << "" + temp;
+
+    QString url = "qrc:///resources/resources/courseCat/Fixed/" + temp + ".htm";
+
+
+    qDebug() << "" + url;
+
+    ui->webView_Courses->load(QUrl(url));
+
+    //ui->webView_Courses->load(QUrl("qrc:///resources/resources/courseCat/Fixed/Academic Skills Program  (ASP).htm"));
+
+
+
+
+
+
+
+
+
 }
