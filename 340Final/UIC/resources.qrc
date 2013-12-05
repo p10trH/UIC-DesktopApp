@@ -207,5 +207,6 @@
         <file>resources/westCampus.png</file>
         <file>resources/westCampusLegend.png</file>
         <file>resources/GreekTown.txt</file>
+        <file>resources/restaurantsCampus.png</file>
     </qresource>
 </RCC>

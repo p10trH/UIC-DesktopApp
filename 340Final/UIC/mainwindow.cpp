@@ -13,6 +13,9 @@
 #include <QtWebKitWidgets>
 #include <QGraphicsScene>
 #include <QGraphicsView>
+ #include <QTextBrowser>
+
+#include "locationLoader.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -32,6 +35,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->webView_Laundry->load(QUrl("http://www.laundryview.com/lvs.php"));
     ui->webView_Cta->load(QUrl("http://ctabustracker.com/bustime/map/displaymap.jsp"));
     ui->webView_Train->load(QUrl("http://www.transitchicago.com/traintrackermap/"));
+
 
    // QWebView *view = new QWebView();
    //     view->load(QUrl("http://cdn.nucloud.com/maps/124/index.html"));
@@ -80,6 +84,11 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->gView_West->setScene(scene4);
     QGraphicsPixmapItem* item4 = new QGraphicsPixmapItem(QPixmap(":/resources/resources/westCampus.png"));
     scene4->addItem(item4);
+
+    QGraphicsScene *scene5 = new QGraphicsScene();
+    ui->graphicsView_Rest->setScene(scene5);
+    QGraphicsPixmapItem* item5 = new QGraphicsPixmapItem(QPixmap(":/resources/resources/restaurantsCampus.png"));
+    scene5->addItem(item5);
 
      //ui->graphicsView->show();
 
@@ -565,24 +574,57 @@ void MainWindow::on_listWidget_Area_itemClicked(QListWidgetItem *item)
 
     if (temp.contains("East Campus")) {
 
-        ui->textBrowser->clear();
-        ui->textBrowser->setText ("jhdshhdchbcbkckbdckjdbdckbdkjcbdcdhcbdcbdckdcbckdbkc");
+     //   ui->textBrowser->clear();
+       // ui->textBrowser->setText ("jhdshhdchbcbkckbdckjdbdckbdkjcbdcdhcbdcbdckdcbckdbkc");
 
 
 
 
     }
     else if (temp.contains("Greek Town")) {
-        ui->textBrowser->clear();
+    //    ui->textBrowser->clear();
+        //locationLoader lL;
+            //QString temp2 = "" +
+        // std::string str  =      lL.locationLoad("qrc:/resources/resources/GreekTown.txt",1);
+
+ //         ui->textBrowser->setSource(QUrl("qrc:/resources/resources/GreekTown.txt"));
+
+            //QString temp3 = temp2.c_str();
+
+       // QString qstr = QString::fromStdString(str);
+       // ui->textBrowser->setText(qstr);
+
+            //qDebug() << "2: " + temp2;
+        //qDebug() << "3: " + qstr;
 
 
-        ui->textBrowser->setText(textBrowser->setSource(QUrl(":/resources/resources/GreekTown.txt")));
-        ui->textBrowser->show();
+        //ui->textBrowser->setText(qstr);
+//            ui->textBrowser->show();
+
 
     }
     else
         qDebug() << "fail";
 
 
+
+}
+
+void MainWindow::on_listWidget_Athletics_itemClicked(QListWidgetItem *item)
+{
+    if (item->text().contains("Basketball (Men's)")) {
+
+        ui->webView_Scores->load(QUrl("http://www.uicflames.com/sports/m-baskbl/sched/ilch-m-baskbl-sched.html"));
+        ui->webView_News->load(QUrl("http://www.uicflames.com/sports/m-baskbl/ilch-m-baskbl-body.html"));
+    }
+
+
+    if (item->text().contains("Baseball (Men's)")) {
+
+
+
+
+
+    }
 
 }

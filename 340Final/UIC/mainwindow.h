@@ -63,6 +63,8 @@ private slots:
 
     void on_listWidget_Area_itemClicked(QListWidgetItem *item);
 
+    void on_listWidget_Athletics_itemClicked(QListWidgetItem *item);
+
 protected:
     //void hoverEnterEvent(QGraphicsSceneHoverEvent *event);
     //void hoverLeaveEvent(QGraphicsSceneHoverEvent *event);

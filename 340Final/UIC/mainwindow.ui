@@ -1821,7 +1821,7 @@ QTabWidget::tab-bar {
  }</string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="West">
      <attribute name="title">
@@ -2060,7 +2060,7 @@ border-style: solid;
        </property>
       </item>
      </widget>
-     <widget class="QTextBrowser" name="textBrowser">
+     <widget class="QGraphicsView" name="graphicsView_Rest">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -2069,20 +2069,7 @@ border-style: solid;
         <height>611</height>
        </rect>
       </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.Lucida Grande UI'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;test&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
      </widget>
-     <zorder>textBrowser</zorder>
-     <zorder>listWidget_Area</zorder>
-     <zorder>listWidget_Rest</zorder>
     </widget>
     <widget class="QWidget" name="Navigation">
      <property name="styleSheet">
@@ -2765,22 +2752,47 @@ QTabWidget::tab-bar {
 </string>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab_Scores">
       <attribute name="title">
-       <string>Scores</string>
+       <string>Scores/Schedule</string>
       </attribute>
-     </widget>
-     <widget class="QWidget" name="tab_Schedule">
-      <attribute name="title">
-       <string>Schedule</string>
-      </attribute>
+      <widget class="QWebView" name="webView_Scores">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>841</width>
+         <height>611</height>
+        </rect>
+       </property>
+       <property name="url">
+        <url>
+         <string>about:blank</string>
+        </url>
+       </property>
+      </widget>
      </widget>
      <widget class="QWidget" name="tab_News">
       <attribute name="title">
        <string>News</string>
       </attribute>
+      <widget class="QWebView" name="webView_News">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>851</width>
+         <height>611</height>
+        </rect>
+       </property>
+       <property name="url">
+        <url>
+         <string>about:blank</string>
+        </url>
+       </property>
+      </widget>
      </widget>
     </widget>
     <widget class="QListWidget" name="listWidget_Athletics">
@@ -2889,9 +2901,9 @@ background-color: rgb(204, 204, 204);
     <widget class="QFrame" name="f_filler">
      <property name="geometry">
       <rect>
-       <x>605</x>
+       <x>405</x>
        <y>0</y>
-       <width>501</width>
+       <width>721</width>
        <height>39</height>
       </rect>
      </property>
@@ -2916,15 +2928,15 @@ border-radius: 0;</string>
    <zorder>f_TopMenu</zorder>
    <zorder>f_Courses</zorder>
    <zorder>f_Safety</zorder>
-   <zorder>f_Athletics</zorder>
    <zorder>label_pix</zorder>
    <zorder>label_18</zorder>
    <zorder>f_BookS</zorder>
    <zorder>tabW_Directory</zorder>
    <zorder>f_Library</zorder>
    <zorder>tabW_CHousing</zorder>
-   <zorder>f_SideMenu</zorder>
    <zorder>tabW_Maps</zorder>
+   <zorder>f_Athletics</zorder>
+   <zorder>f_SideMenu</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

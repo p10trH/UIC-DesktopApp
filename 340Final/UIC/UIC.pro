@@ -17,13 +17,15 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     mypushbutton.cpp \
     myframe.cpp \
-    coursedata.cpp
+    coursedata.cpp \
+    locationLoader.cpp
 
 HEADERS  += mainwindow.h \
     ../mypushbutton.h \
     mypushbutton.h \
     myframe.h \
-    coursedata.h
+    coursedata.h \
+    locationLoader.h
 
 FORMS    += mainwindow.ui
 
