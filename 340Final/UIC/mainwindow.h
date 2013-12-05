@@ -55,6 +55,10 @@ private slots:
 
     void on_listWidget_Courses_itemClicked(QListWidgetItem *item);
 
+    void on_lineEdit_Books_returnPressed();
+
+    void on_B_LegendEast_clicked(bool checked);
+
 protected:
     //void hoverEnterEvent(QGraphicsSceneHoverEvent *event);
     //void hoverLeaveEvent(QGraphicsSceneHoverEvent *event);

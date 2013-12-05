@@ -33,6 +33,176 @@
         <file>resources/peterStyle.css</file>
         <file>resources/chiSkylineTinted.png</file>
         <file>resources/chiRedFarHalfTinted.png</file>
-        <file>resources/courseCat/Fixed/peterStyle.css</file>
+        <file>resources/courseCat/Academic Skills Program  (ASP).htm</file>
+        <file>resources/courseCat/Accounting  (ACTG).htm</file>
+        <file>resources/courseCat/African American Studies  (AAST).htm</file>
+        <file>resources/courseCat/Anatomy and Cell Biology  (ANAT).htm</file>
+        <file>resources/courseCat/Ancient Greek  (GKA).htm</file>
+        <file>resources/courseCat/Anthropology  (ANTH).htm</file>
+        <file>resources/courseCat/Arabic  (ARAB).htm</file>
+        <file>resources/courseCat/Archaeological Studies  (ARST).htm</file>
+        <file>resources/courseCat/Architecture  (ARCH).htm</file>
+        <file>resources/courseCat/Art  (ART).htm</file>
+        <file>resources/courseCat/Art History  (AH).htm</file>
+        <file>resources/courseCat/Asian American Studies  (ASAM).htm</file>
+        <file>resources/courseCat/Asian Studies  (ASST).htm</file>
+        <file>resources/courseCat/Associated Health Sciences  (AHS).htm</file>
+        <file>resources/courseCat/Basic Medical Sciences  (BMS).htm</file>
+        <file>resources/courseCat/Biochemistry and Molecular Genetics  (BCMG).htm</file>
+        <file>resources/courseCat/Bioengineering  (BIOE).htm</file>
+        <file>resources/courseCat/Biological Sciences  (BIOS).htm</file>
+        <file>resources/courseCat/Biomedical and Health Information Sciences  (BHIS).htm</file>
+        <file>resources/courseCat/Biomedical Visualization  (BVIS).htm</file>
+        <file>resources/courseCat/Biopharmaceutical Sciences  (BPS).htm</file>
+        <file>resources/courseCat/Biostatistics  (BSTT).htm</file>
+        <file>resources/courseCat/Business Administration  (BA).htm</file>
+        <file>resources/courseCat/Campus Courses  (CC).htm</file>
+        <file>resources/courseCat/Catholic Studies  (CST).htm</file>
+        <file>resources/courseCat/Central and Eastern European Studies  (CEES).htm</file>
+        <file>resources/courseCat/Chemical Engineering  (CHE).htm</file>
+        <file>resources/courseCat/Chemistry  (CHEM).htm</file>
+        <file>resources/courseCat/Chinese  (CHIN).htm</file>
+        <file>resources/courseCat/Civil and Materials Engineering  (CME).htm</file>
+        <file>resources/courseCat/Classics  (CL).htm</file>
+        <file>resources/courseCat/Communication  (COMM).htm</file>
+        <file>resources/courseCat/Community Health Sciences  (CHSC).htm</file>
+        <file>resources/courseCat/Computer Science  (CS).htm</file>
+        <file>resources/courseCat/Criminology, Law, and Justice  (CLJ).htm</file>
+        <file>resources/courseCat/Curriculum and Instruction  (CI).htm</file>
+        <file>resources/courseCat/Dental Administration  (DADM).htm</file>
+        <file>resources/courseCat/Dental Behavioral Science  (DBSC).htm</file>
+        <file>resources/courseCat/Design  (DES).htm</file>
+        <file>resources/courseCat/Disability and Human Development  (DHD).htm</file>
+        <file>resources/courseCat/Earth and Environmental Sciences  (EAES).htm</file>
+        <file>resources/courseCat/Economics  (ECON).htm</file>
+        <file>resources/courseCat/Education  (ED).htm</file>
+        <file>resources/courseCat/Educational Policy Studies  (EDPS).htm</file>
+        <file>resources/courseCat/Educational Psychology  (EPSY).htm</file>
+        <file>resources/courseCat/Electrical and Computer Engineering  (ECE).htm</file>
+        <file>resources/courseCat/Endodontics  (ENDO).htm</file>
+        <file>resources/courseCat/Energy Engineering  (ENER).htm</file>
+        <file>resources/courseCat/Engineering  (ENGR).htm</file>
+        <file>resources/courseCat/English  (ENGL).htm</file>
+        <file>resources/courseCat/English as a Second Language  (ESL).htm</file>
+        <file>resources/courseCat/Entrepreneurship  (ENTR).htm</file>
+        <file>resources/courseCat/Environmental and Occupational Health Sciences  (EOHS).htm</file>
+        <file>resources/courseCat/Epidemiology  (EPID).htm</file>
+        <file>resources/courseCat/Finance  (FIN).htm</file>
+        <file>resources/courseCat/French  (FR).htm</file>
+        <file>resources/courseCat/Gender and Women's Studies  (GWS).htm</file>
+        <file>resources/courseCat/Geography  (GEOG).htm</file>
+        <file>resources/courseCat/Germanic Studies  (GER).htm</file>
+        <file>resources/courseCat/Graduate College  (GC).htm</file>
+        <file>resources/courseCat/Guaranteed Admissions Medicine  (GAMD).htm</file>
+        <file>resources/courseCat/Health Information Management  (HIM).htm</file>
+        <file>resources/courseCat/Health Policy and Administration  (HPA).htm</file>
+        <file>resources/courseCat/Hebrew  (HEB).htm</file>
+        <file>resources/courseCat/Histology  (HSTL).htm</file>
+        <file>resources/courseCat/History  (HIST).htm</file>
+        <file>resources/courseCat/Honors College Courses  (HON).htm</file>
+        <file>resources/courseCat/Human Nutrition  (HN).htm</file>
+        <file>resources/courseCat/Industrial Engineering  (IE).htm</file>
+        <file>resources/courseCat/Information and Decision Sciences  (IDS).htm</file>
+        <file>resources/courseCat/Information Technology  (IT).htm</file>
+        <file>resources/courseCat/Interdisciplinary Public Health Sciences  (IPHS).htm</file>
+        <file>resources/courseCat/Interdisciplinary Studies in the Arts  (ISA).htm</file>
+        <file>resources/courseCat/International Studies  (INST).htm</file>
+        <file>resources/courseCat/Italian  (ITAL).htm</file>
+        <file>resources/courseCat/Japanese  (JPN).htm</file>
+        <file>resources/courseCat/Jewish Studies  (JST).htm</file>
+        <file>resources/courseCat/Kinesiology  (KN).htm</file>
+        <file>resources/courseCat/Latin  (LAT).htm</file>
+        <file>resources/courseCat/Latin American and Latino Studies  (LALS).htm</file>
+        <file>resources/courseCat/Learning Sciences  (LRSC).htm</file>
+        <file>resources/courseCat/Liberal Arts and Sciences  (LAS).htm</file>
+        <file>resources/courseCat/Library and Information Science  (LIB).htm</file>
+        <file>resources/courseCat/Linguistics  (LING).htm</file>
+        <file>resources/courseCat/Literatures, Cultural Studies, and Linguistics  (LCSL).htm</file>
+        <file>resources/courseCat/Lithuanian  (LITH).htm</file>
+        <file>resources/courseCat/Management  (MGMT).htm</file>
+        <file>resources/courseCat/Marketing  (MKTG).htm</file>
+        <file>resources/courseCat/Master of Business Administration  (MBA).htm</file>
+        <file>resources/courseCat/Master of Engineering  (MENG).htm</file>
+        <file>resources/courseCat/Mathematical Computer Science  (MCS).htm</file>
+        <file>resources/courseCat/Mathematics  (MATH).htm</file>
+        <file>resources/courseCat/Mathematics Teaching  (MTHT).htm</file>
+        <file>resources/courseCat/Mechanical Engineering  (ME).htm</file>
+        <file>resources/courseCat/Medical Biotechnology  (MBT).htm</file>
+        <file>resources/courseCat/Medical Education  (MHPE).htm</file>
+        <file>resources/courseCat/Medical Humanities  (MHUM).htm</file>
+        <file>resources/courseCat/Medicinal Chemistry  (MDCH).htm</file>
+        <file>resources/courseCat/Medicinal Chemistry and Pharmacognosy  (PMMP).htm</file>
+        <file>resources/courseCat/Microbiology and Immunology  (MIM).htm</file>
+        <file>resources/courseCat/Military Science  (MILS).htm</file>
+        <file>resources/courseCat/Modern Greek  (GKM).htm</file>
+        <file>resources/courseCat/Moving Image Arts  (MOVI).htm</file>
+        <file>resources/courseCat/Music  (MUS).htm</file>
+        <file>resources/courseCat/Native American Studies  (NAST).htm</file>
+        <file>resources/courseCat/Natural Sciences  (NATS).htm</file>
+        <file>resources/courseCat/Naval Science  (NS).htm</file>
+        <file>resources/courseCat/Neuroscience  (NEUS).htm</file>
+        <file>resources/courseCat/Nursing Core  (NURS).htm</file>
+        <file>resources/courseCat/Nursing Elective  (NUEL).htm</file>
+        <file>resources/courseCat/Nursing Practicum  (NUPR).htm</file>
+        <file>resources/courseCat/Nursing Specialty  (NUSP).htm</file>
+        <file>resources/courseCat/Occupational Therapy  (OT).htm</file>
+        <file>resources/courseCat/Oral Anatomy  (ORLA).htm</file>
+        <file>resources/courseCat/Oral and Maxillofacial Surgery  (OSUR).htm</file>
+        <file>resources/courseCat/Oral Medicine and Diagnostic Sciences  (OMDS).htm</file>
+        <file>resources/courseCat/Oral Sciences  (OSCI).htm</file>
+        <file>resources/courseCat/Orthodontics  (ORTD).htm</file>
+        <file>resources/courseCat/Pathology  (PATH).htm</file>
+        <file>resources/courseCat/Patient Safety Leadership  (PSL).htm</file>
+        <file>resources/courseCat/Pediatric Dentistry  (PEDD).htm</file>
+        <file>resources/courseCat/Periodontics  (PERI).htm</file>
+        <file>resources/courseCat/peterStyle.css</file>
+        <file>resources/courseCat/Pharmacognosy  (PMPG).htm</file>
+        <file>resources/courseCat/Pharmacology  (PCOL).htm</file>
+        <file>resources/courseCat/Pharmacy  (PHAR).htm</file>
+        <file>resources/courseCat/Pharmacy Practice  (PMPR).htm</file>
+        <file>resources/courseCat/Pharmacy Systems, Outcomes and Policy  (PSOP).htm</file>
+        <file>resources/courseCat/Philosophy  (PHIL).htm</file>
+        <file>resources/courseCat/Physical Therapy  (PT).htm</file>
+        <file>resources/courseCat/Physics  (PHYS).htm</file>
+        <file>resources/courseCat/Physiology and Biophysics  (PHYB).htm</file>
+        <file>resources/courseCat/Polish  (POL).htm</file>
+        <file>resources/courseCat/Political Science  (POLS).htm</file>
+        <file>resources/courseCat/Portuguese  (PORT).htm</file>
+        <file>resources/courseCat/Preclinical Medicine  (PRCL).htm</file>
+        <file>resources/courseCat/Prosthodontics  (PROS).htm</file>
+        <file>resources/courseCat/Psychology  (PSCH).htm</file>
+        <file>resources/courseCat/Public Administration  (PA).htm</file>
+        <file>resources/courseCat/Public Health  (PUBH).htm</file>
+        <file>resources/courseCat/Public Policy Analysis  (PPA).htm</file>
+        <file>resources/courseCat/Religious Studies  (RELS).htm</file>
+        <file>resources/courseCat/Restorative Dentistry  (REST).htm</file>
+        <file>resources/courseCat/Russian  (RUSS).htm</file>
+        <file>resources/courseCat/Slavic and Baltic Languages and Literatures  (SLAV).htm</file>
+        <file>resources/courseCat/Social Work  (SOCW).htm</file>
+        <file>resources/courseCat/Sociology  (SOC).htm</file>
+        <file>resources/courseCat/Spanish  (SPAN).htm</file>
+        <file>resources/courseCat/Special Education  (SPED).htm</file>
+        <file>resources/courseCat/Specialty Medicine  (SPEC).htm</file>
+        <file>resources/courseCat/Statistics  (STAT).htm</file>
+        <file>resources/courseCat/Study Abroad  (SABR).htm</file>
+        <file>resources/courseCat/Surgery  (SURG).htm</file>
+        <file>resources/courseCat/Theatre  (THTR).htm</file>
+        <file>resources/courseCat/Urban and Public Affairs  (UPA).htm</file>
+        <file>resources/courseCat/Urban Planning and Policy  (UPP).htm</file>
+        <file>resources/courseCat/Clerkship - Medicine  (CLER).htm</file>
+        <file>resources/courseCat/Clerkship Electives-Chicago  (CELE).htm</file>
+        <file>resources/courseCat/Clerkship Electives-Peoria  (PELE).htm</file>
+        <file>resources/courseCat/Clerkship Electives-Rockford  (RELE).htm</file>
+        <file>resources/courseCat/Clerkship Electives-Urbana  (UELE).htm</file>
+        <file>resources/courseCat/Dentistry - Applied Oral and Behavioral Sciences  (DAOB).htm</file>
+        <file>resources/courseCat/Dentistry - Biomedical and Clinical Sciences  (DBCS).htm</file>
+        <file>resources/courseCat/Dentistry - Community Learning Experience  (DCLE).htm</file>
+        <file>resources/courseCat/Dentistry - Oral:Systemic Issues  (DOSI).htm</file>
+        <file>resources/courseCat/Dentistry - Oral:Systemic Topics  (DOST).htm</file>
+        <file>resources/courseCat/Graduate College - Life Sciences  (GCLS).htm</file>
+        <file>resources/courseCat/Hindi-Urdu  (HNUR).htm</file>
+        <file>resources/UICskyline.png</file>
+        <file>resources/eastCampusLegend.png</file>
+        <file>resources/eastCampus.png</file>
     </qresource>
 </RCC>

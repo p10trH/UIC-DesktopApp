@@ -11,6 +11,8 @@
 #include <QtWidgets>
 #include <QtNetwork>
 #include <QtWebKitWidgets>
+#include <QGraphicsScene>
+#include <QGraphicsView>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -20,6 +22,9 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->webView->load(QUrl("http://bus.uic.edu/"));
     ui->webView_Interactive->load(QUrl("http://www.uic.edu/uic/docs/UICVisitorMapMCwest.pdf"));
+
+    ui->webView_Amazon->load(QUrl("http://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Dstripbooks"));
+    ui->webView_BStore->load(QUrl("http://www.uicbookstore.org/courselistbuilder.aspx?2"));
 
    // QWebView *view = new QWebView();
    //     view->load(QUrl("http://cdn.nucloud.com/maps/124/index.html"));
@@ -42,20 +47,39 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     //imageLabel = new QLabel;
-    ui->label_EastMap->setBackgroundRole(QPalette::Base);
-    ui->label_EastMap->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
-    ui->label_EastMap->setScaledContents(true);
+    //ui->label_EastMap->setBackgroundRole(QPalette::Base);
+    //ui->label_EastMap->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
+    //ui->label_EastMap->setScaledContents(true);
 
     //scrollArea = new QScrollArea;
-    ui->scrollArea->setBackgroundRole(QPalette::Dark);
+    //ui->scrollArea->setBackgroundRole(QPalette::Dark);
+
+    QGraphicsScene *scene = new QGraphicsScene();
+    ui->gView_LegendEast->setScene(scene);
+    QGraphicsPixmapItem* item = new QGraphicsPixmapItem(QPixmap(":/resources/resources/eastCampusLegend.png"));
+    scene->addItem(item);
+
+    QGraphicsScene *scene2 = new QGraphicsScene();
+    ui->gView_East->setScene(scene2);
+    QGraphicsPixmapItem* item2 = new QGraphicsPixmapItem(QPixmap(":/resources/resources/eastCampus.png"));
+    scene2->addItem(item2);
+
+     //ui->graphicsView->show();
+
+
+
+       // ui->graphicsView->    (&scene);
+        //QGraphicsPixmapItem item(QPixmap(":/resources/resources/img-top-1.jpg"));
+        //scene.addItem(&item);
+        //view.show();
 
 
 
     //ui->scrollArea->setWidget(ui->label_EastMap);
     //ui->setCentralWidget(scrollArea);
 
-    QPixmap pix1 ( ":/resources/resources/img-top-1.jpg");
-    ui->label_EastMap->setPixmap(pix1);
+    //QPixmap pix1 ( ":/resources/resources/img-top-1.jpg");
+    //ui->label_EastMap->setPixmap(pix1);
 
     //createActions();
     //createMenus();
@@ -84,6 +108,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->listWidget_Area->setAttribute(Qt::WA_MacShowFocusRect, false);
     ui->listWidget_Rest->setAttribute(Qt::WA_MacShowFocusRect, false);
+
+    ui->lineEdit_Books->setAttribute(Qt::WA_MacShowFocusRect, false);
 
    // ui->b_Maps->installEventFilter();
 
@@ -456,7 +482,7 @@ void MainWindow::on_lineEdit_Courses_textChanged(const QString &arg1)
     int listWidgetSize = ui->listWidget_Courses->count();
 
     for (int k1 = 0; k1 < listWidgetSize; k1++)
-        if (ui->listWidget_Courses->item(k1)->text().toLower().startsWith(arg1.toLower()))
+        if (ui->listWidget_Courses->item(k1)->text().toLower().contains(arg1.toLower()))
             ui->listWidget_Courses->item(k1)->setHidden(false);
         else
             ui->listWidget_Courses->item(k1)->setHidden(true);
@@ -473,23 +499,32 @@ void MainWindow::on_listWidget_Courses_itemClicked(QListWidgetItem *item)
 
     QString temp = item->text();
 
-    qDebug() << "" + temp;
-
-    QString url = "qrc:///resources/resources/courseCat/Fixed/" + temp + ".htm";
-
-
-    qDebug() << "" + url;
+    QString url = "qrc:///resources/resources/courseCat/" + temp + ".htm";
 
     ui->webView_Courses->load(QUrl(url));
+}
 
-    //ui->webView_Courses->load(QUrl("qrc:///resources/resources/courseCat/Fixed/Academic Skills Program  (ASP).htm"));
+void MainWindow::on_lineEdit_Books_returnPressed()
+{
 
+    QString temp = ui->lineEdit_Books->text();
 
+    temp = temp.replace(" ", "+");
 
+    QString amazon = "http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&field-keywords=" + temp;
 
+    QString bookStore = "http://www.uicbookstore.org/search.aspx?searchterm=" + temp;
 
+     ui->webView_Amazon->load(QUrl(amazon));
+     ui->webView_BStore->load(QUrl(bookStore));
 
+}
 
-
+void MainWindow::on_B_LegendEast_clicked(bool checked)
+{
+    if (checked == true)
+         ui->gView_LegendEast->hide();
+    else
+        ui->gView_LegendEast->show();
 
 }

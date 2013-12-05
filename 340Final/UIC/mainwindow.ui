@@ -32,7 +32,7 @@ MainWindow {
 	background-color: rgb(255, 255, 255);
     /*image: url(:/resources/resources/img-top-1-cut.jpg);*/
 /*image: url(:/resources/resources/chiRedSkyLine1.png);*/
-image: url(:/resources/resources/chiRedFarHalfTinted.png);
+image: url(:/resources/resources/UICskyline.png);
 
 }
 
@@ -99,7 +99,7 @@ QStatusBar::item {
 }
 
 
-QComboBox, QLineEdit, QSpinBox, QTextEdit, QListView {
+QLineEdit, QSpinBox, QTextEdit, QListView {
 
 
     
@@ -123,28 +123,38 @@ QListView::item:hover {
 }
 
 
-
+/*
  QComboBox {
 
-	 font: 15pt &quot;Arial&quot;;
+	 font: 11pt &quot;Arial&quot;;
      border: 0px solid red;
      border-radius: 0px;
      padding: 0px 0px 0px 4px;
-    /* min-width: 6em;*/
+    /* min-width: 6em;
+
+min -height:100em;
+
+selection-color: rgb(255, 255, 255);
+    background-color: rgb(204, 204, 204);
+    color: rgb(0, 0, 186);
+    selection-background-color: rgb(255, 0, 0);
+
  }
 
+/*
 QComboBox::drop-down {
     
+min -height:100em;
 
      border-left-width: 1px;
      border-left-color: white;
-     border-left-style: solid; /* just a single line */
-     border-top-right-radius: 0px; /* same radius as the QComboBox */
+     border-left-style: solid; /* just a single line 
+     border-top-right-radius: 0px; /* same radius as the QComboBox 
      border-bottom-right-radius: 0px;
  }
 
 
-
+*/
 
 QListView {
     show-decoration-selected: 1;
@@ -247,7 +257,15 @@ font: 16pt &quot;Arial&quot;;
  QTabBar::tab:!selected {
      margin-top: 0px; /* make non-selected tabs look smaller */
  }
-</string>
+
+
+QGraphicsView {
+border-width: 0px;
+    border-style: solid;
+    border-radius: 0;
+    
+
+}</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <property name="styleSheet">
@@ -449,7 +467,7 @@ background-color: rgb(204, 204, 204);
      </item>
      <item>
       <property name="text">
-       <string>Biomedical Visualization  (BVIS) </string>
+       <string>Biomedical Visualization  (BVIS)</string>
       </property>
      </item>
      <item>
@@ -754,7 +772,7 @@ background-color: rgb(204, 204, 204);
      </item>
      <item>
       <property name="text">
-       <string>Industrial Engineering  (IE) </string>
+       <string>Industrial Engineering  (IE)</string>
       </property>
      </item>
      <item>
@@ -779,7 +797,7 @@ background-color: rgb(204, 204, 204);
      </item>
      <item>
       <property name="text">
-       <string>International Studies  (INST) </string>
+       <string>International Studies  (INST)</string>
       </property>
      </item>
      <item>
@@ -1004,7 +1022,7 @@ background-color: rgb(204, 204, 204);
      </item>
      <item>
       <property name="text">
-       <string>Pathology  (PATH) </string>
+       <string>Pathology  (PATH)</string>
       </property>
      </item>
      <item>
@@ -1230,10 +1248,10 @@ color: rgb(255, 255, 255);</string>
     <widget class="QWebView" name="webView_Courses">
      <property name="geometry">
       <rect>
-       <x>49</x>
-       <y>69</y>
-       <width>741</width>
-       <height>511</height>
+       <x>9</x>
+       <y>5</y>
+       <width>831</width>
+       <height>605</height>
       </rect>
      </property>
      <property name="url">
@@ -1270,17 +1288,20 @@ border-radius: 0;</string>
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>38</y>
+      <y>0</y>
       <width>1101</width>
-      <height>621</height>
+      <height>651</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-width: 0px;
-background-color: rgb(255, 255, 255);
+     <string notr="true">QFrame {
+
+border-width: 0px;
+/*background-color: rgb(255, 255, 255);*/
 border-color: rgba(255, 0, 0, 191);
 border-style: solid;
-border-radius: 0;</string>
+border-radius: 0;
+}</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -1288,6 +1309,94 @@ border-radius: 0;</string>
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <widget class="QWebView" name="webView_BStore">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>1101</width>
+       <height>310</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="url">
+      <url>
+       <string>about:blank</string>
+      </url>
+     </property>
+    </widget>
+    <widget class="QWebView" name="webView_Amazon">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>350</y>
+       <width>1101</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="url">
+      <url>
+       <string>about:blank</string>
+      </url>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>350</y>
+       <width>1121</width>
+       <height>6</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Search_2">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>0</y>
+       <width>111</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);
+border-width: 0px;
+font: 16pt &quot;Arial&quot;;</string>
+     </property>
+     <property name="text">
+      <string>           Search :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Books">
+     <property name="geometry">
+      <rect>
+       <x>118</x>
+       <y>0</y>
+       <width>291</width>
+       <height>39</height>
+      </rect>
+     </property>
+    </widget>
+    <zorder>webView_BStore</zorder>
+    <zorder>webView_Amazon</zorder>
+    <zorder>line</zorder>
+    <zorder>label_Search_2</zorder>
+    <zorder>lineEdit_Books</zorder>
+    <zorder>tabW_Maps</zorder>
+    <zorder>tabW_Maps</zorder>
    </widget>
    <widget class="QFrame" name="f_Safety">
     <property name="geometry">
@@ -1687,53 +1796,114 @@ QTabWidget::tab-bar {
  }</string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="West">
      <attribute name="title">
       <string>West Campus</string>
      </attribute>
+     <widget class="QPushButton" name="B_LegendWest">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>560</y>
+        <width>181</width>
+        <height>39</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);
+
+}
+QPushButton:hover {
+	background-color: rgb(204, 204, 204);
+	color: rgb(0, 0, 186);
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Show/Hide Legend</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="gView_East_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>612</height>
+       </rect>
+      </property>
+     </widget>
+     <zorder>gView_East_2</zorder>
+     <zorder>B_LegendWest</zorder>
     </widget>
     <widget class="QWidget" name="East">
      <attribute name="title">
       <string>East Campus</string>
      </attribute>
-     <widget class="QScrollArea" name="scrollArea">
+     <widget class="QGraphicsView" name="gView_LegendEast">
       <property name="geometry">
        <rect>
-        <x>140</x>
-        <y>90</y>
-        <width>621</width>
-        <height>301</height>
+        <x>0</x>
+        <y>0</y>
+        <width>400</width>
+        <height>611</height>
        </rect>
       </property>
-      <property name="widgetResizable">
+     </widget>
+     <widget class="QPushButton" name="B_LegendEast">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>560</y>
+        <width>181</width>
+        <height>39</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);
+
+}
+QPushButton:hover {
+	background-color: rgb(204, 204, 204);
+	color: rgb(0, 0, 186);
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Show/Hide Legend</string>
+      </property>
+      <property name="checkable">
        <bool>true</bool>
       </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>619</width>
-         <height>299</height>
-        </rect>
-       </property>
-       <widget class="QLabel" name="label_EastMap">
-        <property name="geometry">
-         <rect>
-          <x>-60</x>
-          <y>-40</y>
-          <width>841</width>
-          <height>461</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </widget>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
      </widget>
+     <widget class="QGraphicsView" name="gView_East">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>612</height>
+       </rect>
+      </property>
+     </widget>
+     <zorder>gView_East</zorder>
+     <zorder>gView_LegendEast</zorder>
+     <zorder>B_LegendEast</zorder>
     </widget>
     <widget class="QWidget" name="Interactive">
      <attribute name="title">
@@ -1824,7 +1994,7 @@ border-style: solid;
         <string>New Item</string>
        </property>
        <property name="background">
-        <brush brushstyle="NoBrush">
+        <brush brushstyle="SolidPattern">
          <color alpha="255">
           <red>0</red>
           <green>255</green>
@@ -2581,18 +2751,18 @@ border-radius: 0;</string>
     <zorder>f_filler</zorder>
     <zorder>listWidget_Athletics</zorder>
    </widget>
-   <zorder>f_BookS</zorder>
+   <zorder>f_TopMenu</zorder>
+   <zorder>f_Courses</zorder>
+   <zorder>tabW_CHousing</zorder>
    <zorder>f_Library</zorder>
    <zorder>f_Safety</zorder>
    <zorder>f_Athletics</zorder>
-   <zorder>f_TopMenu</zorder>
    <zorder>tabW_Directory</zorder>
-   <zorder>tabW_CHousing</zorder>
    <zorder>label_pix</zorder>
    <zorder>label_18</zorder>
+   <zorder>f_BookS</zorder>
    <zorder>f_SideMenu</zorder>
    <zorder>tabW_Maps</zorder>
-   <zorder>f_Courses</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
