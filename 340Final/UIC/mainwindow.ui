@@ -2049,8 +2049,8 @@ QTabBar::tab {
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>1101</width>
-           <height>543</height>
+           <width>100</width>
+           <height>30</height>
           </rect>
          </property>
          <property name="styleSheet">
@@ -2080,8 +2080,8 @@ QTabBar::tab {
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>1101</width>
-           <height>543</height>
+           <width>100</width>
+           <height>30</height>
           </rect>
          </property>
          <attribute name="label">
