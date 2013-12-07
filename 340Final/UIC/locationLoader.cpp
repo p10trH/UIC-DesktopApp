@@ -1,28 +1,19 @@
-#include "locationLoader.h"
+#include "locationloader.h"
 
 locationLoader::locationLoader()
 {
-    //ctor
 }
 
-locationLoader::~locationLoader()
-{
-    //dtor
-}
-string locationLoader::extractName(string input)
-{
-    return input.substr(3,input.size()-6);
-}
-int locationLoader::extractOTime(string input)
+int locationLoader::extractOTime(QString input)
 {
     int output= 0;
     int middle;
-    if(input.find(":") != std::string::npos)
+    if(input.indexOf(":") != -1)
     {
-        middle = input.find(":");
-        output += (input.at(middle + 2)-48);
-        output += (input.at(middle + 1)-48)*10;
-        output += (input.at(middle - 1)-48)*100;
+        middle = input.indexOf(":");
+        output += (input.at(middle + 2).digitValue());
+        output += (input.at(middle + 1).digitValue())*10;
+        output += (input.at(middle - 1).digitValue())*100;
         if(input.at(middle - 2) == '1'){
             output += 1000;
         }
@@ -42,21 +33,25 @@ int locationLoader::extractOTime(string input)
         return 9999;
     }
 }
-int locationLoader::extractCTime(string input)
+int locationLoader::extractCTime(QString input)
 {
     int output= 0;
     int middle;
-    if(input.rfind(":") != std::string::npos)
+    if(input.indexOf(":") != -1)
     {
-        middle = input.rfind(":");
-        output += (input.at(middle + 2)-48);
-        output += (input.at(middle + 1)-48)*10;
-        output += (input.at(middle - 1)-48)*100;
+        middle = input.lastIndexOf(":");
+        output += (input.at(middle + 2).digitValue());
+        output += (input.at(middle + 1).digitValue())*10;
+        output += (input.at(middle - 1).digitValue())*100;
         if(input.at(middle - 2) == '1'){
             output += 1000;
         }
         if(input.at(middle+4) == 'p'){
-            output += 1200;
+            if(input.at(middle - 2) == '1' && input.at(middle - 1) == '2'){
+                //its 12pm
+            } else {
+                output += 1200;
+            }
         }
         if(output >= 1200 && input.at(middle+4) == 'a')
         {
@@ -67,49 +62,56 @@ int locationLoader::extractCTime(string input)
         return 9999;
     }
 }
-string locationLoader::locationLoad(char* filename, int option)
+
+QString locationLoader::locationLoad(QString filename, int option)
 {
-    string infoOut = "";
+    QString infoOut = "";
     /*
     cout << "< 1. Get all retaurant info" << endl;
     */
-    string line;
-    string name;
-    string adress1;
-    string adress2;
-    string phone;
-    string hoursMon;
-    string hoursTue;
-    string hoursWed;
-    string hoursThr;
-    string hoursFri;
-    string hoursSat;
-    string hoursSun;
-    string menuFile;
-    string hashTags;
-    ifstream file;
-    string menuSelectName;
+    QString line;
+    QString name;
+    QString adress1;
+    QString adress2;
+    QString phone;
+    QString hoursMon;
+    QString hoursTue;
+    QString hoursWed;
+    QString hoursThr;
+    QString hoursFri;
+    QString hoursSat;
+    QString hoursSun;
+    QString menuFile;
+    QString hashTags;
+
+    QFile mFile(filename);
+    if(!mFile.open(QFile::ReadOnly | QFile::Text)){
+        qDebug() << "could not open file for read";
+        return "";
+    }
+    QTextStream in(&mFile);
+
+    /*string menuSelectName;
     if(option == 3){
         cout << "What menu would you like to see?" << endl;
         //cin >> menuSelectName;
         menuSelectName = "Primos Chicago Pizza";
-    }
-    file.open(filename);
-    while(getline(file,name))
-    {
-        getline(file,adress1);
-        getline(file,adress2);
-        getline(file,phone);
-        getline(file,hoursMon);
-        getline(file,hoursTue);
-        getline(file,hoursWed);
-        getline(file,hoursThr);
-        getline(file,hoursFri);
-        getline(file,hoursSat);
-        getline(file,hoursSun);
-        getline(file,menuFile);
-        getline(file,hashTags);
-        getline(file, line);
+    }*/
+    while(!in.atEnd()){
+        name = in.readLine();
+        adress1 = in.readLine();
+        adress2 = in.readLine();
+        phone = in.readLine();
+        hoursMon = in.readLine();
+        hoursTue = in.readLine();
+        hoursWed = in.readLine();
+        hoursThr = in.readLine();
+        hoursFri = in.readLine();
+        hoursSat = in.readLine();
+        hoursSun = in.readLine();
+        menuFile = in.readLine();
+        hashTags = in.readLine();
+        line = in.readLine();
         //name = extractName(name);
 
         if(option == 1){
@@ -127,8 +129,8 @@ string locationLoader::locationLoad(char* filename, int option)
             infoOut += hashTags + "\n";
             infoOut += "\n";
         } else if (option == 2) {
-            string hoursOnDay = hoursSun;
-            int currentTime = 1350;
+            QString hoursOnDay = hoursFri;
+            int currentTime = 1500;
 
             int openTime = extractOTime(hoursOnDay);
             int closeTime = extractCTime(hoursOnDay);
@@ -138,12 +140,11 @@ string locationLoader::locationLoad(char* filename, int option)
             } else if (closeTime < openTime && openTime < currentTime) {
                 //cout << name << endl;
                 infoOut += name + "\n";
-            } else if (hoursOnDay.find("Open 24 hours") != std::string::npos) {
+            } else if (hoursOnDay.indexOf("Open 24 hours") != -1) {
                 //cout << name << endl;
                 infoOut += name + "\n";
             }
-        }
-       /* else if (option == 3) {
+        }/* else if (option == 3) {
             if(name.find(menuSelectName) != std::string::npos)
             {
                 menuFile = "Locations/Menus/" + menuFile.substr(1);
@@ -159,8 +160,7 @@ string locationLoader::locationLoad(char* filename, int option)
                 delete[] mF;
                 mL.~menuLoader();
             }
-        }
-        */
+        } */
         //TIME LOOP
         /*
         int i;
@@ -192,6 +192,6 @@ string locationLoader::locationLoad(char* filename, int option)
         }
         */
     }
-    file.close();
+    mFile.close();
     return infoOut;
 }

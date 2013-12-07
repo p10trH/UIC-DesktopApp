@@ -1717,7 +1717,7 @@ QTabWidget::tab-bar {
 }</string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="West">
      <property name="styleSheet">
@@ -1978,6 +1978,31 @@ border-style: solid;
        </rect>
       </property>
      </widget>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>0</y>
+        <width>681</width>
+        <height>611</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="textBrowser_2">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>94</y>
+        <width>261</width>
+        <height>521</height>
+       </rect>
+      </property>
+     </widget>
+     <zorder>listWidget_Rest</zorder>
+     <zorder>graphicsView_Rest</zorder>
+     <zorder>listWidget_Area</zorder>
+     <zorder>textBrowser</zorder>
+     <zorder>textBrowser_2</zorder>
     </widget>
     <widget class="QWidget" name="Navigation">
      <property name="styleSheet">
@@ -2049,8 +2074,8 @@ QTabBar::tab {
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>100</width>
-           <height>30</height>
+           <width>1101</width>
+           <height>543</height>
           </rect>
          </property>
          <property name="styleSheet">
@@ -2829,6 +2854,7 @@ QTabWidget::tab-bar {
     <zorder>listWidget_Athletics</zorder>
    </widget>
    <zorder>f_TopMenu</zorder>
+   <zorder>tabW_Maps</zorder>
    <zorder>f_Courses</zorder>
    <zorder>f_Safety</zorder>
    <zorder>label_pix</zorder>
@@ -2837,7 +2863,6 @@ QTabWidget::tab-bar {
    <zorder>tabW_Directory</zorder>
    <zorder>f_Library</zorder>
    <zorder>tabW_CHousing</zorder>
-   <zorder>tabW_Maps</zorder>
    <zorder>f_Athletics</zorder>
    <zorder>f_SideMenu</zorder>
   </widget>

@@ -70,7 +70,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QGraphicsScene *scene5 = new QGraphicsScene();
     ui->graphicsView_Rest->setScene(scene5);
     QGraphicsPixmapItem* item5 = new QGraphicsPixmapItem(QPixmap(":/resources/resources/restaurantsCampus.png"));
-    scene5->addItem(item5);
+    //scene5->addItem(item5);
 
     hideWidgets();      // widgets overlay.. when app starts, hide all widgets and wait for user
     setMenuIcons();     // set the menu icons on the push buttons
@@ -431,41 +431,31 @@ void MainWindow::on_B_LegendWest_clicked(bool checked) {    // west campus hide/
         ui->gView_LegendWest->show();   // show legend
 }
 
-void MainWindow::on_listWidget_Area_itemClicked(QListWidgetItem *item)
-{
+void MainWindow::on_listWidget_Area_itemClicked(QListWidgetItem *item) {
 
     QString temp = item->text();
 
+    locationLoader lL;
 
-    if (temp.contains("East Campus")) {
+    if (temp.contains("Greek Town")) {
 
-     //   ui->textBrowser->clear();
-       // ui->textBrowser->setText ("jhdshhdchbcbkckbdckjdbdckbdkjcbdcdhcbdcbdckdcbckdbkc");
+        ui->textBrowser->clear();
+        ui->textBrowser_2->clear();
 
+        ui->textBrowser->setText (lL.locationLoad(":/resources/resources/GreekTown.txt",1));
 
-
-
+        ui->textBrowser_2->setText ("OPEN NOW");
+        ui->textBrowser_2->append (lL.locationLoad(":/resources/resources/GreekTown.txt",2));
     }
-    else if (temp.contains("Greek Town")) {
-    //    ui->textBrowser->clear();
-        //locationLoader lL;
-            //QString temp2 = "" +
-        // std::string str  =      lL.locationLoad("qrc:/resources/resources/GreekTown.txt",1);
+    else if (temp.contains("East Campus")) {
 
- //         ui->textBrowser->setSource(QUrl("qrc:/resources/resources/GreekTown.txt"));
+        ui->textBrowser->clear();
+        ui->textBrowser_2->clear();
 
-            //QString temp3 = temp2.c_str();
+        ui->textBrowser->setText (lL.locationLoad(":/resources/resources/EastCampus.txt",1));
 
-       // QString qstr = QString::fromStdString(str);
-       // ui->textBrowser->setText(qstr);
-
-            //qDebug() << "2: " + temp2;
-        //qDebug() << "3: " + qstr;
-
-
-        //ui->textBrowser->setText(qstr);
-//            ui->textBrowser->show();
-
+        ui->textBrowser_2->setText ("OPEN NOW");
+        ui->textBrowser_2->append (lL.locationLoad(":/resources/resources/EastCampus.txt",2));
 
     }
     else

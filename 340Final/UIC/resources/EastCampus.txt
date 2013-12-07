@@ -1,0 +1,111 @@
+***East Cafe Dining***
+Student Center East
+SCE
+000
+Monday		7:30 am - 12:00 am
+Tuesday		7:30 am - 12:00 am
+Wednesday	7:30 am - 12:00 am
+Thursday	7:30 am - 12:00 am
+Friday		7:30 am - 8:00 pm
+Saturday	9:30 am - 8:00 pm
+Sunday		9:30 am - 12:00 am
+@
+#buffet
+
+***Cafe Descartes***
+Student Center East
+SCE
+000
+Monday		7:00 am - 6:00 pm
+Tuesday		7:00 am - 6:00 pm
+Wednesday	7:00 am - 6:00 pm
+Thursday	7:00 am - 6:00 pm
+Friday		7:00 am - 5:00 pm
+Saturday	Closed
+Sunday		Closed
+@
+#cafe
+
+***Dunkin Dounuts / Baskin Robbins***
+Student Center East
+SCE
+000
+Monday		6:00 am - 9:00 pm
+Tuesday		6:00 am - 9:00 pm
+Wednesday	6:00 am - 9:00 pm
+Thursday	6:00 am - 9:00 pm
+Friday		6:00 am - 9:00 pm
+Saturday	8:00 am - 3:00 pm
+Sunday		Closed
+@
+#cafe
+
+***Wendys***
+750 S Halsted St
+Chicago, IL 60607
+(312) 996-6438
+Monday		9:00 am - 9:00 pm
+Tuesday		9:00 am - 9:00 pm
+Wednesday	9:00 am - 9:00 pm
+Thursday	9:00 am - 9:00 pm
+Friday		9:00 am - 9:00 pm
+Saturday	9:00 am - 9:00 pm
+Sunday		9:00 am - 9:00 pm
+@
+#burgers
+
+***Cafe Descartes***
+750 S Halsted St
+Chicago, IL 60607
+(773) 442-5353
+Monday		7:00 am - 6:30 pm
+Tuesday		7:00 am - 6:30 pm
+Wednesday	7:00 am - 6:30 pm
+Thursday	7:00 am - 6:30 pm
+Friday		7:00 am - 6:30 pm
+Saturday	7:00 am - 6:30 pm
+Sunday		7:00 am - 6:30 pm
+@
+#cafe
+
+***Burrito Bravo***
+Student Center East
+SCE
+000
+Monday		10:00 am - 9:00 pm
+Tuesday		10:00 am - 9:00 pm
+Wednesday	10:00 am - 9:00 pm
+Thursday	10:00 am - 9:00 pm
+Friday		10:00 am - 4:00 pm
+Saturday	Closed
+Sunday		Closed
+@
+#cafe
+
+***Sbarro***
+Student Center East
+SCE
+000
+Monday		10:00 am - 9:00 pm
+Tuesday		10:00 am - 9:00 pm
+Wednesday	10:00 am - 9:00 pm
+Thursday	10:00 am - 9:00 pm
+Friday		10:00 am - 4:00 pm
+Saturday	Closed
+Sunday		Closed
+@
+#cafe
+
+***Subway***
+Student Center East
+SCE
+000
+Monday		10:00 am - 9:00 pm
+Tuesday		10:00 am - 9:00 pm
+Wednesday	10:00 am - 9:00 pm
+Thursday	10:00 am - 9:00 pm
+Friday		10:00 am - 4:00 pm
+Saturday	Closed
+Sunday		Closed
+@
+#cafe

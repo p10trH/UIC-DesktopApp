@@ -1,23 +1,21 @@
 #ifndef LOCATIONLOADER_H
 #define LOCATIONLOADER_H
-#include <iostream>
-#include <string>
-#include <fstream>
-//#include "../include/menuLoader.h"
 
-using namespace::std;
+#include <QCoreApplication>
+#include <QFile>
+#include <QString>
+#include <QDebug>
+#include <QTextStream>
+#include <QResource>
+#include <QIODevice>
 
 class locationLoader
 {
-    public:
-        locationLoader();
-        virtual ~locationLoader();
-        string locationLoad(char* filename, int option);
-        int extractOTime(string input);
-        int extractCTime(string input);
-        string extractName(string input);
-    protected:
-    private:
+public:
+    locationLoader();
+    int extractOTime(QString input);
+    int extractCTime(QString input);
+    QString locationLoad(QString filename, int option);
 };
 
 #endif // LOCATIONLOADER_H

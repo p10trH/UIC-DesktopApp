@@ -208,5 +208,6 @@
         <file>resources/westCampusLegend.png</file>
         <file>resources/GreekTown.txt</file>
         <file>resources/restaurantsCampus.png</file>
+        <file>resources/EastCampus.txt</file>
     </qresource>
 </RCC>
