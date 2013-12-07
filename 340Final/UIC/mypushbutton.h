@@ -5,8 +5,8 @@
 #include <QGraphicsDropShadowEffect>
 #include <QApplication>
 
-class MyPushButton : public QPushButton
-{
+class MyPushButton : public QPushButton {
+
     Q_OBJECT
 public:
     MyPushButton(QWidget *parent = 0);

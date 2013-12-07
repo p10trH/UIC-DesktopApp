@@ -3,8 +3,8 @@
 
 #include <QFrame>
 
-class MyFrame : public QFrame
-{
+class MyFrame : public QFrame {
+
 public:
     MyFrame(QWidget *parent = 0);
 

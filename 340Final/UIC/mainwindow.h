@@ -5,20 +5,17 @@
 #include <QListWidget>
 #include <QListWidgetItem>
 
-
 namespace Ui {
 class MainWindow;
 }
 
-class MainWindow : public QMainWindow
-{
+class MainWindow : public QMainWindow {
+
     Q_OBJECT
 
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-
-
 
 private slots:
     void on_b_Home_clicked();
@@ -35,41 +32,19 @@ private slots:
 
     void hideWidgets();
     void setMenuIcons();
-    void slideShow();
-    void delay();
-
-    void mouseMoveEvent(QMouseEvent *e);
-
-   // bool eventFilter(QEvent *event);
-
-    //void on_pushButton_3_clicked();
-
-
-
-    //void on_lineEdit_returnPressed();
 
     void on_lineEdit_Courses_textChanged(const QString &arg1);
-
     void on_listWidget_Courses_itemClicked();
-
-
     void on_listWidget_Courses_itemClicked(QListWidgetItem *item);
 
     void on_lineEdit_Books_returnPressed();
 
     void on_B_LegendEast_clicked(bool checked);
-
     void on_B_LegendWest_clicked(bool checked);
 
     void on_listWidget_Area_itemClicked(QListWidgetItem *item);
 
     void on_listWidget_Athletics_itemClicked(QListWidgetItem *item);
-
-protected:
-    //void hoverEnterEvent(QGraphicsSceneHoverEvent *event);
-    //void hoverLeaveEvent(QGraphicsSceneHoverEvent *event);
-
-
 
 private:
     Ui::MainWindow *ui;

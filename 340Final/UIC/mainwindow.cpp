@@ -1,8 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-//#include <QTime>
-//#include <QCoreApplication>
-//#include <QEventLoop>
 #include <QMovie>
 #include <QPropertyAnimation>
 #include <QHoverEvent>
@@ -13,7 +10,7 @@
 #include <QtWebKitWidgets>
 #include <QGraphicsScene>
 #include <QGraphicsView>
- #include <QTextBrowser>
+#include <QTextBrowser>
 
 #include "locationLoader.h"
 
@@ -23,9 +20,9 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    ui->webView->load(QUrl("http://bus.uic.edu/"));
-    //ui->webView_Interactive->load(QUrl("http://www.uic.edu/uic/docs/UICVisitorMapMCwest.pdf"));
+    // pre-load web content for faster experience
 
+    ui->webView->load(QUrl("http://bus.uic.edu/"));
     ui->webView_Amazon->load(QUrl("http://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Dstripbooks"));
     ui->webView_BStore->load(QUrl("http://www.uicbookstore.org/courselistbuilder.aspx?2"));
     ui->webView_Prof->load(QUrl("http://www.uic.edu/htbin/ldap_search/index.pl"));
@@ -36,96 +33,55 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->webView_Cta->load(QUrl("http://ctabustracker.com/bustime/map/displaymap.jsp"));
     ui->webView_Train->load(QUrl("http://www.transitchicago.com/traintrackermap/"));
 
-
-   // QWebView *view = new QWebView();
-   //     view->load(QUrl("http://cdn.nucloud.com/maps/124/index.html"));
-   //     view->show();
-    //connect(view, SIGNAL(loadFinished(bool)), SLOT(adjustLocation()));
-    //connect(view, SIGNAL(titleChanged(QString)), SLOT(adjustTitle()));
-    //connect(view, SIGNAL(loadProgress(int)), SLOT(setProgress(int)));
-    //connect(view, SIGNAL(loadFinished(bool)), SLOT(finishLoading(bool)));
-
-
-
-    //ui->webView_2->load(QUrl("qrc:///resources/resources/ComputerScience.html"));
-    //ui->webView_2->load(QUrl("qrc:///resources/resources/ComputerScience2.htm"));
-
+    // slide-show effect
 
     //QMovie *movie = new QMovie(":/resources/resources/uicApp.gif");
     //QLabel *processLabel = new QLabel(ui->label_pix);
     //processLabel->setMovie(movie);
     //movie->start();
 
+    // pre-load campus maps (scrollable)
 
-    //imageLabel = new QLabel;
-    //ui->label_EastMap->setBackgroundRole(QPalette::Base);
-    //ui->label_EastMap->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
-    //ui->label_EastMap->setScaledContents(true);
-
-    //scrollArea = new QScrollArea;
-    //ui->scrollArea->setBackgroundRole(QPalette::Dark);
-
+    // east campus legend
     QGraphicsScene *scene = new QGraphicsScene();
     ui->gView_LegendEast->setScene(scene);
     QGraphicsPixmapItem* item = new QGraphicsPixmapItem(QPixmap(":/resources/resources/eastCampusLegend.png"));
     scene->addItem(item);
 
+    // east campus
     QGraphicsScene *scene2 = new QGraphicsScene();
     ui->gView_East->setScene(scene2);
     QGraphicsPixmapItem* item2 = new QGraphicsPixmapItem(QPixmap(":/resources/resources/eastCampus.png"));
     scene2->addItem(item2);
 
+    // west campus legend
     QGraphicsScene *scene3 = new QGraphicsScene();
     ui->gView_LegendWest->setScene(scene3);
     QGraphicsPixmapItem* item3 = new QGraphicsPixmapItem(QPixmap(":/resources/resources/westCampusLegend.png"));
     scene3->addItem(item3);
 
+    // west campus
     QGraphicsScene *scene4 = new QGraphicsScene();
     ui->gView_West->setScene(scene4);
     QGraphicsPixmapItem* item4 = new QGraphicsPixmapItem(QPixmap(":/resources/resources/westCampus.png"));
     scene4->addItem(item4);
 
+    // restaurants
     QGraphicsScene *scene5 = new QGraphicsScene();
     ui->graphicsView_Rest->setScene(scene5);
     QGraphicsPixmapItem* item5 = new QGraphicsPixmapItem(QPixmap(":/resources/resources/restaurantsCampus.png"));
     scene5->addItem(item5);
 
-     //ui->graphicsView->show();
+    hideWidgets();      // widgets overlay.. when app starts, hide all widgets and wait for user
+    setMenuIcons();     // set the menu icons on the push buttons
 
-
-
-       // ui->graphicsView->    (&scene);
-        //QGraphicsPixmapItem item(QPixmap(":/resources/resources/img-top-1.jpg"));
-        //scene.addItem(&item);
-        //view.show();
-
-
-
-    //ui->scrollArea->setWidget(ui->label_EastMap);
-    //ui->setCentralWidget(scrollArea);
-
-    //QPixmap pix1 ( ":/resources/resources/img-top-1.jpg");
-    //ui->label_EastMap->setPixmap(pix1);
-
-    //createActions();
-    //createMenus();
-
-    //setWindowTitle(tr("Image Viewer"));
-    //resize(500, 400);
-
-    //
-
-
-    hideWidgets();
-    setMenuIcons();
-
-    //ui->label_17->show();
-
-    //slideShow();
-
+    // set mouse tracking for QPropertyAnimation
     setMouseTracking(true);
 
-    ui->f_SideMenu->hasMouseTracking();
+    ui->f_SideMenu->hasMouseTracking();     // specifically for menu frame
+
+    // on mac, there's a focus rectangle on list widgets, line edits, etc.
+    // this gets rid of it
 
     ui->listWidget_Courses->setAttribute(Qt::WA_MacShowFocusRect, false);
     ui->lineEdit_Courses->setAttribute(Qt::WA_MacShowFocusRect, false);
@@ -137,55 +93,17 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->lineEdit_Books->setAttribute(Qt::WA_MacShowFocusRect, false);
 
-   // ui->b_Maps->installEventFilter();
-
-
+    // set text for toolbox
 
     ui->toolBox->setItemText(0, "Bus");
     ui->toolBox->setItemText(1, "Train");
-
-
-
-
-
 }
 
-MainWindow::~MainWindow()
-{
+MainWindow::~MainWindow() {
     delete ui;
 }
 
-void MainWindow::slideShow() {
-
-    QPixmap pix1 ( ":/resources/resources/img-top-1.jpg");
-    QPixmap pix4 ( ":/resources/resources/img-top-4.jpg");
-
-    for (int x = 0; x < 10; x++){
-
-        ui->label_pix->setPixmap(pix1);
-        delay();
-
-        ui->label_pix->repaint();
-
-        ui->label_pix->setPixmap(pix4);
-
-        delay();
-
-        ui->label_pix->repaint();
-
-
-     }
-
-}
-
-void MainWindow::delay()
-{
-    QTime dieTime= QTime::currentTime().addSecs(2);
-    while( QTime::currentTime() < dieTime )
-    QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
-}
-
-void MainWindow::setMenuIcons() {
+void MainWindow::setMenuIcons() {       // set side menu icons from resources to blue icon
 
     ui->b_Home->setIcon(QIcon(":/resources/resources/iconsUIC/homeBlue.png"));
     ui->b_Maps->setIcon(QIcon(":/resources/resources/iconsUIC/mapsBlue.png"));
@@ -197,61 +115,10 @@ void MainWindow::setMenuIcons() {
     ui->b_BookS->setIcon(QIcon(":/resources/resources/iconsUIC/bookStoreBlue.png"));
     ui->b_CHousing->setIcon(QIcon(":/resources/resources/iconsUIC/campusBlue.png"));
     ui->b_Safety->setIcon(QIcon(":/resources/resources/iconsUIC/safetyBlue.png"));
-
-
 }
 
-void MainWindow::mouseMoveEvent(QMouseEvent *event) {
+void MainWindow::setAllFalse() {        // when push button clicked, call this function to reset setDown(bool) on all buttons
 
-    ui->f_SideMenu->hasMouseTracking();
-
-   // if (ui->f_SideMenu->) {
-
-
-    //}
-
-/*
-    if (this->rect().contains(e->pos())) {
-        // Mouse over Widget
-
-    }
-    else {
-         qDebug("no sir");
-    }
-*/
-}
-/*
-bool MainWindow::eventFilter(QEvent *event)
- {
-
-     if (event->type() == QEvent::Enter)
-     {
-         if (this->objectName() == "b_Home")
-             qDebug("whattt");
-
-
-     }
-     else if (event->type() == QEvent::Leave)
-     {
-         //((QLabel*)obj)->setText("<img src='img/Ordner_unselected.png' />");
-     }
-     else if (event->type() == QEvent::MouseButtonRelease)
-     {
-        qDebug()<<"icon clicked!";
-
-     }
-     else
-    {
-
-        // return QObject::eventFilter(obj, event);
-     }
- }
- */
-
-
-
-void MainWindow::setAllFalse()
-{
     ui->b_Home->setDown(false);
     ui->b_Athletics->setDown(false);
     ui->b_BookS->setDown(false);
@@ -264,223 +131,217 @@ void MainWindow::setAllFalse()
     ui->b_Safety->setDown(false);
 }
 
-void MainWindow::hideWidgets(){
+void MainWindow::hideWidgets() {        // when push button clicked, call this function to hide all widgets
 
    ui->tabW_Directory->hide();
-   //ui->tabW_Athletics->hide();
    ui->f_Courses->hide();
    ui->f_Library->hide();
    ui->f_BookS->hide();
    ui->f_Safety->hide();
    ui->tabW_CHousing->hide();
    ui->tabW_Maps->hide();
-   //ui->label_17->hide();
    ui->f_Athletics->hide();
 }
-/*
-void MainWindow::on_pushButton_3_clicked() {
 
-    //ui->frame->setGeometry(QRect(10, 80, 141, 101));
+void MainWindow::on_b_Home_clicked() {      // push button Home
 
-    //ui->pushButton->setGeometry(QRect(10, 190, 71, 32));
+    // button already pressed, return
 
-
-    //ui->b_Athletics->iconSize();
-
-    QPropertyAnimation *animation = new QPropertyAnimation(ui->f_SideMenu, "size");
-    animation->setDuration(100);
-   // QSize test = this->size();
-    animation->setStartValue(QSize(41,71));
-    animation->setEndValue(QSize(100,71));
-    animation->start();
-
-
-
-
-}
-
-
-
-*/
-
-void MainWindow::on_b_Home_clicked()
-{
     if (ui->b_Home->isDown())
-    return;
+        return;
 
-    hideWidgets();
+    hideWidgets();      // call function to hide all widgets
 
-    //ui->f_Athletics_1->show();
-    //ui->tabW_Athletics->show();
+    setAllFalse();      // call function to reset setDown on all buttons
 
-    setAllFalse();
+    setMenuIcons();     // call function to reset all icons to blue
 
-   // ui->b_Home->setDown(true);
-
-    setMenuIcons();
+    // then set icon for this button to white
     ui->b_Home->setIcon(QIcon(":/resources/resources/iconsUIC/homeWhite.png"));
-
-    //setStyleSheet("MainWindow {image: url(:/resources/resources/img-top-1-cut.png);}");
-  //  ui->centralWidget->setStyleSheet(":/resources/resources/img-top-1-cut.png");
-
 }
 
-void MainWindow::on_b_Athletics_clicked()
-{
+void MainWindow::on_b_Athletics_clicked() {     // push button Athletics
+
+    // button already pressed, return
+
     if (ui->b_Athletics->isDown())
-    return;
+        return;
 
-    hideWidgets();
+    hideWidgets();      // call function to hide all widgets
 
-   // ui->f_Athletics_1->show();
-   // ui->tabW_Athletics->show();
-    ui->f_Athletics->show();
+    ui->f_Athletics->show();        // then show this specific widget
 
-    setAllFalse();
+    setAllFalse();      // call function to reset setDown on all buttons
 
-    ui->b_Athletics->setDown(true);
+    ui->b_Athletics->setDown(true);     // then setDown true for this button
 
-    setMenuIcons();
+    setMenuIcons();     // call function to reset all icons to blue
+
+    // then set icon for this button to white
     ui->b_Athletics->setIcon(QIcon(":/resources/resources/iconsUIC/athleticsWhite.png"));
-
 }
 
-void MainWindow::on_b_BookS_clicked()
-{
+void MainWindow::on_b_BookS_clicked() {     // push button Book Store
+
+    // button already pressed, return
+
     if (ui->b_BookS->isDown())
-    return;
+        return;
 
-    hideWidgets();
+    hideWidgets();      // call function to hide all widgets
 
-    ui->f_BookS->show();
+    ui->f_BookS->show();        // then show this specific widget
 
-    setAllFalse();
+    setAllFalse();      // call function to reset setDown on all buttons
 
-    ui->b_BookS->setDown(true);
+    ui->b_BookS->setDown(true);     // then setDown true for this button
 
-    setMenuIcons();
+    setMenuIcons();      // call function to reset all icons to blue
+
+    // then set icon for this button to white
     ui->b_BookS->setIcon(QIcon(":/resources/resources/iconsUIC/bookStoreWhite.png"));
-
-
 }
 
-void MainWindow::on_b_CHousing_clicked()
-{
+void MainWindow::on_b_CHousing_clicked() {      // push button Campus Housing
+
+    // button already pressed, return
+
     if (ui->b_CHousing->isDown())
-    return;
+        return;
 
-    hideWidgets();
+    hideWidgets();      // call function to hide all widgets
 
-    ui->tabW_CHousing->show();
+    ui->tabW_CHousing->show();      // then show this specific widget
 
-    setAllFalse();
+    setAllFalse();      // call function to reset setDown on all buttons
 
-    ui->b_CHousing->setDown(true);
+    ui->b_CHousing->setDown(true);      // then setDown true for this button
 
-    setMenuIcons();
+    setMenuIcons();     // call function to reset all icons to blue
+
+    // then set icon for this button to white
     ui->b_CHousing->setIcon(QIcon(":/resources/resources/iconsUIC/campusWhite.png"));
-
 }
 
-void MainWindow::on_b_Courses_clicked()
-{
+void MainWindow::on_b_Courses_clicked() {       // push button Courses
+
+    // button already pressed, return
+
     if (ui->b_Courses->isDown())
-    return;
+        return;
 
-    hideWidgets();
+    hideWidgets();      // call function to hide all widgets
 
-    //ui->f_Courses_1->show();
-    ui->f_Courses->show();
+    ui->f_Courses->show();      // then show this specific widget
 
-    setAllFalse();
+    setAllFalse();      // call function to reset setDown on all buttons
 
-    ui->b_Courses->setDown(true);
+    ui->b_Courses->setDown(true);       // then setDown true for this button
 
-    setMenuIcons();
+    setMenuIcons();     // call function to reset all icons to blue
+
+    // then set icon for this button to white
     ui->b_Courses->setIcon(QIcon(":/resources/resources/iconsUIC/coursesWhite.png"));
-
 }
 
-void MainWindow::on_b_Directory_clicked()
-{
+void MainWindow::on_b_Directory_clicked() {     // push button Directory
+
+    // button already pressed, return
+
     if (ui->b_Directory->isDown())
-    return;
+        return;
 
-    hideWidgets();
+    hideWidgets();      // call function to hide all widgets
 
-    ui->tabW_Directory->show();
+    ui->tabW_Directory->show();     // then show this specific widget
 
-    setAllFalse();
+    setAllFalse();      // call function to reset setDown on all buttons
 
-    ui->b_Directory->setDown(true);
+    ui->b_Directory->setDown(true);     // then setDown true for this button
 
-    setMenuIcons();
+    setMenuIcons();     // call function to reset all icons to blue
+
+    // then set icon for this button to white
     ui->b_Directory->setIcon(QIcon(":/resources/resources/iconsUIC/directoryWhite.png"));
 }
 
-void MainWindow::on_b_EventsNews_clicked()
-{
+void MainWindow::on_b_EventsNews_clicked() {        // push button Events/News
+
+    // button already pressed, return
+
     if (ui->b_EventsNews->isDown())
-    return;
+        return;
 
-    hideWidgets();
+    hideWidgets();      // call function to hide all widgets
 
-    setAllFalse();
+    setAllFalse();      // call function to reset setDown on all buttons
 
-    ui->b_EventsNews->setDown(true);
+    ui->b_EventsNews->setDown(true);        // then setDown true for this button
 
-    setMenuIcons();
+    setMenuIcons();     // call function to reset all icons to blue
+
+    // then set icon for this button to white
     ui->b_EventsNews->setIcon(QIcon(":/resources/resources/iconsUIC/eventsWhite.png"));
-
 }
 
-void MainWindow::on_b_Library_clicked()
-{
+void MainWindow::on_b_Library_clicked() {       // push button Library
+
+    // button already pressed, return
+
     if (ui->b_Library->isDown())
-    return;
+        return;
 
-    hideWidgets();
+    hideWidgets();      // call function to hide all widgets
 
-    ui->f_Library->show();
+    ui->f_Library->show();      // then show this specific widget
 
-    setAllFalse();
+    setAllFalse();       // call function to reset setDown on all buttons
 
-    ui->b_Library->setDown(true);
+    ui->b_Library->setDown(true);       // then setDown true for this button
 
-    setMenuIcons();
+    setMenuIcons();     // call function to reset all icons to blue
+
+    // then set icon for this button to white
     ui->b_Library->setIcon(QIcon(":/resources/resources/iconsUIC/libraryWhite.png"));
-
 }
 
-void MainWindow::on_b_Maps_clicked()
-{
+void MainWindow::on_b_Maps_clicked() {      // push button Maps
+
+    // button already pressed, return
+
     if (ui->b_Maps->isDown())
-    return;
+        return;
 
-    hideWidgets();
+    hideWidgets();      // call function to hide all widgets
 
-    ui->tabW_Maps->show();
+    ui->tabW_Maps->show();      // then show this specific widget
 
-    setAllFalse();
+    setAllFalse();      // call function to reset setDown on all buttons
 
-    ui->b_Maps->setDown(true);
+    ui->b_Maps->setDown(true);      // then setDown true for this button
 
-    setMenuIcons();
+    setMenuIcons();     // call function to reset all icons to blue
+
+    // then set icon for this button to white
     ui->b_Maps->setIcon(QIcon(":/resources/resources/iconsUIC/mapsWhite.png"));
 }
 
-void MainWindow::on_b_Safety_clicked()
-{
+void MainWindow::on_b_Safety_clicked() {        // push button Safety
+
+    // button already pressed, return
+
     if (ui->b_Safety->isDown())
-    return;
+        return;
 
-    hideWidgets();
+    hideWidgets();      // call function to hide all widgets
 
-    ui->f_Safety->show();
+    ui->f_Safety->show();       // then show this specific widget
 
-    setAllFalse();
+    setAllFalse();      // call function to reset setDown on all buttons
 
-    ui->b_Safety->setDown(true);
+    ui->b_Safety->setDown(true);        // then setDown true for this button
+
+    // make text selectable
 
     ui->label_3->setTextInteractionFlags(Qt::TextSelectableByMouse);
     ui->label_4->setTextInteractionFlags(Qt::TextSelectableByMouse);
@@ -497,73 +358,77 @@ void MainWindow::on_b_Safety_clicked()
     ui->label_15->setTextInteractionFlags(Qt::TextSelectableByMouse);
     ui->label_16->setTextInteractionFlags(Qt::TextSelectableByMouse);
 
-    setMenuIcons();
+    setMenuIcons();     // call function to reset all icons to blue
+
+    // then set icon for this button to white
     ui->b_Safety->setIcon(QIcon(":/resources/resources/iconsUIC/safetyWhite.png"));
-
 }
 
+void MainWindow::on_lineEdit_Courses_textChanged(const QString &arg1) {     // courses filter function
 
+    // call function every time text field has changed
 
+    int listWidgetSize = ui->listWidget_Courses->count();       // get list widget size
 
-void MainWindow::on_lineEdit_Courses_textChanged(const QString &arg1)
-{
-    int listWidgetSize = ui->listWidget_Courses->count();
-
-    for (int k1 = 0; k1 < listWidgetSize; k1++)
-        if (ui->listWidget_Courses->item(k1)->text().toLower().contains(arg1.toLower()))
-            ui->listWidget_Courses->item(k1)->setHidden(false);
+    // loop through list widget
+    for (int i = 0; i < listWidgetSize; i++)
+        if (ui->listWidget_Courses->item(i)->text().toLower().contains(arg1.toLower()))
+            ui->listWidget_Courses->item(i)->setHidden(false);      // if list widget item contains text, set hidden to false
         else
-            ui->listWidget_Courses->item(k1)->setHidden(true);
+            ui->listWidget_Courses->item(i)->setHidden(true);       // if list widget item doesn't contain text, set hidden to true
 }
 
-void MainWindow::on_listWidget_Courses_itemClicked()
-{
-    ui->lineEdit_Courses->clear();
+void MainWindow::on_listWidget_Courses_itemClicked() {      // list widget item clicked
+
+    ui->lineEdit_Courses->clear();      // clear the text inputted by user
+                                        // this updates on_lineEdit_Courses_textChanged as well
+                                        // more efficent, user doesnt have to waste time backspacing
 }
 
+void MainWindow::on_listWidget_Courses_itemClicked(QListWidgetItem *item) {     // list widget item clicked, with arg
 
-void MainWindow::on_listWidget_Courses_itemClicked(QListWidgetItem *item)
-{
+    QString temp = item->text();        // convert to string
 
-    QString temp = item->text();
+    QString url = "qrc:///resources/resources/courseCat/" + temp + ".htm";      // create url that links to a resource htm file
 
-    QString url = "qrc:///resources/resources/courseCat/" + temp + ".htm";
-
-    ui->webView_Courses->load(QUrl(url));
+    ui->webView_Courses->load(QUrl(url));       // display this url to a web view widget
 }
 
-void MainWindow::on_lineEdit_Books_returnPressed()
-{
+void MainWindow::on_lineEdit_Books_returnPressed() {    // search function, return pressed
 
-    QString temp = ui->lineEdit_Books->text();
+    QString temp = ui->lineEdit_Books->text();      // create a string from line edit input
 
-    temp = temp.replace(" ", "+");
+    temp = temp.replace(" ", "+");      // replace space character to make url work
 
+    // create url that links to amazon search
     QString amazon = "http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&field-keywords=" + temp;
 
+    // create url that links to book store search
     QString bookStore = "http://www.uicbookstore.org/search.aspx?searchterm=" + temp;
 
-     ui->webView_Amazon->load(QUrl(amazon));
-     ui->webView_BStore->load(QUrl(bookStore));
-
+    // display these urls to a web view widget
+    ui->webView_Amazon->load(QUrl(amazon));
+    ui->webView_BStore->load(QUrl(bookStore));
 }
 
-void MainWindow::on_B_LegendEast_clicked(bool checked)
-{
-    if (checked == true)
-         ui->gView_LegendEast->hide();
-    else
-        ui->gView_LegendEast->show();
+void MainWindow::on_B_LegendEast_clicked(bool checked) {    // east campus hide/show legend push button
 
+    // made button checkable in gui
+
+    if (checked == true)
+         ui->gView_LegendEast->hide();  // hide legend
+    else
+        ui->gView_LegendEast->show();   // show legend
 }
 
-void MainWindow::on_B_LegendWest_clicked(bool checked)
-{
-    if (checked == true)
-         ui->gView_LegendWest->hide();
-    else
-        ui->gView_LegendWest->show();
+void MainWindow::on_B_LegendWest_clicked(bool checked) {    // west campus hide/show legend push button
 
+    // made button checkable in gui
+
+    if (checked == true)
+         ui->gView_LegendWest->hide();  // hide legend
+    else
+        ui->gView_LegendWest->show();   // show legend
 }
 
 void MainWindow::on_listWidget_Area_itemClicked(QListWidgetItem *item)
@@ -610,8 +475,10 @@ void MainWindow::on_listWidget_Area_itemClicked(QListWidgetItem *item)
 
 }
 
-void MainWindow::on_listWidget_Athletics_itemClicked(QListWidgetItem *item)
-{
+void MainWindow::on_listWidget_Athletics_itemClicked(QListWidgetItem *item) {   // list widget in athletics item clicked
+
+    // load webviews for different sports
+
     if (item->text().contains("Baseball (Men's)")) {
         ui->webView_Scores->load(QUrl("http://www.uicflames.com/sports/m-basebl/sched/ilch-m-basebl-sched.html"));
         ui->webView_News->load(QUrl("http://www.uicflames.com/sports/m-basebl/ilch-m-basebl-body-main.html"));

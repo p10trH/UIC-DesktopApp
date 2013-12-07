@@ -4,18 +4,16 @@
 #include <QPushButton>
 
 MyPushButton::MyPushButton(QWidget *parent)
-    :QPushButton(parent)
-{
-    //effect = new QGraphicsDropShadowEffect();
-    //effect->setBlurRadius(5);
-    //effect->setEnabled(false);
-    //this->setGraphicsEffect(effect);
+    :QPushButton(parent) {
 }
 
-void MyPushButton::enterEvent(QEvent *event) {
+void MyPushButton::enterEvent(QEvent *event) {  // enter event
 
+    // button already pressed, return
     if (this->isDown())
         return;
+
+    // set icon for push button entered
 
     if ((this->objectName() == "b_Home"))
         setIcon(QIcon(":/resources/resources/iconsUIC/homeWhite.png"));
@@ -48,10 +46,13 @@ void MyPushButton::enterEvent(QEvent *event) {
         setIcon(QIcon(":/resources/resources/iconsUIC/safetyWhite.png"));
 }
 
-void MyPushButton::leaveEvent(QEvent *event) {
+void MyPushButton::leaveEvent(QEvent *event) {  // leave event
 
+    // button already pressed, return
     if (this->isDown())
         return;
+
+    // set icon for push button left
 
     if ((this->objectName() == "b_Home"))
         setIcon(QIcon(":/resources/resources/iconsUIC/homeBlue.png"));

@@ -27,37 +27,22 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QTextBrowser {
-
- border-width: 0px;
+	border-width: 0px;
     border-color: rgba(0, 0, 186, 191);
     border-style: solid;
 
 }
 MainWindow {
-
 	background-color: rgb(255, 255, 255);
-    /*image: url(:/resources/resources/img-top-1-cut.jpg);*/
-/*image: url(:/resources/resources/chiRedSkyLine1.png);*/
-image: url(:/resources/resources/UICskyline.png);
-
+	image: url(:/resources/resources/UICskyline.png);
 }
 
-/*.QWidget {
-	image: url(:/resources/resources/img-top-1.jpg);
-   background-color: white;
-} */
-
-/* We provide a min-width and min-height for push buttons
-   so that they look elegant regardless of the width of the text. */
 QPushButton {
     font: 16pt &quot;Arial&quot;;
 	background-color: rgb(204, 204, 204);
 
-	/*background-color: rgba(0, 0, 186, 191);
-	color: rgb(255, 255, 255);*/
     color: rgb(0, 0, 186);
 	
-    /*background-color: blue;*/
     border-width: 0px;
     border-color: rgba(0, 0, 186, 191);
     border-style: solid;
@@ -70,12 +55,8 @@ QPushButton {
 QPushButton:hover {
 	background-color: rgb(255, 0, 0);
 	color: rgb(255, 255, 255);
-
-
 }
 
-/* Increase the padding, so the text is shifted when the button is
-   pressed. */
 QPushButton:pressed {
     padding-left: 0px;
     padding-top: 0px;
@@ -87,12 +68,10 @@ QLabel, QAbstractButton {
     font: normal;
 }
 
-/* Mark mandatory fields with a brownish color. */
 .mandatory {
-    color: brown;
+    color: red;
 }
 
-/* Bold text on status bar looks awful. */
 QStatusBar QLabel {
    font: normal;
 }
@@ -104,11 +83,7 @@ QStatusBar::item {
     border-radius: 2;
 }
 
-
 QLineEdit, QSpinBox, QTextEdit, QListView {
-
-
-    
 	selection-color: rgb(255, 255, 255);
     background-color: rgb(204, 204, 204);
     color: rgb(0, 0, 186);
@@ -116,11 +91,11 @@ QLineEdit, QSpinBox, QTextEdit, QListView {
 }
 
 QLineEdit {
-border-right-width: 4px;
-border-right-color: rgb(255, 0, 0);
-color: rgb(255, 0, 0);
-border-style: solid;
-border-radius: 0;
+	border-right-width: 4px;
+	border-right-color: rgb(255, 0, 0);
+	color: rgb(255, 0, 0);
+	border-style: solid;
+	border-radius: 0;
 }
 
 QListView::item:hover {
@@ -128,91 +103,32 @@ QListView::item:hover {
 	color: rgb(255, 255, 255);
 }
 
-
-/*
- QComboBox {
-
-	 font: 11pt &quot;Arial&quot;;
-     border: 0px solid red;
-     border-radius: 0px;
-     padding: 0px 0px 0px 4px;
-    /* min-width: 6em;
-
-min -height:100em;
-
-selection-color: rgb(255, 255, 255);
-    background-color: rgb(204, 204, 204);
-    color: rgb(0, 0, 186);
-    selection-background-color: rgb(255, 0, 0);
-
- }
-
-/*
-QComboBox::drop-down {
-    
-min -height:100em;
-
-     border-left-width: 1px;
-     border-left-color: white;
-     border-left-style: solid; /* just a single line 
-     border-top-right-radius: 0px; /* same radius as the QComboBox 
-     border-bottom-right-radius: 0px;
- }
-
-
-*/
-
 QListView {
     show-decoration-selected: 1;
 }
 
-
-
-/* We reserve 1 pixel space in padding. When we get the focus,
-   we kill the padding and enlarge the border. This makes the items
-   glow. 
-QLineEdit, QFrame {
-    border-width: 2px;
-    padding: 1px;
-    border-style: solid;
-    border-color: darkkhaki;
-    border-radius: 5px;
-}*/
-
-/* As mentioned above, eliminate the padding and increase the border. 
-QLineEdit:focus, QFrame:focus {
-    border-width: 3px;
-    padding: 0px;
-}*/
-
-/* A QLabel is a QFrame ... */
 QLabel {
     border: none;
     padding: 0;
     background: none;
 }
 
-/* A QToolTip is a QLabel ... */
 QToolTip {
-    border: 2px solid darkkhaki;
+    border: 2px solid red;
     padding: 5px;
     border-radius: 3px;
     opacity: 200;
 }
 
-/* Nice to have the background color change when hovered. */
 QRadioButton:hover, QCheckBox:hover {
-    background-color: wheat;
+    background-color: red;
 }
 
-/* Force the dialog's buttons to follow the Windows guidelines. */
 QDialogButtonBox {
     button-layout: 0;
 }
 
-
-
-QTabWidget::pane { /* The tab widget frame */
+QTabWidget::pane {
      border-top: 0px solid #C2C7CB;
  }
 
@@ -223,54 +139,38 @@ QTabWidget::pane { /* The tab widget frame */
  /* Style the tab using the tab sub-control. Note that
      it reads QTabBar _not_ QTabWidget */
  QTabBar::tab {
-
-font: 16pt &quot;Arial&quot;;
+	font: 16pt &quot;Arial&quot;;
 
     height: 39px; width: 200px;
 	color: rgb(0, 0, 186);
 
-     background-color: rgb(204, 204, 204);
-     /*background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
-                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);*/
-    /* border: 0px solid #C4C4C3;*/
-	
-     border-right: 1px solid rgb(255, 255, 255);
-     /*border-left: 1px solid rgb(255, 255, 255);*/
+    background-color: rgb(204, 204, 204);
      
-     border-bottom-color: #C2C7CB; /* same as the pane color */
-     border-top-left-radius: 0px;
-     border-top-right-radius: 0px;
-     min-width: 8ex;
-     padding: 0px;
+    border-right: 1px solid rgb(255, 255, 255);     
+    border-bottom-color: #C2C7CB; /* same as the pane color */
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    min-width: 8ex;
+    padding: 0px;
  }
 
  QTabBar::tab:selected, QTabBar::tab:hover {
-
      background-color: rgb(255, 0, 0);
      color: rgb(255, 255, 255);
-
-     /*background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                 stop: 0 #fafafa, stop: 0.4 #f4f4f4,
-                                 stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);*/
  }
 
  QTabBar::tab:selected {
-     /*border-color: rgba(0, 0, 186, 191); */
-     /* border-bottom-color: #C2C7CB; /* same as pane color */
+   
  }
 
  QTabBar::tab:!selected {
      margin-top: 0px; /* make non-selected tabs look smaller */
  }
 
-
 QGraphicsView {
-border-width: 0px;
+	border-width: 0px;
     border-style: solid;
     border-radius: 0;
-    
-
 }</string>
   </property>
   <widget class="QWidget" name="centralWidget">
@@ -294,23 +194,20 @@ border-width: 0px;
     </property>
     <property name="styleSheet">
      <string notr="true">QTabWidget::pane { /* The tab widget frame */
-     border-width: 0px;
-border-color: rgba(255, 0, 0, 191);
-border-style: solid;
-border-radius: 0;
- }
+	border-width: 0px;
+	border-color: rgba(255, 0, 0, 191);
+	border-style: solid;
+	border-radius: 0;
+}
 
 /*QTabBar::tab {
-
-
-
     height: 48px; width: 198px;
 }
 */
 
 QTabWidget::tab-bar {
-     left: 2px; /* move to the right by 5px */
- }</string>
+	left: 2px; /* move to the right by 5px */
+}</string>
     </property>
     <property name="tabShape">
      <enum>QTabWidget::Rounded</enum>
@@ -319,6 +216,9 @@ QTabWidget::tab-bar {
      <number>0</number>
     </property>
     <widget class="QWidget" name="tab_Prof">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <attribute name="title">
       <string/>
      </attribute>
@@ -350,13 +250,12 @@ QTabWidget::tab-bar {
     </property>
     <property name="styleSheet">
      <string notr="true">QFrame {
+	background-color: rgb(255, 255, 255);
 
-background-color: rgb(255, 255, 255);
-
-border-width: 0px;
-border-color: rgba(255, 0, 0, 191);
-border-style: solid;
-border-radius: 0;
+	border-width: 0px;
+	border-color: rgba(255, 0, 0, 191);
+	border-style: solid;
+	border-radius: 0;
 }</string>
     </property>
     <property name="frameShape">
@@ -375,15 +274,13 @@ border-radius: 0;
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">
- QListView {
-border-width: 0px;
-border-color: rgba(255, 0, 0, 191);
-border-style: solid;
-border-radius: 0;
-background-color: rgb(204, 204, 204);
-
- }
+      <string notr="true">QListView {
+	border-width: 0px;
+	border-color: rgba(255, 0, 0, 191);
+	border-style: solid;
+	border-radius: 0;
+	background-color: rgb(204, 204, 204);
+}
 </string>
      </property>
      <item>
@@ -1254,8 +1151,8 @@ background-color: rgb(204, 204, 204);
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 0, 0);
-color: rgb(255, 255, 255);</string>
+      <string notr="true">	background-color: rgb(255, 0, 0);
+	color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
       <string>      Filter :</string>
@@ -1269,6 +1166,9 @@ color: rgb(255, 255, 255);</string>
        <width>831</width>
        <height>605</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
      </property>
      <property name="url">
       <url>
@@ -1287,11 +1187,11 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-width: 0px;
-background-color: rgb(255, 255, 255);
-border-color: rgba(255, 0, 0, 191);
-border-style: solid;
-border-radius: 0;</string>
+     <string notr="true">	border-width: 0px;
+	background-color: rgb(255, 255, 255);
+	border-color: rgba(255, 0, 0, 191);
+	border-style: solid;
+	border-radius: 0;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -1326,12 +1226,10 @@ border-radius: 0;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">QFrame {
-
-border-width: 0px;
-/*background-color: rgb(255, 255, 255);*/
-border-color: rgba(255, 0, 0, 191);
-border-style: solid;
-border-radius: 0;
+	border-width: 0px;
+	border-color: rgba(255, 0, 0, 191);
+	border-style: solid;
+	border-radius: 0;
 }</string>
     </property>
     <property name="frameShape">
@@ -1386,7 +1284,7 @@ border-radius: 0;
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 0, 0);</string>
+      <string notr="true">	background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -1402,10 +1300,10 @@ border-radius: 0;
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 0, 0);
-color: rgb(255, 255, 255);
-border-width: 0px;
-font: 16pt &quot;Arial&quot;;</string>
+      <string notr="true">	background-color: rgb(255, 0, 0);
+	color: rgb(255, 255, 255);
+	border-width: 0px;
+	font: 16pt &quot;Arial&quot;;</string>
      </property>
      <property name="text">
       <string>           Search :</string>
@@ -1419,6 +1317,9 @@ font: 16pt &quot;Arial&quot;;</string>
        <width>291</width>
        <height>39</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
      </property>
     </widget>
    </widget>
@@ -1438,14 +1339,13 @@ font: 16pt &quot;Arial&quot;;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-color: rgb(255, 0, 0);
-     background-color: rgb(255, 255, 255);
+     <string notr="true">	color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
 
-border-width: 0px;
-border-color: rgba(255, 0, 0, 191);
-border-style: solid;
-border-radius: 0;
+	border-width: 0px;
+	border-color: rgba(255, 0, 0, 191);
+	border-style: solid;
+	border-radius: 0;
 </string>
     </property>
     <property name="frameShape">
@@ -1471,7 +1371,7 @@ border-radius: 0;
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border: none;</string>
+      <string notr="true">	border: none;</string>
      </property>
      <property name="text">
       <string>UIC Police Emergency:</string>
@@ -1494,7 +1394,7 @@ border-radius: 0;
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border: none;</string>
+      <string notr="true">	border: none;</string>
      </property>
      <property name="text">
       <string>UIC Police Non-Emergency:</string>
@@ -1517,7 +1417,7 @@ border-radius: 0;
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border: none;</string>
+      <string notr="true">	border: none;</string>
      </property>
      <property name="text">
       <string>UIC Family Medical Center:</string>
@@ -1540,7 +1440,7 @@ border-radius: 0;
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border: none;</string>
+      <string notr="true">	border: none;</string>
      </property>
      <property name="text">
       <string>Res-Net (ACCC):</string>
@@ -1563,7 +1463,7 @@ border-radius: 0;
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border: none;</string>
+      <string notr="true">	border: none;</string>
      </property>
      <property name="text">
       <string>UIC Red Car:</string>
@@ -1586,8 +1486,8 @@ border-radius: 0;
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border: none;
-color: rgb(0, 0, 255);</string>
+      <string notr="true">	border: none;
+	color: rgb(0, 0, 255);</string>
      </property>
      <property name="text">
       <string>(312) 996-6800</string>
@@ -1610,8 +1510,8 @@ color: rgb(0, 0, 255);</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border: none;
-color: rgb(0, 0, 255);</string>
+      <string notr="true">	border: none;
+	color: rgb(0, 0, 255);</string>
      </property>
      <property name="text">
       <string>(312) 413-0003</string>
@@ -1634,8 +1534,8 @@ color: rgb(0, 0, 255);</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border: none;
-color: rgb(0, 0, 255);</string>
+      <string notr="true">	border: none;
+	color: rgb(0, 0, 255);</string>
      </property>
      <property name="text">
       <string>(312) 996-2901</string>
@@ -1658,8 +1558,8 @@ color: rgb(0, 0, 255);</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border: none;
-color: rgb(0, 0, 255);</string>
+      <string notr="true">	border: none;
+	color: rgb(0, 0, 255);</string>
      </property>
      <property name="text">
       <string>(312) 355-5555</string>
@@ -1682,8 +1582,8 @@ color: rgb(0, 0, 255);</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border: none;
-color: rgb(0, 0, 255);</string>
+      <string notr="true">	border: none;
+	color: rgb(0, 0, 255);</string>
      </property>
      <property name="text">
       <string>(312) 996-2830</string>
@@ -1706,7 +1606,7 @@ color: rgb(0, 0, 255);</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border: none;</string>
+      <string notr="true">	border: none;</string>
      </property>
      <property name="text">
       <string>Crisis Hotline (In-Touch):</string>
@@ -1729,8 +1629,8 @@ color: rgb(0, 0, 255);</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border: none;
-color: rgb(0, 0, 255);</string>
+      <string notr="true">	border: none;
+	color: rgb(0, 0, 255);</string>
      </property>
      <property name="text">
       <string>(312) 996-5535</string>
@@ -1753,7 +1653,7 @@ color: rgb(0, 0, 255);</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border: none;</string>
+      <string notr="true">	border: none;</string>
      </property>
      <property name="text">
       <string>UIC Operators:</string>
@@ -1776,8 +1676,8 @@ color: rgb(0, 0, 255);</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border: none;
-color: rgb(0, 0, 255);</string>
+      <string notr="true">	border: none;
+	color: rgb(0, 0, 255);</string>
      </property>
      <property name="text">
       <string>(312) 996-7000</string>
@@ -1801,29 +1701,28 @@ color: rgb(0, 0, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">QTabWidget::pane { /* The tab widget frame */
-     border-width: 0px;
-border-color: rgba(255, 0, 0, 191);
-border-style: solid;
-border-radius: 0;
-	
- }
+	border-width: 0px;
+	border-color: rgba(255, 0, 0, 191);
+	border-style: solid;
+	border-radius: 0;	 
+}
 
 /*QTabBar::tab {
-
-
-
     height: 48px; width: 198px;
 }
 */
 
 QTabWidget::tab-bar {
      left: 2px; /* move to the right by 5px */
- }</string>
+}</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="West">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <attribute name="title">
       <string>West Campus</string>
      </attribute>
@@ -1877,12 +1776,18 @@ QPushButton:hover {
         <height>611</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
      </widget>
      <zorder>gView_West</zorder>
      <zorder>B_LegendWest</zorder>
      <zorder>gView_LegendWest</zorder>
     </widget>
     <widget class="QWidget" name="East">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <attribute name="title">
       <string>East Campus</string>
      </attribute>
@@ -1942,6 +1847,9 @@ QPushButton:hover {
      <zorder>B_LegendEast</zorder>
     </widget>
     <widget class="QWidget" name="Food">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <attribute name="title">
       <string>Restaurants</string>
      </attribute>
@@ -2073,8 +1981,7 @@ border-style: solid;
     </widget>
     <widget class="QWidget" name="Navigation">
      <property name="styleSheet">
-      <string notr="true">QToolBox::tab {
-     
+      <string notr="true">QToolBox::tab {     
 	color: rgb(0, 0, 186);
  }</string>
      </property>
@@ -2098,32 +2005,25 @@ border-style: solid;
       </property>
       <property name="styleSheet">
        <string notr="true">QTabWidget::pane { /* The tab widget frame */
-     border-width: 0px;
-     top: -3.1em;
- }
+    border-width: 0px;
+	top: -3.1em;
+}
 
 QTabWidget::tab-bar {
-     left: 605px; /* move to the right by 5px */
- }
+	left: 605px; /* move to the right by 5px */
+}
 
 QTabBar::tab {
-    height: 39px; width: 100px;
-
-
-
-    
-	
-     border-right: 0px solid rgb(255, 255, 255);
+	height: 39px; width: 100px;	
+    border-right: 0px solid rgb(255, 255, 255);
 }</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="cta">
        <property name="styleSheet">
-        <string notr="true">
-
-	background-color: rgb(255, 255, 255);
+        <string notr="true">	background-color: rgb(255, 255, 255);
 </string>
        </property>
        <attribute name="title">
@@ -2138,17 +2038,23 @@ QTabBar::tab {
           <height>611</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
         <property name="currentIndex">
-         <number>1</number>
+         <number>0</number>
         </property>
         <widget class="QWidget" name="Bus">
          <property name="geometry">
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>100</width>
-           <height>30</height>
+           <width>1101</width>
+           <height>543</height>
           </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
          </property>
          <attribute name="label">
           <string>Page 1</string>
@@ -2200,6 +2106,9 @@ QTabBar::tab {
        </widget>
       </widget>
       <widget class="QWidget" name="uicShuttle">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <attribute name="title">
         <string>UIC Shuttle</string>
        </attribute>
@@ -2231,6 +2140,9 @@ QTabBar::tab {
       <height>501</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -2245,33 +2157,22 @@ QTabBar::tab {
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-QFrame {
+     <string notr="true">QFrame {
+	background-color: rgb(255, 255, 255);
 
-background-color: rgb(255, 255, 255);
-
- border-width: 0px;
+ 	border-width: 0px;
     border-color: rgb(255, 0, 0);
     border-style: none;
     border-radius: 0;
     padding: 0px;
-
 }
 
 QPushButton {
-
-padding-left:13px;
-font: 16pt &quot;Arial&quot;;
-qproperty-iconSize: 25px; 
-Text-align:left
-
+	padding-left:13px;
+	font: 16pt &quot;Arial&quot;;
+	qproperty-iconSize: 25px; 
+	Text-align:left
 }
-
-/*
-QPushButton#b_Athletics:hover {
-   qproperty-icon: url(:/resources/resources/iconsUIC/athleticsWhite.png);
-}
-*/
 </string>
     </property>
     <property name="frameShape">
@@ -2541,7 +2442,7 @@ QPushButton {
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(204, 204, 204);</string>
+      <string notr="true">	background-color: rgb(204, 204, 204);</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -2561,8 +2462,8 @@ QPushButton {
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 0, 0);
-color: rgb(255, 255, 255);</string>
+     <string notr="true">	background-color: rgb(255, 0, 0);
+	color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string/>
@@ -2579,15 +2480,12 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">QFrame {
-
-background-color: rgb(204, 204, 204);
-
- border-width: 0px;
+	background-color: rgb(204, 204, 204);
+	border-width: 0px;
     border-color: rgb(255, 0, 0);
     border-style: none;
     border-radius: 0;
     padding: 0px;
-
 }</string>
     </property>
     <property name="frameShape">
@@ -2613,28 +2511,28 @@ background-color: rgb(204, 204, 204);
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QTabWidget::pane { /* The tab widget frame */
-     border-width: 0px;
-border-color: rgba(255, 0, 0, 191);
-border-style: solid;
-border-radius: 0;
+     <string notr="true">QTabWidget::pane { /* The tab widget frame */	
+	border-width: 0px;
+	border-color: rgba(255, 0, 0, 191);
+	border-style: solid;
+	border-radius: 0;
  }
 
-
 QTabBar::tab {
-
-
-
   /*  height: 48px; width: 200px;*/
 }
+
 QTabWidget::tab-bar {
-     left: 2px; /* move to the right by 5px */
- }</string>
+	left: 2px; /* move to the right by 5px */
+}</string>
     </property>
     <property name="currentIndex">
      <number>0</number>
     </property>
     <widget class="QWidget" name="Laundry">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <attribute name="title">
       <string>Laundry View</string>
      </attribute>
@@ -2706,7 +2604,7 @@ QTabWidget::tab-bar {
     </property>
     <property name="styleSheet">
      <string notr="true">QFrame {
-background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
 }</string>
     </property>
     <property name="frameShape">
@@ -2732,19 +2630,15 @@ background-color: rgb(255, 255, 255);
      </property>
      <property name="styleSheet">
       <string notr="true">QTabWidget::pane { /* The tab widget frame */
-     border-width: 0px;
-border-color: rgba(255, 0, 0, 191);
-border-style: solid;
-border-radius: 0;
- }
+    border-width: 0px;
+	border-color: rgba(255, 0, 0, 191);
+	border-style: solid;
+	border-radius: 0;
+}
 
 QTabBar::tab {
-	
-
-
-
-    /*height: 48px; width: 100px;*/
 }
+
 QTabWidget::tab-bar {
      left: 2px; /* move to the right by 5px */
  }
@@ -2752,9 +2646,12 @@ QTabWidget::tab-bar {
 </string>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab_Scores">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <attribute name="title">
        <string>Scores/Schedule</string>
       </attribute>
@@ -2767,6 +2664,9 @@ QTabWidget::tab-bar {
          <height>611</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <property name="url">
         <url>
          <string>about:blank</string>
@@ -2775,6 +2675,9 @@ QTabWidget::tab-bar {
       </widget>
      </widget>
      <widget class="QWidget" name="tab_News">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <attribute name="title">
        <string>News</string>
       </attribute>
@@ -2786,6 +2689,9 @@ QTabWidget::tab-bar {
          <width>851</width>
          <height>611</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
        </property>
        <property name="url">
         <url>
@@ -2805,16 +2711,13 @@ QTabWidget::tab-bar {
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">
- QListView {
-
-
-border-width: 0px;
-border-color: rgba(255, 0, 0, 191);
-border-style: solid;
-border-radius: 0;
-background-color: rgb(204, 204, 204);
- }
+      <string notr="true">QListView {
+	border-width: 0px;
+	border-color: rgba(255, 0, 0, 191);
+	border-style: solid;
+	border-radius: 0;
+	background-color: rgb(204, 204, 204);
+}
 </string>
      </property>
      <item>
@@ -2901,18 +2804,18 @@ background-color: rgb(204, 204, 204);
     <widget class="QFrame" name="f_filler">
      <property name="geometry">
       <rect>
-       <x>405</x>
+       <x>404</x>
        <y>0</y>
        <width>721</width>
        <height>39</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(204, 204, 204);
-border-width: 0px;
-border-color: rgba(255, 0, 0, 191);
-border-style: solid;
-border-radius: 0;</string>
+      <string notr="true">	background-color: rgb(204, 204, 204);
+	border-width: 0px;
+	border-color: rgba(255, 0, 0, 191);
+	border-style: solid;
+	border-radius: 0;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
