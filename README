@@ -1,0 +1,54 @@
+|=======================|
+|*** UIC Desktop App ***|
+|=======================|
+
+Team Peter:         
+    >Peter Hanula (Graphics, front end design)
+    >Peter Bekos (Data gathering, back end design)
+|=======================|
+
+>>>Project Goals:
+The goal of this project is to bring all sorts of UIC related information
+to students with out the need to go on a mad scavenger hunt
+|=======================|
+
+>>>Design in Mind:
+Front End:
+We are going to go with a "tab and section" styled layout
+-Homepage, a place to start
+-Maps, any type of map graphic one would need around UIC 
+including CTA and food
+-Directory, listing of staff contact info
+-Courses, listing of course selection
+-Events/News, news feed
+-Athletics, scores and updates on sport teams
+-Library, information on library and contents
+-Book Store, book pricing and look up
+-Housing, useful housing information including laundry view
+-Safety, numbers to call
+
+Back End:
+-Restaurant Database, a text file storing all restaurant information 
+for a location
+-Menu Database, text files per restaurant that contain menu, food and price
+-Course Database, html files re made containing course data
+-HTML Parser, finds the information we want from a website,
+very custom build and not too flexible, but it works well
+-Menu Loader, loads in and allows manipulation of menu info
+-Location Loader, loads in and allows manipulation of restaurant info
+|=======================|
+
+>>>Implementation of Ideas:
+Front End:
+
+Back End:
+Goal 1: Efficient way to get the data we need
+Goal 2: Tools to "play with" data we have
+-Since there wasn't a solid structure defining all restaurants in a local
+area, I had to scout them out my self and decide how far we were going to
+go. Then from that I went on google and hand picked the restaurants to
+include. From there I had found a website that had a nice layout where
+I would grab all the menu pages as HTML and then extract the name and
+price of each dish and store them in text files.
+-Part two of my project was finding a way to put this data to use. I 
+started off 

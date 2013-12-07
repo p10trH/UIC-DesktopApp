@@ -129,9 +129,43 @@ QString locationLoader::locationLoad(QString filename, int option)
             infoOut += hashTags + "\n";
             infoOut += "\n";
         } else if (option == 2) {
-            QString hoursOnDay = hoursSun;
-            int currentTime = 1350;
-
+			//============
+			//LOOK HERE
+			//=================
+				//Original Code:
+				//QString hoursOnDay = hoursSun;
+				//int currentTime = 1350;
+				
+				//New Code:
+			QString hoursOnDay;
+			int currentTime;
+			
+			QDate date = QDate::currentDate();
+			QString dateString = date.toString();
+			dateString = dateString.mid(0,2);
+			if(dateString == "Mo"){
+				hoursOnDay = hoursMon;
+			} else if (dateString == "Tu") {
+				hoursOnDay = hoursTue;
+			} else if (dateString == "We") {
+				hoursOnDay = hoursWed;
+			} else if (dateString == "Th") {
+				hoursOnDay = hoursThr;
+			} else if (dateString == "Fr") {
+				hoursOnDay = hoursFri;
+			} else if (dateString == "Sa") {
+				hoursOnDay = hoursSat;
+			} else if (dateString == "Su") {
+				hoursOnDay = hoursSun;
+			}
+			
+			QTime time = QTime::currentTime();
+			QString timeString = time.toString();
+			currentTime += timeString.mid(0,timeString.indexOf(":")).toInt()*100;
+			currentTime += timeString.mid(timeString.indexOf(":")+1,2).toInt();
+			//=================
+			//STOP LOOKING HERE
+			//=================
             int openTime = extractOTime(hoursOnDay);
             int closeTime = extractCTime(hoursOnDay);
             if(openTime < currentTime && currentTime < closeTime){
