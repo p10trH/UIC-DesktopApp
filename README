@@ -40,7 +40,15 @@ very custom build and not too flexible, but it works well
 
 >>>Implementation of Ideas:
 Front End:
-It started with design mode in qt and dragging widgets onto our main window. We wanted a simple guy that was organized but also very stylish. This is where style sheets came in. once we knew more or less the layout of our application, we added some widgets and edited the style sheets. then we were able to create a simple slide out menu that was efficient and spared us space. Some styling also included the addition of subclasses to make a group of widgets do specific things ( for example enter and leave events for the side menu buttons ). we were able to group the side menu buttons together and only they would react to the subclass. 
+It started with design mode in qt and dragging widgets onto our main 
+window. We wanted a simple guy that was organized but also very stylish. 
+This is where style sheets came in. once we knew more or less the layout
+ of our application, we added some widgets and edited the style sheets. 
+ then we were able to create a simple slide out menu that was efficient 
+ and spared us space. Some styling also included the addition of subclasses 
+ to make a group of widgets do specific things ( for example enter and leave
+ events for the side menu buttons ). we were able to group the side menu 
+ buttons together and only they would react to the subclass. 
 
 Back End:
 Goal 1: Efficient way to get the data we need
@@ -52,4 +60,31 @@ include. From there I had found a website that had a nice layout where
 I would grab all the menu pages as HTML and then extract the name and
 price of each dish and store them in text files.
 -Part two of my project was finding a way to put this data to use. I 
-started off 
+started off creating a function to read in the information in my text file
+and then proceeded to make functions that can interpret the data, for instance
+like a search function.
+|=======================|
+
+>>>Project File Structure:
+//340Final (Peter H, front end)
+//UICmod (Peter B, back end)
+	-structure.txt, file listing how I'm going to make the infomation work
+	-main.cpp, main for my tool programs
+	//courseCat
+		-contains all the modified course html files
+	//HTML
+		-contains all restaurant menu html files
+	//images
+		-contains a few graphics from project run
+	//Locations
+		-list of restaurants
+		//Menus
+			-menu files
+	//include
+		-header files
+	//src
+		-c++ class files
+	//REMADE FOR QT
+		-modified classes that worked with Qt, considering we had problems
+		connecting the back and front end
+	
