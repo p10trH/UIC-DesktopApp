@@ -138,7 +138,7 @@ QString locationLoader::locationLoad(QString filename, int option)
 				
 				//New Code:
 			QString hoursOnDay;
-			int currentTime;
+			int currentTime = 0;
 			
 			QDate date = QDate::currentDate();
 			QString dateString = date.toString();
